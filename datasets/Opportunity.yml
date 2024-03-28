@@ -1,0 +1,340 @@
+unique_name: Opportunity
+object_type: dataset
+label: Opportunity
+columns:
+  - data_type: string
+    name: Id
+  - data_type: boolean
+    name: IsDeleted
+  - data_type: string
+    name: AccountId
+  - data_type: string
+    name: RecordTypeId
+  - data_type: string
+    name: Name
+  - data_type: string
+    name: Description
+  - data_type: string
+    name: StageName
+  - data_type: decimal(18,2)
+    name: Amount
+  - data_type: double
+    name: Probability
+  - data_type: date
+    name: CloseDate
+  - data_type: string
+    name: Type
+  - data_type: string
+    name: NextStep
+  - data_type: string
+    name: LeadSource
+  - data_type: boolean
+    name: IsClosed
+  - data_type: boolean
+    name: IsWon
+  - data_type: string
+    name: ForecastCategory
+  - data_type: string
+    name: ForecastCategoryName
+  - data_type: string
+    name: CampaignId
+  - data_type: boolean
+    name: HasOpportunityLineItem
+  - data_type: boolean
+    name: IsSplit
+  - data_type: string
+    name: Pricebook2Id
+  - data_type: string
+    name: OwnerId
+  - data_type: datetime
+    name: CreatedDate
+  - data_type: string
+    name: CreatedById
+  - data_type: datetime
+    name: LastModifiedDate
+  - data_type: string
+    name: LastModifiedById
+  - data_type: datetime
+    name: SystemModstamp
+  - data_type: date
+    name: LastActivityDate
+  - data_type: long
+    name: PushCount
+  - data_type: datetime
+    name: LastStageChangeDate
+  - data_type: long
+    name: FiscalQuarter
+  - data_type: long
+    name: FiscalYear
+  - data_type: string
+    name: Fiscal
+  - data_type: string
+    name: ContactId
+  - data_type: datetime
+    name: LastViewedDate
+  - data_type: datetime
+    name: LastReferencedDate
+  - data_type: string
+    name: SyncedQuoteId
+  - data_type: string
+    name: ContractId
+  - data_type: boolean
+    name: HasOpenActivity
+  - data_type: boolean
+    name: HasOverdueTask
+  - data_type: string
+    name: LastAmountChangedHistoryId
+  - data_type: string
+    name: LastCloseDateChangedHistoryId
+  - data_type: string
+    name: Current_Data_Platforms__c
+  - data_type: string
+    name: Current_BI_Tools__c
+  - data_type: string
+    name: Old_Oppty_ID_18_digit__c
+  - data_type: string
+    name: Lead_Source_Bucket__c
+  - data_type: boolean
+    name: DSCORGPKG__Attributed_to_DiscoverOrg__c
+  - data_type: string
+    name: Business_Development_Representative__c
+  - data_type: boolean
+    name: DSCORGPKG__Converted_from_Discoverorg_Data__c
+  - data_type: decimal(18,2)
+    name: Accounting_ARR__c
+  - data_type: string
+    name: Budget__c
+  - data_type: string
+    name: Closed_Lost_Reason__c
+  - data_type: date
+    name: POC_Start_Date__c
+  - data_type: decimal(18,2)
+    name: Expiring_ARR__c
+  - data_type: double
+    name: LeanData__Days_In_Stage__c
+  - data_type: date
+    name: POC_Target_End_Date__c
+  - data_type: date
+    name: POC_End_Date__c
+  - data_type: string
+    name: POC_Status__c
+  - data_type: datetime
+    name: Create_Date_Stamp__c
+  - data_type: string
+    name: Lost_Reason_Notes__c
+  - data_type: string
+    name: Manager_Notes__c
+  - data_type: date
+    name: NDA_Signed__c
+  - data_type: decimal(18,2)
+    name: Accounting_NRR__c
+  - data_type: string
+    name: Next_Steps__c
+  - data_type: double
+    name: Number_of_end_users__c
+  - data_type: double
+    name: Age_calc__c
+  - data_type: string
+    name: Partner_Lookup__c
+  - data_type: string
+    name: SQL_Engine__c
+  - data_type: decimal(18,2)
+    name: Services_Booking_Editable__c
+  - data_type: decimal(18,2)
+    name: Net_New_ARR__c
+  - data_type: decimal(38,9)
+    name: Renewal_Forecast__c
+  - data_type: double
+    name: IS_Adaptive_Analytics_Cores__c
+  - data_type: string
+    name: Use_Case_Details__c
+  - data_type: string
+    name: Use_Case__c
+  - data_type: boolean
+    name: AI_Link_Discussed__c
+  - data_type: string
+    name: xactly_sc__c
+  - data_type: string
+    name: xactly_se__c
+  - data_type: string
+    name: Opportunity_ID_18_digit__c
+  - data_type: decimal(18,2)
+    name: Opportunity_ARR__c
+  - data_type: decimal(18,2)
+    name: Services_Booking__c
+  - data_type: decimal(18,2)
+    name: Net_New_ARR_calc__c
+  - data_type: boolean
+    name: MSP_Signed_By_Customer__c
+  - data_type: boolean
+    name: MSP_Internal_Review_Complete__c
+  - data_type: date
+    name: Expected_POC_Start_Date__c
+  - data_type: string
+    name: Lead_Creator_Stamp__c
+  - data_type: string
+    name: Lead_Creator_ID_Stamp__c
+  - data_type: string
+    name: Legal_Review__c
+  - data_type: string
+    name: Procurement__c
+  - data_type: string
+    name: Technical_Win__c
+  - data_type: string
+    name: Pricing__c
+  - data_type: double
+    name: IS_Adaptive_Analytics_Months__c
+  - data_type: string
+    name: POC_Type__c
+  - data_type: string
+    name: CP_Value_Drivers__c
+  - data_type: string
+    name: CP_Negative_Consequences__c
+  - data_type: string
+    name: CP_How_We_Do_It__c
+  - data_type: string
+    name: CP_Proof_Point__c
+  - data_type: string
+    name: CP_Required_Capabilities__c
+  - data_type: string
+    name: CP_Metrics__c
+  - data_type: string
+    name: CP_Economic_Buyer__c
+  - data_type: string
+    name: CP_Decision_Criteria__c
+  - data_type: string
+    name: CP_Decision_Process__c
+  - data_type: string
+    name: CP_Paper_Process__c
+  - data_type: string
+    name: CP_Identified_Pain__c
+  - data_type: string
+    name: CP_Champion__c
+  - data_type: string
+    name: CP_Competition__c
+  - data_type: double
+    name: CP_Score_Primary_Value_Driver__c
+  - data_type: double
+    name: CP_Score_Negative_Consequences__c
+  - data_type: double
+    name: CP_Score_How_We_Do_It__c
+  - data_type: double
+    name: CP_Score_Proof_Point__c
+  - data_type: double
+    name: CP_Score_Required_Capabilities__c
+  - data_type: double
+    name: CP_Score_Metrics__c
+  - data_type: double
+    name: CP_Score_Economic_Buyer__c
+  - data_type: double
+    name: CP_Score_Decision_Criteria__c
+  - data_type: double
+    name: CP_Score_Decision_Process__c
+  - data_type: double
+    name: CP_Score_Paper_Process__c
+  - data_type: double
+    name: CP_Score_Identified_Pain__c
+  - data_type: double
+    name: CP_Score_Champion__c
+  - data_type: double
+    name: CP_Score_Competition__c
+  - data_type: double
+    name: CP_Score__c
+  - data_type: string
+    name: CP_Positive_Business_Outcomes__c
+  - data_type: double
+    name: CP_Score_Positive_Business_Outcomes__c
+  - data_type: string
+    name: Customer_Success_Manager__c
+  - data_type: double
+    name: IS_Adaptive_Analytics_Core_Months__c
+  - data_type: string
+    name: LID__CurrentGenerators__c
+  - data_type: string
+    name: LID__DeliveryInstallationStatus__c
+  - data_type: boolean
+    name: LID__Is_Influenced__c
+  - data_type: string
+    name: LID__LinkedIn_Company_Id__c
+  - data_type: string
+    name: LID__MainCompetitors__c
+  - data_type: datetime
+    name: LID__My_DateTime__c
+  - data_type: double
+    name: LID__My_Geolocation__Latitude__s
+  - data_type: double
+    name: LID__My_Geolocation__Longitude__s
+  - data_type: string
+    name: LID__OrderNumber__c
+  - data_type: string
+    name: LID__TrackingNumber__c
+  - data_type: string
+    name: LeanData__Reporting_Opportunity_Source__c
+  - data_type: double
+    name: LeanData__Reporting_Total_Marketing_Touches__c
+  - data_type: string
+    name: LeanData__Routing_Action__c
+  - data_type: string
+    name: LeanData__Status_Info__c
+  - data_type: string
+    name: Budget_Status__c
+  - data_type: string
+    name: Legal_Review_Status__c
+  - data_type: string
+    name: Pricing_Status__c
+  - data_type: string
+    name: Procurement_Status__c
+  - data_type: string
+    name: Technical_Win_Status__c
+  - data_type: string
+    name: Compelling_Event_Detail__c
+  - data_type: string
+    name: Compelling_Event__c
+  - data_type: string
+    name: Unsupported_Tools__c
+  - data_type: string
+    name: Technical_Win_2__c
+  - data_type: string
+    name: Product_Gap_Area__c
+  - data_type: string
+    name: Forecast_Opportunity__c
+  - data_type: boolean
+    name: By_Pass_Validation_Compelling_Event__c
+  - data_type: string
+    name: Link_To_MSP__c
+  - data_type: string
+    name: DealRoom_URL__c
+  - data_type: boolean
+    name: DealHub_Create_Subscription__c
+  - data_type: string
+    name: Data_Science_Tools__c
+  - data_type: decimal(18,2)
+    name: Opportunity_ARR_2__c
+  - data_type: string
+    name: PowerBI_Deployment_Scenario__c
+  - data_type: decimal(18,2)
+    name: New_ARR_Calc__c
+  - data_type: string
+    name: Product_Gap_Details__c
+  - data_type: boolean
+    name: Handoff_to_CSM_Completed__c
+  - data_type: string
+    name: Churn_Reason_CSM__c
+  - data_type: string
+    name: Churn_Reason_Details_CSM__c
+  - data_type: string
+    name: Sage_Contract_ID__c
+  - data_type: string
+    name: Partner_AE__c
+  - data_type: string
+    name: Link_to_Customer_Deck__c
+  - data_type: decimal(38,9)
+    name: Cloud_Spend__c
+  - data_type: string
+    name: Business_Use_Case__c
+  - data_type: string
+    name: Highest_Level_Contact__c
+  - data_type: double
+    name: Renewal_Probability__c
+connection_id: con_atscale-data-warehouse_AIA_SFDC
+table: Opportunity
