@@ -1,0 +1,23 @@
+unique_name: Finance Data Model
+object_type: model
+label: Finance Data Model
+dimensions:
+  - Scenario
+metrics:
+  - unique_name: Amount
+  - unique_name: Budget
+relationships:
+  - unique_name: factGLDetail3_empty_dimension
+    from:
+      dataset: factGLDetail3
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: empty_dataset_Date_Dimension
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      dimension: Date Dimension
+      level: ''

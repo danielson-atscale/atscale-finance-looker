@@ -1,0 +1,6 @@
+unique_name: Amount
+object_type: metric
+label: Amount
+calculation_method: sum
+column: Amount
+dataset: factGLDetail3

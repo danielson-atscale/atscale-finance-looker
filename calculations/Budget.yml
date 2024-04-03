@@ -1,0 +1,5 @@
+unique_name: Budget
+object_type: metric_calc
+label: Budget
+expression: IIF ([Scenario].[Scenario] = "Budget", [Measures].[Amount], 0)
+is_hidden: false
