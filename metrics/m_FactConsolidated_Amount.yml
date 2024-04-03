@@ -1,0 +1,6 @@
+unique_name: m_FactConsolidated_Amount
+object_type: metric
+label: Total
+calculation_method: sum
+column: Amount
+dataset: FactConsolidated

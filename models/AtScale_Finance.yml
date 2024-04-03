@@ -1,0 +1,16 @@
+unique_name: AtScale_Finance
+object_type: model
+label: AtScale_Finance
+dimensions:
+  - FactConsolidated_ScenarioID_dimension
+metrics:
+  - unique_name: m_FactConsolidated_Amount
+relationships:
+  - unique_name: FactConsolidated_TransactionDate_to_dimDate_dimension_dimDate_Date_Level
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - TransactionDate
+    to:
+      dimension: dimDate_dimension
+      level: dimDate_Date_Level

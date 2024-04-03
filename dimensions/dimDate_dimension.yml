@@ -1,0 +1,50 @@
+unique_name: dimDate_dimension
+object_type: dimension
+label: dimDate_dimension
+hierarchies:
+  - unique_name: dimDate
+    label: dimDate_dimension Hierarchy
+    levels:
+      - unique_name: Year
+        time_unit: year
+      - unique_name: Quarter
+        time_unit: quarter
+      - unique_name: Month
+        time_unit: month
+      - unique_name: dimDate_Date_Level
+        time_unit: day
+level_attributes:
+  - unique_name: Year
+    label: dimDate_dimension_Year_Level
+    contains_unique_names: false
+    dataset: dimDate
+    is_unique_key: false
+    key_columns:
+      - Year
+    name_column: Year
+  - unique_name: Quarter
+    label: dimDate_Quarter_Level
+    contains_unique_names: false
+    dataset: dimDate
+    is_unique_key: false
+    key_columns:
+      - Quarter
+    name_column: Quarter
+  - unique_name: Month
+    label: dimDate_Month_Level
+    contains_unique_names: false
+    dataset: dimDate
+    is_unique_key: false
+    key_columns:
+      - MonthYear
+    name_column: MonthYear
+  - unique_name: dimDate_Date_Level
+    label: Date
+    contains_unique_names: false
+    dataset: dimDate
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - Date
+    name_column: Date
+type: time

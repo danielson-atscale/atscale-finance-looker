@@ -1,0 +1,20 @@
+unique_name: dimDate
+object_type: dataset
+label: dimDate
+columns:
+  - name: Id
+    data_type: long
+  - name: Date
+    data_type: date
+  - name: Month
+    data_type: string
+  - name: Quarter
+    data_type: string
+  - name: Year
+    data_type: string
+  - name: MonthYear
+    data_type: string
+  - name: YearMonthNum
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_MasterData
+table: dimDate
