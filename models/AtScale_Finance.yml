@@ -5,6 +5,7 @@ dimensions:
   - FactConsolidated_ScenarioID_dimension
 metrics:
   - unique_name: m_FactConsolidated_Amount
+  - unique_name: m_FactConsolidated_CreditAmount
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_dimension_dimDate_Date_Level
     from:
