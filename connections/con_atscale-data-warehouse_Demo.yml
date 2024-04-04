@@ -1,6 +1,0 @@
-unique_name: con_atscale-data-warehouse_Demo
-object_type: connection
-label: con_atscale-data-warehouse_Demo
-as_connection: gbq
-database: atscale-data-warehouse
-schema: Demo
