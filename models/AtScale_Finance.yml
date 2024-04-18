@@ -14,3 +14,11 @@ relationships:
     to:
       dimension: dimDate_dimension
       level: dimDate_Date_Level
+  - unique_name: FactConsolidated_AccountID_to_dimAccount_dimension_dimAccount_RecordNo
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - AccountID
+    to:
+      dimension: dimAccount_dimension
+      level: dimAccount_RecordNo

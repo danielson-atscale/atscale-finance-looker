@@ -1,0 +1,54 @@
+unique_name: dimAccount_dimension
+object_type: dimension
+label: dimAccount_dimension
+hierarchies:
+  - unique_name: dimAccount_dimension Hierarchy
+    label: dimAccount_dimension Hierarchy
+    levels:
+      - unique_name: dimAccount_Level1
+      - unique_name: dimAccount_Level2
+      - unique_name: dimAccount_Level3
+      - unique_name: dimAccount_AccountID_Name
+      - unique_name: dimAccount_RecordNo
+level_attributes:
+  - unique_name: dimAccount_Level1
+    label: dimAccount_Level1
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - Level1
+    name_column: Level1
+  - unique_name: dimAccount_Level2
+    label: dimAccount_Level2
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - Level2
+    name_column: Level2
+  - unique_name: dimAccount_Level3
+    label: dimAccount_Level3
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - Level3
+    name_column: Level3
+  - unique_name: dimAccount_AccountID_Name
+    label: dimAccount_AccountID_Name
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - AccountID_Name
+    name_column: AccountID_Name
+  - unique_name: dimAccount_RecordNo
+    label: dimAccount_RecordNo
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
+type: standard
