@@ -1,6 +1,6 @@
 unique_name: con_atscale-data-warehouse_AIA_MasterData
 object_type: connection
 label: con_atscale-data-warehouse_AIA_MasterData
-as_connection: gbq
+as_connection: atscale-data-warehouse
 database: atscale-data-warehouse
 schema: AIA_MasterData
