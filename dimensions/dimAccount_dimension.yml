@@ -51,4 +51,16 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+relationships:
+  - unique_name: dimAccount_Level3_to_dimStatement_dimension_dimStatement_ReportSection
+    from:
+      dataset: dimAccount
+      hierarchy: dimAccount_dimension Hierarchy
+      join_columns:
+        - Level3
+      level: dimAccount_Level1
+    to:
+      dimension: dimStatement_dimension
+      level: dimStatement_ReportSection
+    type: embedded
 type: standard

@@ -1,0 +1,34 @@
+unique_name: dimStatement
+object_type: dataset
+label: dimStatement
+columns:
+  - name: ReportNo
+    data_type: long
+  - name: LineNo
+    data_type: long
+  - name: ReportSection
+    data_type: string
+  - name: ReportHeadingNo
+    data_type: long
+  - name: ReportHeading
+    data_type: string
+  - name: Operator
+    data_type: string
+  - name: Format
+    data_type: string
+  - name: Calc1
+    data_type: string
+  - name: Calc2
+    data_type: string
+  - name: Report
+    data_type: string
+  - name: Signage
+    data_type: string
+  - name: LinkReport
+    data_type: string
+  - name: LinkLineNo
+    data_type: string
+  - name: LinkHeading
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimStatement
