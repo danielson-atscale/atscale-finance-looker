@@ -7,6 +7,15 @@ hierarchies:
     levels:
       - unique_name: dimStatement_ReportHeading
       - unique_name: dimStatement_ReportSection
+        secondary_attributes:
+          - unique_name: dimStatement_dimension Secondary Attribute
+            label: dimStatement_AccountID_Name
+            contains_unique_names: false
+            dataset: dimAccount
+            is_unique_key: false
+            key_columns:
+              - AccountID_Name
+            name_column: AccountID_Name
 level_attributes:
   - unique_name: dimStatement_ReportSection
     label: dimStatement_ReportSection
