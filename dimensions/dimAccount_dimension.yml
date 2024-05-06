@@ -5,6 +5,7 @@ hierarchies:
   - unique_name: dimAccount_dimension Hierarchy
     label: dimAccount_dimension Hierarchy
     levels:
+      - unique_name: dimAccount_Level1
       - unique_name: dimAccount_Level3
         secondary_attributes:
           - unique_name: dimAccount_ReportHeading
@@ -45,6 +46,14 @@ level_attributes:
       - Recordno
     name_column: Recordno
     sort_column: empty_value
+  - unique_name: dimAccount_Level1
+    label: dimAccount_Level1
+    contains_unique_names: false
+    dataset: dimAccount
+    is_unique_key: false
+    key_columns:
+      - Level1
+    name_column: Level1
 relationships:
   - unique_name: dimAccount_Level3_to_dimStatement_dimension_dimStatement_ReportSection
     from:
