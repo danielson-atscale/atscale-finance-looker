@@ -5,28 +5,19 @@ hierarchies:
   - unique_name: dimAccount_dimension Hierarchy
     label: dimAccount_dimension Hierarchy
     levels:
-      - unique_name: dimAccount_Level1
-      - unique_name: dimAccount_Level2
       - unique_name: dimAccount_Level3
+        secondary_attributes:
+          - unique_name: dimAccount_ReportHeading
+            label: dimAccount_ReportHeading
+            contains_unique_names: false
+            dataset: dimStatement
+            is_unique_key: false
+            key_columns:
+              - ReportHeading
+            name_column: ReportHeading
       - unique_name: dimAccount_AccountID_Name
       - unique_name: dimAccount_RecordNo
 level_attributes:
-  - unique_name: dimAccount_Level1
-    label: dimAccount_Level1
-    contains_unique_names: false
-    dataset: dimAccount
-    is_unique_key: false
-    key_columns:
-      - Level1
-    name_column: Level1
-  - unique_name: dimAccount_Level2
-    label: dimAccount_Level2
-    contains_unique_names: false
-    dataset: dimAccount
-    is_unique_key: false
-    key_columns:
-      - Level2
-    name_column: Level2
   - unique_name: dimAccount_Level3
     label: dimAccount_Level3
     contains_unique_names: false
@@ -35,6 +26,7 @@ level_attributes:
     key_columns:
       - Level3
     name_column: Level3
+    sort_column: empty_value
   - unique_name: dimAccount_AccountID_Name
     label: dimAccount_AccountID_Name
     contains_unique_names: false
@@ -43,6 +35,7 @@ level_attributes:
     key_columns:
       - AccountID_Name
     name_column: AccountID_Name
+    sort_column: empty_value
   - unique_name: dimAccount_RecordNo
     label: dimAccount_RecordNo
     contains_unique_names: false
@@ -51,6 +44,7 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
 relationships:
   - unique_name: dimAccount_Level3_to_dimStatement_dimension_dimStatement_ReportSection
     from:
