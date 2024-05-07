@@ -1,0 +1,5 @@
+unique_name: Actual_NonGAAP
+object_type: metric_calc
+label: Actual (Non GAAP)
+expression: '[Measures].[m_FactConsolidated_Amount] * 1.5'
+is_hidden: false

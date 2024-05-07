@@ -5,6 +5,7 @@ dimensions:
   - FactConsolidated_ScenarioID_dimension
 metrics:
   - unique_name: m_FactConsolidated_Amount
+  - unique_name: Actual_NonGAAP
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_dimension_dimDate_Date_Level
     from:
@@ -14,3 +15,11 @@ relationships:
     to:
       dimension: dimDate_dimension
       level: dimDate_Date_Level
+  - unique_name: FactConsolidated_AccountID_to_dimAccount_dimension_dimAccount_RecordNo
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - AccountID
+    to:
+      dimension: dimAccount_dimension
+      level: dimAccount_RecordNo

@@ -1,0 +1,34 @@
+unique_name: dimAccount
+object_type: dataset
+label: dimAccount
+columns:
+  - name: Id
+    data_type: long
+  - name: Recordno
+    data_type: string
+  - name: Accountno
+    data_type: string
+  - name: Title
+    data_type: string
+  - name: Accounttype
+    data_type: string
+  - name: Normalbalance
+    data_type: string
+  - name: Status
+    data_type: string
+  - name: Categorykey
+    data_type: string
+  - name: Category
+    data_type: string
+  - name: AccountID
+    data_type: string
+  - name: AccountID_Name
+    data_type: string
+  - name: Level1
+    data_type: string
+  - name: Level2
+    data_type: string
+  - name: Level3
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimAccount

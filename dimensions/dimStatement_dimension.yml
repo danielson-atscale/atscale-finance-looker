@@ -1,0 +1,28 @@
+unique_name: dimStatement_dimension
+object_type: dimension
+label: dimStatement_dimension
+hierarchies:
+  - unique_name: dimStatement_ReportSection
+    label: dimStatement_ReportSection
+    levels:
+      - unique_name: dimStatement_ReportHeading
+      - unique_name: dimStatement_ReportSection
+level_attributes:
+  - unique_name: dimStatement_ReportSection
+    label: dimStatement_ReportSection
+    contains_unique_names: false
+    dataset: dimStatement
+    is_unique_key: false
+    key_columns:
+      - ReportSection
+    name_column: ReportSection
+    sort_column: empty_value
+  - unique_name: dimStatement_ReportHeading
+    label: dimStatement_ReportHeading
+    contains_unique_names: false
+    dataset: dimStatement
+    is_unique_key: false
+    key_columns:
+      - ReportHeading
+    name_column: ReportHeading
+type: standard
