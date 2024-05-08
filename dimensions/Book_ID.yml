@@ -1,0 +1,18 @@
+unique_name: Book_ID
+object_type: dimension
+label: Book ID
+hierarchies:
+  - unique_name: Book_ID_Hierarchy
+    label: Book ID Hierarchy
+    levels:
+      - unique_name: Book_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Book_ID_Level
+    label: Book ID Level
+    contains_unique_names: false
+    dataset: FactConsolidated
+    key_columns:
+      - BookID
+    name_column: BookID
+type: standard
