@@ -7,8 +7,8 @@ hierarchies:
     levels:
       - unique_name: dimDepartment_ParentId
         secondary_attributes:
-          - unique_name: dimDepartment_dimension Secondary Attribute
-            label: dimDepartment_dimension Secondary Attribute
+          - unique_name: dimDepartment_ParentName
+            label: dimDepartment_ParentName
             contains_unique_names: false
             dataset: dimDepartment
             is_unique_key: false
@@ -17,8 +17,8 @@ hierarchies:
             name_column: Parentname
       - unique_name: dimDepartment_Recordno
         secondary_attributes:
-          - unique_name: dimDepartment_dimension Secondary Attribute (1)
-            label: dimDepartment_dimension Secondary Attribute (1)
+          - unique_name: dimDepartment_Title
+            label: dimDepartment_Title
             contains_unique_names: false
             dataset: dimDepartment
             is_unique_key: false
