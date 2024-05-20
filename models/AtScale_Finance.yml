@@ -24,14 +24,6 @@ relationships:
     to:
       dimension: dimAccount_dimension
       level: dimAccount_RecordNo
-  - unique_name: FactConsolidated_DepartmentID_to_dimDepartment_Recordno
-    from:
-      dataset: FactConsolidated
-      join_columns:
-        - DepartmentID
-    to:
-      dimension: dimDepartment_dimension
-      level: dimDepartment_Recordno
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimension_dimProduct_recordno
     from:
       dataset: FactConsolidated
