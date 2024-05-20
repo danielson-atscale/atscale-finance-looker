@@ -5,8 +5,26 @@ hierarchies:
   - unique_name: dimDepartment Hierarchy
     label: dimDepartment Hierarchy
     levels:
+      - unique_name: dimDepartment_ParentId
+        secondary_attributes:
+          - unique_name: dimDepartment_dimension Secondary Attribute
+            label: dimDepartment_dimension Secondary Attribute
+            contains_unique_names: false
+            dataset: dimDepartment
+            is_unique_key: false
+            key_columns:
+              - Parentname
+            name_column: Parentname
       - unique_name: dimDepartment_Recordno
-      - unique_name: dimDepartment_Title
+        secondary_attributes:
+          - unique_name: dimDepartment_dimension Secondary Attribute (1)
+            label: dimDepartment_dimension Secondary Attribute (1)
+            contains_unique_names: false
+            dataset: dimDepartment
+            is_unique_key: false
+            key_columns:
+              - Title
+            name_column: Title
 level_attributes:
   - unique_name: dimDepartment_Recordno
     label: dimDepartment_Recordno
@@ -17,12 +35,13 @@ level_attributes:
       - Recordno
     name_column: Recordno
     sort_column: empty_value
-  - unique_name: dimDepartment_Title
-    label: dimDepartment_Title
+  - unique_name: dimDepartment_ParentId
+    label: dimDepartment_ParentId
     contains_unique_names: false
     dataset: dimDepartment
+    is_hidden: true
     is_unique_key: false
     key_columns:
-      - Title
-    name_column: Title
+      - Parentid
+    name_column: Parentid
 type: standard
