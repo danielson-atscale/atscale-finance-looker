@@ -1,0 +1,24 @@
+unique_name: dimDepartment
+object_type: dataset
+label: dimDepartment
+columns:
+  - name: Departmentid
+    data_type: string
+  - name: Recordno
+    data_type: long
+  - name: Title
+    data_type: string
+  - name: Parentid
+    data_type: string
+  - name: Parentname
+    data_type: string
+  - name: Whencreated
+    data_type: datetime
+  - name: Whenmodified
+    data_type: datetime
+  - name: Status
+    data_type: string
+  - name: Custtitle
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimDepartment

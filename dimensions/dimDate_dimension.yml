@@ -1,6 +1,6 @@
 unique_name: dimDate_dimension
 object_type: dimension
-label: dimDate_dimension
+label: dimDate
 hierarchies:
   - unique_name: dimDate
     label: dimDate_dimension Hierarchy

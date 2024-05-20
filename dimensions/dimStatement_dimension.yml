@@ -1,6 +1,6 @@
 unique_name: dimStatement_dimension
 object_type: dimension
-label: dimStatement_dimension
+label: dimStatement
 hierarchies:
   - unique_name: dimStatement_ReportSection
     label: dimStatement_ReportSection

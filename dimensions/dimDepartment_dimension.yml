@@ -1,0 +1,18 @@
+unique_name: dimDepartment_dimension
+object_type: dimension
+label: dimDepartment
+hierarchies:
+  - unique_name: dimDepartment Hierarchy
+    label: dimDepartment Hierarchy
+    levels:
+      - unique_name: dimDepartment_Recordno
+level_attributes:
+  - unique_name: dimDepartment_Recordno
+    label: dimDepartment_Recordno
+    contains_unique_names: false
+    dataset: dimDepartment
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
+type: standard

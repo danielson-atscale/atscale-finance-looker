@@ -1,6 +1,6 @@
 unique_name: dimAccount_dimension
 object_type: dimension
-label: dimAccount_dimension
+label: dimAccount
 hierarchies:
   - unique_name: dimAccount_dimension Hierarchy
     label: dimAccount_dimension Hierarchy
