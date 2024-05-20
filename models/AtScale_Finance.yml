@@ -32,3 +32,11 @@ relationships:
     to:
       dimension: dimProduct_dimension
       level: dimProduct_recordno
+  - unique_name: FactConsolidated_DepartmentID_to_dimDepartment_Recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - DepartmentID
+    to:
+      dimension: dimDepartment_dimension
+      level: dimDepartment_Recordno
