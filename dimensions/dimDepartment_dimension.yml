@@ -6,6 +6,7 @@ hierarchies:
     label: dimDepartment Hierarchy
     levels:
       - unique_name: dimDepartment_Recordno
+      - unique_name: dimDepartment_Title
 level_attributes:
   - unique_name: dimDepartment_Recordno
     label: dimDepartment_Recordno
@@ -15,4 +16,13 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
+  - unique_name: dimDepartment_Title
+    label: dimDepartment_Title
+    contains_unique_names: false
+    dataset: dimDepartment
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Title
 type: standard
