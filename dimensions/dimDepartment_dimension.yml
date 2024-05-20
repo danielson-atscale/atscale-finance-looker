@@ -23,6 +23,6 @@ level_attributes:
     dataset: dimDepartment
     is_unique_key: false
     key_columns:
-      - Recordno
+      - Title
     name_column: Title
 type: standard
