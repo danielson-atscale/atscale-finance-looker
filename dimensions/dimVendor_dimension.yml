@@ -1,0 +1,6 @@
+unique_name: dimVendor_dimension
+object_type: dimension
+label: dimVendor_dimension
+hierarchies: []
+level_attributes: []
+type: standard

@@ -1,5 +1,21 @@
 unique_name: Actual_NonGAAP
 object_type: metric_calc
 label: Actual (Non GAAP)
-expression: '[Measures].[m_FactConsolidated_Amount] * 1.5'
+expression: |2-
+    SUM(
+      FILTER(
+        [factConsolidated].[ScenarioID].[ScenarioID].MEMBERS *
+        {[factConsolidated].[BookID].[Accrual], [factConsolidated].[BookID].[605Accrual], [factConsolidated].[BookID].[None], [factConsolidated].[BookID].[ConAccrual], [factConsolidated].[BookID].[ARRAccrual]},
+        [factConsolidated].[ScenarioID].CurrentMember.Name = "Budget"
+        AND
+        (
+          [factConsolidated].[BookID].CurrentMember.Name = "Accrual" OR
+          [factConsolidated].[BookID].CurrentMember.Name = "605Accrual" OR
+          [factConsolidated].[BookID].CurrentMember.Name = "None" OR
+          [factConsolidated].[BookID].CurrentMember.Name = "ConAccrual" OR
+          [factConsolidated].[BookID].CurrentMember.Name = "ARRAccrual"
+        )
+      ),
+      [Measures].[m_FactConsolidated_Amount]
+    )
 is_hidden: false

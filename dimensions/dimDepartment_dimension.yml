@@ -15,6 +15,7 @@ hierarchies:
             key_columns:
               - Parentname
             name_column: Parentname
+            sort_column: empty_value
       - unique_name: dimDepartment_Recordno
         secondary_attributes:
           - unique_name: dimDepartment_Title
@@ -25,6 +26,7 @@ hierarchies:
             key_columns:
               - Title
             name_column: Title
+            sort_column: empty_value
 level_attributes:
   - unique_name: dimDepartment_Recordno
     label: dimDepartment_Recordno
@@ -44,4 +46,5 @@ level_attributes:
     key_columns:
       - Parentid
     name_column: Parentid
+    sort_column: empty_value
 type: standard

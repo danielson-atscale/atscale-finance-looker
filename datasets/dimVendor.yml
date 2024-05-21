@@ -1,0 +1,26 @@
+unique_name: dimVendor
+object_type: dataset
+label: dimVendor
+columns:
+  - name: Recordno
+    data_type: string
+  - name: Entity
+    data_type: string
+  - name: Name
+    data_type: string
+  - name: Status
+    data_type: string
+  - name: Totaldue
+    data_type: long
+  - name: Vendoraccountno
+    data_type: string
+  - name: Vendoracctnokey
+    data_type: long
+  - name: Vendorid
+    data_type: string
+  - name: Whencreated
+    data_type: datetime
+  - name: Whenmodified
+    data_type: datetime
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimVendor
