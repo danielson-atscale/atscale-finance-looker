@@ -40,3 +40,11 @@ relationships:
     to:
       dimension: dimDepartment_dimension
       level: dimDepartment_Recordno
+  - unique_name: FactConsolidated_VendorID_to_dimVendor_dimension_dimVendor_dimension Level
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - VendorID
+    to:
+      dimension: dimVendor_dimension
+      level: dimVendor_dimension Level
