@@ -22,6 +22,7 @@ level_attributes:
     key_columns:
       - Year
     name_column: Year
+    sort_column: empty_value
   - unique_name: Quarter
     label: dimDate_Quarter_Level
     contains_unique_names: false
@@ -30,6 +31,7 @@ level_attributes:
     key_columns:
       - Quarter
     name_column: Quarter
+    sort_column: empty_value
   - unique_name: Month
     label: dimDate_Month_Level
     contains_unique_names: false
@@ -38,11 +40,11 @@ level_attributes:
     key_columns:
       - MonthYear
     name_column: MonthYear
+    sort_column: empty_value
   - unique_name: dimDate_Date_Level
     label: Date
     contains_unique_names: false
     dataset: dimDate
-    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
