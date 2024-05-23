@@ -1,0 +1,28 @@
+unique_name: dimVendor
+object_type: dimension
+label: dimVendor
+hierarchies:
+  - unique_name: Vendor_Hierarchy
+    label: Vendor Hierarchy
+    levels:
+      - unique_name: dimVendor_Recordno
+        secondary_attributes:
+          - unique_name: dimVendor_Name
+            label: Name
+            contains_unique_names: false
+            dataset: dimVendor_dataset
+            is_unique_key: false
+            key_columns:
+              - Name
+            name_column: Name
+level_attributes:
+  - unique_name: dimVendor_Recordno
+    label: Recordno
+    contains_unique_names: false
+    dataset: dimVendor_dataset
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
+type: standard

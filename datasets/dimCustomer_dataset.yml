@@ -1,0 +1,38 @@
+unique_name: dimCustomer_dataset
+object_type: dataset
+label: dimCustomer
+columns:
+  - name: crmid
+    data_type: string
+  - name: crmName
+    data_type: string
+  - name: crmIsDeleted
+    data_type: boolean
+  - name: crmType
+    data_type: string
+  - name: crmWebsite
+    data_type: string
+  - name: crmIndustry
+    data_type: string
+  - name: crmOwnerID
+    data_type: string
+  - name: crmOwnername
+    data_type: string
+  - name: crmCreatedDate
+    data_type: datetime
+  - name: crmRegion
+    data_type: string
+  - name: glInternalID
+    data_type: string
+  - name: glCustomerID
+    data_type: string
+  - name: glName
+    data_type: string
+  - name: glStatus
+    data_type: string
+  - name: glWhenCreated
+    data_type: datetime
+  - name: glWhenModified
+    data_type: datetime
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimCustomer

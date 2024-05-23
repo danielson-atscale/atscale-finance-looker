@@ -2,7 +2,7 @@ unique_name: Actual_NonGAAP
 object_type: metric_calc
 label: Actual (Non GAAP)
 expression: >-
-  ([FactConsolidated_ScenarioID_dimension].[ScenarioID hierarchy].[ScenarioID].&[Actual],
-  [Book_ID].[Book_ID_Hierarchy].[Book_ID_Level].&[ACCRUAL],
+  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
+  [FactConsolidated_BookID].[BookID_Hierarchy].[BookID_BookID].&[ACCRUAL],
   [Measures].[m_factConsolidated_Amount])
 is_hidden: false

@@ -1,50 +1,46 @@
-unique_name: dimDepartment_dimension
+unique_name: dimDepartment
 object_type: dimension
 label: dimDepartment
 hierarchies:
-  - unique_name: dimDepartment Hierarchy
-    label: dimDepartment Hierarchy
+  - unique_name: Department_Hierarchy
+    label: Department Hierarchy
     levels:
-      - unique_name: dimDepartment_ParentId
+      - unique_name: dimDepartment_Parentid
         secondary_attributes:
-          - unique_name: dimDepartment_ParentName
-            label: dimDepartment_ParentName
+          - unique_name: dimDepartment_Parentname
+            label: Parentname
             contains_unique_names: false
-            dataset: dimDepartment
+            dataset: dimDepartment_dataset
             is_unique_key: false
             key_columns:
               - Parentname
             name_column: Parentname
-            sort_column: empty_value
       - unique_name: dimDepartment_Recordno
         secondary_attributes:
           - unique_name: dimDepartment_Title
-            label: dimDepartment_Title
+            label: Title
             contains_unique_names: false
-            dataset: dimDepartment
+            dataset: dimDepartment_dataset
             is_unique_key: false
             key_columns:
               - Title
             name_column: Title
-            sort_column: empty_value
 level_attributes:
   - unique_name: dimDepartment_Recordno
-    label: dimDepartment_Recordno
+    label: Recordno
     contains_unique_names: false
-    dataset: dimDepartment
+    dataset: dimDepartment_dataset
     is_unique_key: false
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
-  - unique_name: dimDepartment_ParentId
-    label: dimDepartment_ParentId
+  - unique_name: dimDepartment_Parentid
+    label: Parentid
     contains_unique_names: false
-    dataset: dimDepartment
+    dataset: dimDepartment_dataset
     is_hidden: true
     is_unique_key: false
     key_columns:
       - Parentid
     name_column: Parentid
-    sort_column: empty_value
 type: standard

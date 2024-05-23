@@ -1,4 +1,4 @@
-unique_name: dimAccount
+unique_name: dimAccount_dataset
 object_type: dataset
 label: dimAccount
 columns:

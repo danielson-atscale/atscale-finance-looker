@@ -1,4 +1,4 @@
-unique_name: dimDate
+unique_name: dimDate_dataset
 object_type: dataset
 label: dimDate
 columns:

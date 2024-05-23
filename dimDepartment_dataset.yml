@@ -1,4 +1,4 @@
-unique_name: dimDepartment
+unique_name: dimDepartment_dataset
 object_type: dataset
 label: dimDepartment
 columns:

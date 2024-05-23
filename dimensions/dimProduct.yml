@@ -1,16 +1,16 @@
-unique_name: dimProduct_dimension
+unique_name: dimProduct
 object_type: dimension
 label: dimProduct
 hierarchies:
-  - unique_name: dimProduct_dimension Hierarchy
-    label: dimProduct_dimension Hierarchy
+  - unique_name: Product_Hierarchy
+    label: Product Hierarchy
     levels:
       - unique_name: dimProduct_recordno
 level_attributes:
   - unique_name: dimProduct_recordno
-    label: dimProduct_recordno
+    label: recordno
     contains_unique_names: false
-    dataset: dimProduct
+    dataset: dimProduct_dataset
     is_unique_key: false
     key_columns:
       - recordno

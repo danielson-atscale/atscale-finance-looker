@@ -1,4 +1,4 @@
-unique_name: dimStatement
+unique_name: dimStatement_dataset
 object_type: dataset
 label: dimStatement
 columns:

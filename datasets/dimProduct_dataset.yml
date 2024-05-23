@@ -1,4 +1,4 @@
-unique_name: dimProduct
+unique_name: dimProduct_dataset
 object_type: dataset
 label: dimProduct
 columns:

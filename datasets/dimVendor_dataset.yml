@@ -1,4 +1,4 @@
-unique_name: dimVendor
+unique_name: dimVendor_dataset
 object_type: dataset
 label: dimVendor
 columns:
