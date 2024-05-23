@@ -1,0 +1,7 @@
+unique_name: Forecast
+object_type: metric_calc
+label: Forecast
+expression: >-
+  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Budget],
+  [Measures].[m_factConsolidated_Amount])
+is_hidden: false

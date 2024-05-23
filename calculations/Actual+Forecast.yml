@@ -1,0 +1,5 @@
+unique_name: Actual+Forecast
+object_type: metric_calc
+label: Actual+Forecast
+expression: '[Measures].[Actual_NonGAAP]+[Measures].[Forecast]'
+is_hidden: false

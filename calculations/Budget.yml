@@ -1,8 +1,9 @@
-unique_name: Actual_NonGAAP
+unique_name: Budget
 object_type: metric_calc
-label: Actual (Non GAAP)
+label: Budget
 expression: >-
-  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
+  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Budget],
   [FactConsolidated_BookID].[BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
   [Measures].[m_factConsolidated_Amount])
+format: standard
 is_hidden: false

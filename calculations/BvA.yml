@@ -1,0 +1,5 @@
+unique_name: BvA
+object_type: metric_calc
+label: BvA
+expression: '[Measures].[Actual+Forecast]-[Measures].[Budget]'
+is_hidden: false

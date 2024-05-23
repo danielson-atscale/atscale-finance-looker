@@ -1,0 +1,8 @@
+unique_name: Trial Balance
+object_type: metric_calc
+label: Trial Balance
+expression: >-
+  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Budget],
+  [FactConsolidated_BookID].[BookID_Filtered].[BookID_Trial_Balance].&[TRUE],
+  [Measures].[m_factConsolidated_Amount])
+is_hidden: false
