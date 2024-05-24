@@ -2,7 +2,7 @@ unique_name: dimStatement
 object_type: dimension
 label: dimStatement
 hierarchies:
-  - unique_name: Statement_Hierarchy
+  - unique_name: dimStatement_Hierarchy
     label: Statement Hierarchy
     levels:
       - unique_name: dimStatement_ReportHeading

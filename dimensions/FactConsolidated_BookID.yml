@@ -2,11 +2,11 @@ unique_name: FactConsolidated_BookID
 object_type: dimension
 label: BookID
 hierarchies:
-  - unique_name: BookID_Hierarchy
+  - unique_name: FactConsolidated_BookID_Hierarchy
     label: BookID Hierarchy
     levels:
       - unique_name: BookID_BookID
-  - unique_name: BookID_Filtered
+  - unique_name: FactConsolidated_BookID_Filtered
     label: Filtered BookIDs
     levels:
       - unique_name: BookID_Budget_Actuals
@@ -29,6 +29,7 @@ level_attributes:
     key_columns:
       - BookID_For_Budget_Actuals
     name_column: BookID_For_Budget_Actuals
+    sort_column: empty_value
   - unique_name: BookID_Trial_Balance
     label: BookID Set for Trial Balance
     contains_unique_names: false
@@ -37,4 +38,5 @@ level_attributes:
     key_columns:
       - BookID_For_TrialBalance
     name_column: BookID_For_TrialBalance
+    sort_column: empty_value
 type: standard

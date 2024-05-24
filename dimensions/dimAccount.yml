@@ -2,7 +2,7 @@ unique_name: dimAccount
 object_type: dimension
 label: dimAccount
 hierarchies:
-  - unique_name: Account_Hierarchy
+  - unique_name: dimAccount_Hierarchy
     label: Account Hierarchy
     levels:
       - unique_name: dimAccount_Level1
@@ -19,6 +19,7 @@ level_attributes:
     key_columns:
       - Level3
     name_column: Level3
+    sort_column: empty_value
   - unique_name: dimAccount_AccountID_Name
     label: AccountID_Name
     contains_unique_names: false
@@ -27,6 +28,7 @@ level_attributes:
     key_columns:
       - AccountID_Name
     name_column: AccountID_Name
+    sort_column: empty_value
   - unique_name: dimAccount_RecordNo
     label: RecordNo
     contains_unique_names: false
@@ -35,6 +37,7 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
   - unique_name: dimAccount_Level1
     label: Level1
     contains_unique_names: false
@@ -43,6 +46,7 @@ level_attributes:
     key_columns:
       - Level1
     name_column: Level1
+    sort_column: empty_value
   - unique_name: dimAccount_Level2
     label: Level2
     contains_unique_names: false
@@ -51,11 +55,12 @@ level_attributes:
     key_columns:
       - Level2
     name_column: Level2
+    sort_column: empty_value
 relationships:
   - unique_name: dimAccount_dataset_Level3_to_dimStatement_dimStatement_ReportSection
     from:
       dataset: dimAccount_dataset
-      hierarchy: Account_Hierarchy
+      hierarchy: dimAccount_Hierarchy
       join_columns:
         - Level3
       level: dimAccount_Level3
@@ -63,3 +68,4 @@ relationships:
       dimension: dimStatement
       level: dimStatement_ReportSection
     type: embedded
+type: standard

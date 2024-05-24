@@ -2,7 +2,7 @@ unique_name: dimProduct
 object_type: dimension
 label: dimProduct
 hierarchies:
-  - unique_name: Product_Hierarchy
+  - unique_name: dimProduct_Hierarchy
     label: Product Hierarchy
     levels:
       - unique_name: dimProduct_recordno
@@ -15,4 +15,5 @@ level_attributes:
     key_columns:
       - recordno
     name_column: recordno
+    sort_column: empty_value
 type: standard

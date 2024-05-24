@@ -2,7 +2,7 @@ unique_name: FactConsolidated_ScenarioID
 object_type: dimension
 label: ScenarioID
 hierarchies:
-  - unique_name: ScenarioID_Hierarchy
+  - unique_name: FactConsolidated_ScenarioID_Hierarchy
     label: ScenarioID Hierarchy
     levels:
       - unique_name: ScenarioID_ScenarioID
@@ -15,4 +15,5 @@ level_attributes:
     key_columns:
       - ScenarioID
     name_column: ScenarioID
+    sort_column: empty_value
 type: standard

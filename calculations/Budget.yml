@@ -2,8 +2,8 @@ unique_name: Budget
 object_type: metric_calc
 label: Budget
 expression: >-
-  ([FactConsolidated_ScenarioID].[ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Budget],
-  [FactConsolidated_BookID].[BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
+  ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Budget],
+  [FactConsolidated_BookID].[FactConsolidated_BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
   [Measures].[m_factConsolidated_Amount])
 format: standard
 is_hidden: false

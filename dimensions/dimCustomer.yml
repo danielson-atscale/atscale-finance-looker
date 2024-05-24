@@ -2,7 +2,7 @@ unique_name: dimCustomer
 object_type: dimension
 label: dimCustomer
 hierarchies:
-  - unique_name: Customer_Hierarchy
+  - unique_name: dimCustomer_Hierarchy
     label: Customer Hierarchy
     levels:
       - unique_name: dimCustomer_crmIndustry
