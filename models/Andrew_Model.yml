@@ -1,0 +1,53 @@
+unique_name: Andrew_Model
+object_type: model
+label: Andrew_Model
+metrics: []
+relationships:
+  - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - ItemID
+    to:
+      dimension: dimProduct
+      level: dimProduct_recordno
+  - unique_name: FactConsolidated_DepartmentID_to_dimDepartment_dimDepartment_Recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - DepartmentID
+    to:
+      dimension: dimDepartment
+      level: dimDepartment_Recordno
+  - unique_name: FactConsolidated_VendorID_to_dimVendor_dimVendor_Recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - VendorID
+    to:
+      dimension: dimVendor
+      level: dimVendor_Recordno
+  - unique_name: FactConsolidated_DepartmentNo_to_dimCustomer_dimCustomer_glInternalID
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - DepartmentNo
+    to:
+      dimension: dimCustomer
+      level: dimCustomer_glInternalID
+  - unique_name: FactConsolidated_AccountID_to_dimAccount_dimAccount_RecordNo
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - AccountID
+    to:
+      dimension: dimAccount
+      level: dimAccount_RecordNo
+  - unique_name: FactConsolidated_TransactionDate_to_dimDate_dimDate_Date
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - TransactionDate
+    to:
+      dimension: dimDate
+      level: dimDate_Date
