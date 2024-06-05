@@ -4,5 +4,6 @@ label: Actual (Non GAAP)
 expression: >-
   ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
   [FactConsolidated_BookID].[FactConsolidated_BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
-  [Measures].[m_factConsolidated_Amount])
+  [Measures].[m_factConsolidated_Amount])/1000
+format: '#,###.0;(#,###.0)'
 is_hidden: false

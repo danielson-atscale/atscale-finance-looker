@@ -1,0 +1,6 @@
+unique_name: Sum_DateId
+object_type: metric
+label: DateId
+calculation_method: maximum
+column: Id
+dataset: dimDate_dataset

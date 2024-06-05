@@ -2,5 +2,6 @@ unique_name: Forecast
 object_type: metric_calc
 label: Forecast
 expression: >-
-  ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Forecast],[Measures].[m_factConsolidated_Amount])
+  ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Forecast],[Measures].[m_factConsolidated_Amount])/1000
+format: '#,###.0;(#,###.0)'
 is_hidden: false

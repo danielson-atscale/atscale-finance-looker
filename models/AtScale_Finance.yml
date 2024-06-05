@@ -12,6 +12,7 @@ metrics:
   - unique_name: Trial Balance
   - unique_name: Actual+Forecast
   - unique_name: BvA
+  - unique_name: Actual_Ending
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

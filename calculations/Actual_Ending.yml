@@ -1,10 +1,9 @@
-unique_name: Actual_Opening
+unique_name: Actual_Ending
 object_type: metric_calc
 label: Actual (Opening)
 expression: >-
-  ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
-
+ ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
   [FactConsolidated_BookID].[FactConsolidated_BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
-
+  [dimDate].[Date_Hierarchy].[dimDate_Date].CurrentMember.LastChild,
   [Measures].[m_FactConsolidated_Amount])
 is_hidden: false

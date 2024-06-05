@@ -10,21 +10,27 @@ hierarchies:
           - unique_name: dimVendor_Name
             label: Name
             contains_unique_names: false
+            custom_empty_member:
+              name: (blank)
+              key:
+                - (blank)
             dataset: dimVendor_dataset
             is_unique_key: false
             key_columns:
               - Name
             name_column: Name
-            sort_column: empty_value
 level_attributes:
   - unique_name: dimVendor_Recordno
     label: Recordno
     contains_unique_names: false
+    custom_empty_member:
+      name: (blank)
+      key:
+        - (blank)
     dataset: dimVendor_dataset
     is_hidden: true
     is_unique_key: false
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
 type: standard

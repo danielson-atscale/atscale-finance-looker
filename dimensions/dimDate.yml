@@ -11,6 +11,8 @@ hierarchies:
         time_unit: quarter
       - unique_name: dimDate_Month
         time_unit: month
+      - unique_name: dimDate_Id
+        time_unit: undefined
       - unique_name: dimDate_Date
         time_unit: day
 level_attributes:
@@ -22,6 +24,7 @@ level_attributes:
     key_columns:
       - Year
     name_column: Year
+    sort_column: empty_value
   - unique_name: dimDate_Quarter
     label: Quarter
     contains_unique_names: false
@@ -30,6 +33,7 @@ level_attributes:
     key_columns:
       - Quarter
     name_column: Quarter
+    sort_column: empty_value
   - unique_name: dimDate_Month
     label: Month
     contains_unique_names: false
@@ -38,6 +42,16 @@ level_attributes:
     key_columns:
       - Month
     name_column: Month
+    sort_column: empty_value
+  - unique_name: dimDate_Id
+    label: Id
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - Id
+    name_column: Id
   - unique_name: dimDate_Date
     label: Date
     contains_unique_names: false
@@ -46,4 +60,5 @@ level_attributes:
     key_columns:
       - Date
     name_column: Date
+    sort_column: empty_value
 type: time
