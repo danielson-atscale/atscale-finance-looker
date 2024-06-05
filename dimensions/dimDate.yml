@@ -11,6 +11,8 @@ hierarchies:
         time_unit: quarter
       - unique_name: dimDate_Month
         time_unit: month
+      - unique_name: dimDate_Id
+        time_unit: undefined
       - unique_name: dimDate_Date
         time_unit: day
 level_attributes:
@@ -41,6 +43,15 @@ level_attributes:
       - Month
     name_column: Month
     sort_column: empty_value
+  - unique_name: dimDate_Id
+    label: Id
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - Id
+    name_column: Id
   - unique_name: dimDate_Date
     label: Date
     contains_unique_names: false

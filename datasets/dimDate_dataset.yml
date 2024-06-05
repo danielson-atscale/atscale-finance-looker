@@ -16,8 +16,5 @@ columns:
     data_type: string
   - name: YearMonthNum
     data_type: string
-  - name: First Date in Period
-    data_type: long
-    sql: MIN(Date)
 connection_id: con_atscale-data-warehouse_AIA_MasterData
 table: dimDate
