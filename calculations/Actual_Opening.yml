@@ -1,9 +1,0 @@
-unique_name: Actual_Opening
-object_type: metric_calc
-label: Actual (Opening)
-expression: >-
- ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_ScenarioID].&[Actual],
-  [FactConsolidated_BookID].[FactConsolidated_BookID_Filtered].[BookID_Budget_Actuals].&[TRUE],
-  [dimDate].[Date_Hierarchy].[dimDate_Id].CurrentMember.MemberValue > 1,
-  [Measures].[m_FactConsolidated_Amount])
-is_hidden: false

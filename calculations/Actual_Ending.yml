@@ -1,0 +1,11 @@
+unique_name: Actual_Ending
+object_type: metric_calc
+label: Actual (Ending)
+expression: >-
+  AGGREGATE(
+  PERIODSTODATE(
+    [dimDate].[Date_Hierarchy].[dimDate_Date],
+    [Date_Hierarchy].CurrentMember.LastChild
+  ),
+  [Measures].[m_FactConsolidated_Amount])/1000
+is_hidden: false
