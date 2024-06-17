@@ -3,6 +3,7 @@ object_type: model
 label: Andrew_Model
 metrics:
   - unique_name: TotalSales
+  - unique_name: m_FactConsolidated_Amount_sum
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:

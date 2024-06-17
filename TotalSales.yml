@@ -1,6 +1,6 @@
 unique_name: TotalSales
 object_type: metric_calc
 label: Total Sales
-expression: SUM(factconsolidated.amount)
+expression: SUM(m_FactConsolidated_Amount_sum)
 format: general number
 is_hidden: false
