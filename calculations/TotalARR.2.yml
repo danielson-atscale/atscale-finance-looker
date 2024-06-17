@@ -1,0 +1,5 @@
+unique_name: TotalARR.2
+object_type: metric_calc
+label: Total ARR.2
+expression: '[dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR]'
+is_hidden: false
