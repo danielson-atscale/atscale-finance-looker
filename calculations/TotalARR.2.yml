@@ -1,5 +1,8 @@
 unique_name: TotalARR.2
 object_type: metric_calc
 label: Total ARR.2
-expression: '[dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR]'
+expression: |-
+  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+  [Measures].[m_factConsolidated_Amount])
+format: '#,###.0;(#,###.0)'
 is_hidden: false
