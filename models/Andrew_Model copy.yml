@@ -7,6 +7,7 @@ metrics:
   - unique_name: TotalARR
   - unique_name: m_FactConsolidated_Amount
   - unique_name: TotalARR.2
+  - unique_name: ThisYearsARR
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:
