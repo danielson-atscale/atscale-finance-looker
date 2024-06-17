@@ -1,7 +1,8 @@
 unique_name: Andrew_Model copy
 object_type: model
 label: Andrew_Model
-metrics: []
+metrics:
+  - unique_name: TotalSales
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:
