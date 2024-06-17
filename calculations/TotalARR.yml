@@ -1,7 +1,7 @@
 unique_name: TotalARR
 object_type: metric_calc
 label: Total ARR
-expression: |-
+expression: >-
   ([dimAccount].[dimAccount_Hierarchy].[Hierarchy_Level2].&[ARR],
-  [Measures].[m_factConsolidated_Amount])
+  [Measures].[m_factConsolidated_Amount])/1000
 is_hidden: false
