@@ -1,6 +1,8 @@
 unique_name: Andrew_Model copy
 object_type: model
 label: Andrew_Model
+dimensions:
+  - Scenario_ID
 metrics:
   - unique_name: m_FactConsolidated_Amount_sum
   - unique_name: TotalSales.2
