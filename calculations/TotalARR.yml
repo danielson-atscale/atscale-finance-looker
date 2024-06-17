@@ -2,6 +2,6 @@ unique_name: TotalARR
 object_type: metric_calc
 label: Total ARR
 expression: |-
-  ([dimStatement].[dimStatement_Hierarchy].[Hierarchy_ReportHeading].&[ARR],
+  ([dimAccount].[dimAccount_Hierarchy].[Hierarchy_Level2].&[ARR],
   [Measures].[m_factConsolidated_Amount])
 is_hidden: false
