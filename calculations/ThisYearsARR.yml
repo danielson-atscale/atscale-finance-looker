@@ -3,6 +3,6 @@ object_type: metric_calc
 label: This Year's ARR
 expression: |-
   ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR], 
-  [dimDate].[dimDate_Hierarchy].[dimDate_Year].&[2024],
+  [dimDate].[Date_Hierarchy].[dimDate_Year].&[2024],
   [Measures].[m_factConsolidated_Amount])
 is_hidden: false
