@@ -4,6 +4,7 @@ label: Andrew_Model
 metrics:
   - unique_name: m_FactConsolidated_Amount_sum
   - unique_name: TotalSales.2
+  - unique_name: TotalARR
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:
