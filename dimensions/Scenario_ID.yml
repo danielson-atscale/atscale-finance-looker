@@ -1,0 +1,18 @@
+unique_name: Scenario_ID
+object_type: dimension
+label: Scenario ID
+hierarchies:
+  - unique_name: Scenario_ID_Hierarchy
+    label: Scenario ID Hierarchy
+    levels:
+      - unique_name: Scenario_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Scenario_ID_Level
+    label: Scenario ID Level
+    contains_unique_names: false
+    dataset: FactConsolidated
+    key_columns:
+      - ScenarioID
+    name_column: ScenarioID
+type: standard

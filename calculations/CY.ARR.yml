@@ -1,0 +1,8 @@
+unique_name: CY.ARR
+object_type: metric_calc
+label: CY ARR
+expression: |-
+  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR], 
+      [dimDate].[Date_Hierarchy].[dimDate_Month].CurrentMember,
+      [Measures].[m_factConsolidated_Amount])
+is_hidden: false
