@@ -2,13 +2,16 @@ unique_name: CY_ARR
 object_type: metric_calc
 label: CY_ARR
 expression: 
-  AGGREGATE(
+ AGGREGATE(
   PERIODSTODATE(
     [dimDate].[Date_Hierarchy].[dimDate_Date],
-    [Date_Hierarchy].CurrentMember.LastChild
+    [Date_Hierarchy].CurrentMember
   ),
-
-    ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+  
+  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
           [Measures].[m_factConsolidated_Amount]
-  )
+
+ )
+ )
+
 is_hidden: false
