@@ -9,5 +9,5 @@ expression:
   ),
   [Measures].[m_factConsolidated_Amount]
  )
-
+format: '#,###.0;(#,###.0)'
 is_hidden: false
