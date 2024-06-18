@@ -1,6 +1,6 @@
-unique_name: Scenario_ID
+unique_name: dimScenario
 object_type: dimension
-label: Scenario ID
+label: dimScenario
 hierarchies:
   - unique_name: Scenario_ID_Hierarchy
     label: Scenario ID Hierarchy
@@ -15,4 +15,5 @@ level_attributes:
     key_columns:
       - ScenarioID
     name_column: ScenarioID
+    sort_column: empty_value
 type: standard
