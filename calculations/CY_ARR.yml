@@ -1,15 +1,15 @@
 unique_name: CY_ARR
 object_type: metric_calc
 label: CY_ARR
-expression: 
- AGGREGATE(
-  PERIODSTODATE(
-    [dimDate].[Date_Hierarchy].[dimDate_Year],
-    [Date_Hierarchy].CurrentMember
-  ),
-  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
-  [Measures].[m_factConsolidated_Amount]
-  )
- )/1000
+expression: |-
+  AGGREGATE(
+    PERIODSTODATE(
+      [dimDate].[Date_Hierarchy].[dimDate_Year],
+      [Date_Hierarchy].CurrentMember
+    ),
+    ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+    [Measures].[m_factConsolidated_Amount]
+    )
+   )/1000
 format: '#,###.0;(#,###.0)'
 is_hidden: false
