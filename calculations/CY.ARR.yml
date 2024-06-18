@@ -3,6 +3,6 @@ object_type: metric_calc
 label: CY ARR
 expression: |-
   ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR], 
-      [dimDate].[Date_Hierarchy].[dimDate_Date].CurrentMember,
+      [dimDate].[Date_Hierarchy].CurrentMember,
       [Measures].[m_factConsolidated_Amount])
 is_hidden: false
