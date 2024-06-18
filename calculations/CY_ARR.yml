@@ -4,11 +4,10 @@ label: CY_ARR
 expression: 
  AGGREGATE(
   PERIODSTODATE(
-    [dimDate].[Date_Hierarchy].[dimDate_Date],
+    [dimDate].[Date_Hierarchy].[dimDate_Year],
     [Date_Hierarchy].CurrentMember
   ),
-          [Measures].[m_factConsolidated_Amount]
-
+  [Measures].[m_factConsolidated_Amount]
  )
 
 is_hidden: false
