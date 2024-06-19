@@ -1,0 +1,16 @@
+unique_name: 3.Prev.Year.Total.Amount
+object_type: metric_calc
+label: 3 Prev Year Total Amount
+expression: |-
+  AGGREGATE(
+          PERIODSTODATE(
+            [dimDate].[Date_Hierarchy].[dimDate_Year],
+            PARALLELPERIOD(
+              [dimDate].[Date_Hierarchy].[dimDate_Year],
+              3,
+              [dimDate].[Date_Hierarchy].CurrentMember
+            )
+          ),
+            [Measures].[m_factConsolidated_Amount]
+            ) / 1000
+is_hidden: false
