@@ -4,9 +4,9 @@ label: CY Total Amount
 expression: >-
    AGGREGATE(
       PERIODSTODATE(
-        [dimDate].[Date_Hierarchy].[dimDate_Year],
+        [dimDate].[Date_Hierarchy].[dimDate_YearMonthNum],
         [dimDate].[Date_Hierarchy].CurrentMember
         ),
         [Measures].[m_factConsolidated_Amount]
-        )
+        ) / 1000
 is_hidden: false
