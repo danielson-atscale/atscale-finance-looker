@@ -1,4 +1,4 @@
-unique_name: 3.Prev.Year.Total.Amount
+unique_name: 3Prev.Year.Total.Amount
 object_type: metric_calc
 label: 3 Prev Year Total Amount
 expression: |-
