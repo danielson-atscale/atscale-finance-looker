@@ -1,6 +1,0 @@
-unique_name: m_FactConsolidated_RecordNo_count
-object_type: metric
-label: Record No
-calculation_method: count distinct
-column: RecordNo
-dataset: FactConsolidated

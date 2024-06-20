@@ -13,9 +13,6 @@ metrics:
   - unique_name: Actual+Forecast
   - unique_name: BvA
   - unique_name: Actual_Ending
-  - unique_name: lastChildTest
-  - unique_name: m_FactConsolidated_RecordNo_count
-  - unique_name: CountTestMeasure
   - unique_name: FvB
   - unique_name: BvA_variance
   - unique_name: FvB_variance
