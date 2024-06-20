@@ -16,6 +16,8 @@ metrics:
   - unique_name: FvB
   - unique_name: BvA_variance
   - unique_name: FvB_variance
+  - unique_name: Budget_Ending
+  - unique_name: Actual+Forecast_Ending
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
