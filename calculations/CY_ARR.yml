@@ -1,15 +1,13 @@
 unique_name: CY_ARR
 object_type: metric_calc
 label: CY_ARR
-expression: >2-
-    SUM(
-      PERIODSTODATE(
-        [dimDate].[Date_Hierarchy].[dimDate_Year],
-        [dimDate].[Date_Hierarchy].CurrentMember
-        ),
-      ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
-      [Measures].[m_factConsolidated_Amount])
-    ) / 1000
-
-format: '#,###.0;(#,###.0)'
+expression: |-
+  SUM(
+        PERIODSTODATE(
+          [dimDate].[Date_Hierarchy].[dimDate_Year],
+          [dimDate].[Date_Hierarchy].CurrentMember
+          ),
+        ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+        [Measures].[m_factConsolidated_Amount]) -- THIS IS YTD CODE NOT CY
+      ) / 1000
 is_hidden: false

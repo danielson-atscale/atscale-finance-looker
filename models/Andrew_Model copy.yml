@@ -14,6 +14,7 @@ metrics:
   - unique_name: Prev.Year.Total.Amount
   - unique_name: 3.Year.Total.Amount
   - unique_name: 3.Prev.Year.Total.Amount
+  - unique_name: YTD_ARR
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:
