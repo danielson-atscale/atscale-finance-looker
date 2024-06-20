@@ -5,6 +5,8 @@ hierarchies:
   - unique_name: Date_Hierarchy
     label: Date Hierarchy
     levels:
+      - unique_name: dimDate_Century
+        time_unit: undefined
       - unique_name: dimDate_Year
         time_unit: year
       - unique_name: dimDate_Quarter
@@ -40,6 +42,7 @@ level_attributes:
     key_columns:
       - YearMonthNum
     name_column: YearMonthNum
+    sort_column: empty_value
   - unique_name: dimDate_Date
     label: Date
     contains_unique_names: false
@@ -49,4 +52,13 @@ level_attributes:
       - Date
     name_column: Id
     sort_column: empty_value
+  - unique_name: dimDate_Century
+    label: Century
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - Century
+    name_column: Century
 type: time

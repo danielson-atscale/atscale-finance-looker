@@ -4,7 +4,7 @@ label: Actual (Ending)
 expression: >-
   AGGREGATE(
   PERIODSTODATE(
-    [dimDate].[Date_Hierarchy].[dimDate_Date],
+    [dimDate].[Date_Hierarchy].[dimDate_Century],
     [Date_Hierarchy].CurrentMember.LastChild
   ),
   [Measures].[m_FactConsolidated_Amount])/1000
