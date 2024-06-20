@@ -10,6 +10,5 @@ expression: >2-
       ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
       [Measures].[m_factConsolidated_Amount])
     ) / 1000
-
 format: '#,###.0;(#,###.0)'
 is_hidden: false
