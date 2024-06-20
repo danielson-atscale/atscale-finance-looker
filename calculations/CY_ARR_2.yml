@@ -1,0 +1,10 @@
+unique_name: CY_ARR_2
+object_type: metric_calc
+label: CY_ARR_2
+expression: |2-
+    SUM(
+      [dimDate].[Date_Hierarchy].CurrentMember.Children,
+      ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+      [Measures].[m_factConsolidated_Amount])
+    ) / 1000
+is_hidden: false

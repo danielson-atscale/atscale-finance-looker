@@ -1,0 +1,8 @@
+unique_name: CY_ARR
+object_type: metric_calc
+label: CY_ARR
+expression: |-
+  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+  [Measures].[m_factConsolidated_Amount])
+  / 1000
+is_hidden: false

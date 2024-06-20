@@ -1,16 +1,20 @@
 unique_name: Andrew_Model copy
 object_type: model
-label: Andrew_Model
+label: Andrew_Model copy
 dimensions:
-  - Scenario_ID
+  - dimScenario
 metrics:
   - unique_name: m_FactConsolidated_Amount_sum
   - unique_name: TotalSales.2
   - unique_name: TotalARR
   - unique_name: m_FactConsolidated_Amount
   - unique_name: TotalARR.2
-  - unique_name: ThisYearsARR
-  - unique_name: CY.ARR
+  - unique_name: CY_ARR
+  - unique_name: CY.Total.Amount
+  - unique_name: Prev.Year.Total.Amount
+  - unique_name: 3.Year.Total.Amount
+  - unique_name: 3.Prev.Year.Total.Amount
+  - unique_name: YTD_ARR
 relationships:
   - unique_name: FactConsolidated_ItemID_to_dimProduct_dimProduct_recordno
     from:
