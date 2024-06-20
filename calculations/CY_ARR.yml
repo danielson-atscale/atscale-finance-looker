@@ -2,12 +2,7 @@ unique_name: CY_ARR
 object_type: metric_calc
 label: CY_ARR
 expression: |-
-  SUM(
-        PERIODSTODATE(
-          [dimDate].[Date_Hierarchy].[dimDate_Year],
-          [dimDate].[Date_Hierarchy].CurrentMember
-          ),
-        ([dimDate].[dimDate_Hierarchy].[dimDate_Year].&[ARR],
-        [Measures].[m_factConsolidated_Amount]) 
-      ) / 1000
+  ([dimStatement].[dimStatement_Hierarchy].[dimStatement_ReportHeading].&[ARR],
+     [Measures].[m_factConsolidated_Amount])
+    / 1000
 is_hidden: false
