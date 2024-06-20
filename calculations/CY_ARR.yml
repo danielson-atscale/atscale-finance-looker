@@ -3,11 +3,10 @@ object_type: metric_calc
 label: CY_ARR
 expression: |-
   AGGREGATE(
-      PERIODSTODATE(
-        [dimDate].[Date_Hierarchy].[dimDate_Year],
-        [Date_Hierarchy].CurrentMember
-      ),
-         ([Measures].[m_factConsolidated_Amount],[dimAccount].[Level2].&[ARR])
-   )
-format: '#,###.0;(#,###.0)'
+        PERIODSTODATE(
+          [dimDate].[Date_Hierarchy].[dimDate_Year],
+          [Date_Hierarchy].CurrentMember
+        ),
+           ([Measures].[m_factConsolidated_Amount], [dimStatement_ReportHeading].&[ARR])
+     )
 is_hidden: false
