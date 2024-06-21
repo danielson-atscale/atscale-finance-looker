@@ -67,3 +67,11 @@ relationships:
     to:
       dimension: dimCustomer
       level: dimCustomer_glInternalID
+  - unique_name: FactConsolidated_ContractID_to_dimContract_dimContract_Recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - ContractID
+    to:
+      dimension: dimContract
+      level: dimContract_Recordno

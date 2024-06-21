@@ -64,11 +64,3 @@ relationships:
     to:
       dimension: dimDate
       level: dimDate_Date
-  - unique_name: FactConsolidated_ContractID_to_dimContract_Recordno
-    from:
-      dataset: FactConsolidated
-      join_columns:
-        - ContractID
-    to:
-      dimension: dimContract
-      level: Recordno
