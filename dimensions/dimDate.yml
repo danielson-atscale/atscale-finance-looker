@@ -5,6 +5,8 @@ hierarchies:
   - unique_name: Date_Hierarchy
     label: Date Hierarchy
     levels:
+      - unique_name: dimDate_Century
+        time_unit: undefined
       - unique_name: dimDate_Year
         time_unit: year
       - unique_name: dimDate_Quarter
@@ -14,6 +16,14 @@ hierarchies:
       - unique_name: dimDate_Date
         time_unit: day
 level_attributes:
+  - unique_name: dimDate_Century
+    label: Century
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_unique_key: false
+    key_columns:
+      - Century
+    name_column: Century
   - unique_name: dimDate_Year
     label: Year
     contains_unique_names: false
@@ -40,6 +50,7 @@ level_attributes:
     key_columns:
       - YearMonthNum
     name_column: YearMonthNum
+    sort_column: empty_value
   - unique_name: dimDate_Date
     label: Date
     contains_unique_names: false
@@ -50,3 +61,45 @@ level_attributes:
     name_column: Id
     sort_column: empty_value
 type: time
+calculation_groups:
+  - unique_name: ToDate
+    name: Time Intelligence
+    description: time intelligence to apply to other measures
+    folder: Time Intelligence
+    calculated_members:
+      - unique_name: YTD
+        name: YTD
+        description: Year to Date
+        expression: "Aggregate(PeriodsToDate([dimDate].[Date_Hierarchy].[dimDate_Year], [dimDate].[Date_Hierarchy].CurrentMember),[Measures].currentMember)"
+        format: standard
+      - unique_name: QTD
+        name: QTD
+        description: Quarter to Date
+        expression: "Aggregate(PeriodsToDate([dimDate].[Date_Hierarchy].[dimDate_Quarter], [dimDate].[Date_Hierarchy].CurrentMember),[Measures].currentMember)"
+        format: standard
+      - unique_name: PY
+        name: PY
+        description: Previous Year
+        expression: "(ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1, [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember)"
+        format: standard
+      - unique_name: Previous
+        name: Previous
+        description: Previous Member
+        expression: "([dimDate].[Date_Hierarchy].CurrentMember.prevMember, [Measures].currentMember)"
+        format: standard
+      - unique_name: YoY
+        name: YoY
+        description: Year over Year
+        expression: "(([dimDate].[Date_Hierarchy].CurrentMember, [Measures].currentMember) - (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1, [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember ))"
+        format: standard   
+      - unique_name: YoY_pct
+        name: YoY Pct
+        description: Year over Year
+        expression: "(([dimDate].[Date_Hierarchy].CurrentMember, [Measures].currentMember) -  (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1, [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember )) / (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1, [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember)"
+        format: percent
+      - unique_name: CurrentMember
+        name: CurrentMember
+        description: value of the current Member
+        expression: "([dimDate].[Date_Hierarchy].CurrentMember, [Measures].currentMember)"
+        format: standard
+

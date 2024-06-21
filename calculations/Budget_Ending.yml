@@ -1,12 +1,12 @@
-unique_name: Actual_Ending
+unique_name: Budget_Ending
 object_type: metric_calc
-label: Actual - Ending
+label: Budget - Ending
 expression: |-
   SUM(
   PERIODSTODATE(
       [dimDate].[Date_Hierarchy].[dimDate_Century],
       [Date_Hierarchy].CurrentMember.LastChild
   ),
-  [Measures].[Actual_NonGAAP])
+  [Measures].[Budget])
 format: '#,###.0;(#,###.0)'
 is_hidden: false
