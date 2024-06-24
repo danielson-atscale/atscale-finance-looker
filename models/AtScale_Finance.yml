@@ -75,3 +75,35 @@ relationships:
     to:
       dimension: dimContract
       level: dimContract_Recordno
+  - unique_name: factReceivables_InvoiceID_to_dimInvoice_dimInvoice_dimension Level
+    from:
+      dataset: factReceivables
+      join_columns:
+        - InvoiceID
+    to:
+      dimension: dimInvoice
+      level: dimInvoice_dimension Level
+  - unique_name: factReceivables_TransactionDate_to_dimDate_dimDate_Date
+    from:
+      dataset: factReceivables
+      join_columns:
+        - TransactionDate
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+  - unique_name: factReceivables_CustomerID_to_dimCustomer_dimCustomer_glInternalID
+    from:
+      dataset: factReceivables
+      join_columns:
+        - CustomerID
+    to:
+      dimension: dimCustomer
+      level: dimCustomer_glInternalID
+  - unique_name: factReceivables_ContractID_to_dimContract_dimContract_Recordno
+    from:
+      dataset: factReceivables
+      join_columns:
+        - ContractID
+    to:
+      dimension: dimContract
+      level: dimContract_Recordno

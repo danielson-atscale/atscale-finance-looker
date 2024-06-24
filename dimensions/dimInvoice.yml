@@ -1,0 +1,19 @@
+unique_name: dimInvoice
+object_type: dimension
+label: dimInvoice
+hierarchies:
+  - unique_name: dimInvoice_dimension Hierarchy
+    label: dimInvoice_dimension Hierarchy
+    levels:
+      - unique_name: dimInvoice_dimension Level
+level_attributes:
+  - unique_name: dimInvoice_dimension Level
+    label: dimInvoice_dimension Level
+    contains_unique_names: false
+    dataset: dimInvoice.dataset
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
+    sort_column: empty_value
+type: standard

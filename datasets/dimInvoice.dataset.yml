@@ -1,0 +1,32 @@
+unique_name: dimInvoice.dataset
+object_type: dataset
+label: dimInvoice.dataset
+columns:
+  - name: Recordno
+    data_type: string
+  - name: Recordid
+    data_type: string
+  - name: State
+    data_type: string
+  - name: Customerid
+    data_type: string
+  - name: Customername
+    data_type: string
+  - name: Termname
+    data_type: string
+  - name: Whenposted
+    data_type: date
+  - name: Whendue
+    data_type: date
+  - name: Whenpaid
+    data_type: date
+  - name: Currency
+    data_type: string
+  - name: Totalpaid
+    data_type: decimal(38,9)
+  - name: Totaldue
+    data_type: decimal(38,9)
+  - name: Due_in_days
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimInvoice
