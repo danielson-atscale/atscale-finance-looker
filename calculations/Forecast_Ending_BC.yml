@@ -1,0 +1,13 @@
+unique_name: Forecast_Ending_BC
+object_type: metric_calc
+label: Forecast Ending (Base Case)
+expression: |-
+  SUM(
+  PERIODSTODATE(
+      [dimDate].[Date_Hierarchy].[dimDate_Century],
+      [Date_Hierarchy].CurrentMember.LastChild
+  ),
+  ([FactConsolidated_VersionID].[FactConsolidated_VersionID_Hierarchy].[VersionID_VersionID].&[Base Case],
+  [Measures].[Forecast]))
+format: '#,###.0;(#,###.0)'
+is_hidden: false

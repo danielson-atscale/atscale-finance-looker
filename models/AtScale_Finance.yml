@@ -4,6 +4,7 @@ label: AtScale_Finance
 dimensions:
   - FactConsolidated_ScenarioID
   - FactConsolidated_BookID
+  - FactConsolidated_VersionID
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -17,9 +18,12 @@ metrics:
   - unique_name: BvA_variance
   - unique_name: FvB_variance
   - unique_name: Budget_Ending
-  - unique_name: Actual+Forecast_Ending
   - unique_name: Actual_Opening
   - unique_name: m_factReceivables_Amount_sum
+  - unique_name: Forecast_Ending_BC
+  - unique_name: Forecast_Ending_DS
+  - unique_name: Actual+Forecast_Ending_BC
+  - unique_name: Actual+Forecast_Ending_DS
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

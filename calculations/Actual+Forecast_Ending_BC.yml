@@ -1,0 +1,6 @@
+unique_name: Actual+Forecast_Ending_BC
+object_type: metric_calc
+label: Actual + Forecast - Ending (Base Case)
+expression: '[Measures].[Actual_Ending] + [Measures].[Forecast_Ending_BC]'
+format: '#,###.0;(#,###.0)'
+is_hidden: false
