@@ -1,0 +1,42 @@
+unique_name: factReceivables
+object_type: dataset
+label: factReceivables
+columns:
+  - name: CompanyID
+    data_type: string
+  - name: LocationID
+    data_type: string
+  - name: TransactionID
+    data_type: string
+  - name: Currency
+    data_type: string
+  - name: AccountID
+    data_type: string
+  - name: DepartmentID
+    data_type: string
+  - name: CustomerID
+    data_type: string
+  - name: VendorID
+    data_type: string
+  - name: EmployeeID
+    data_type: string
+  - name: ItemID
+    data_type: string
+  - name: ContractID
+    data_type: string
+  - name: ProjectID
+    data_type: string
+  - name: InvoiceID
+    data_type: string
+  - name: Scenario
+    data_type: string
+  - name: Version
+    data_type: string
+  - name: Source
+    data_type: string
+  - name: TransactionDate
+    data_type: date
+  - name: Amount
+    data_type: decimal(38,9)
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: factCustomerWolf3
