@@ -5,15 +5,14 @@ hierarchies:
   - unique_name: dimInvoice_dimension Hierarchy
     label: dimInvoice_dimension Hierarchy
     levels:
-      - unique_name: dimInvoice_dimension Level
+      - unique_name: dimInvoice_Recordno
 level_attributes:
-  - unique_name: dimInvoice_dimension Level
-    label: dimInvoice_dimension Level
+  - unique_name: dimInvoice_Recordno
+    label: Recordno
     contains_unique_names: false
     dataset: dimInvoice.dataset
     is_unique_key: false
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
 type: standard
