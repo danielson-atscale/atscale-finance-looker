@@ -5,9 +5,9 @@ hierarchies:
   - unique_name: dimInvoice_dimension Hierarchy
     label: dimInvoice_dimension Hierarchy
     levels:
-      - unique_name: dimInvoice_Recordno
+      - unique_name: dimInvoice_dimension Level
 level_attributes:
-  - unique_name: dimInvoice_Recordno
+  - unique_name: dimInvoice_dimension Level
     label: Recordno
     contains_unique_names: false
     dataset: dimInvoice.dataset
