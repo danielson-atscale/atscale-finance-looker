@@ -4,6 +4,7 @@ label: AtScale_Finance
 dimensions:
   - FactConsolidated_ScenarioID
   - FactConsolidated_BookID
+  - FactConsolidated_VersionID
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP

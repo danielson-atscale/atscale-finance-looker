@@ -1,0 +1,18 @@
+unique_name: FactConsolidated_VersionID
+object_type: dimension
+label: VersionID
+hierarchies:
+  - unique_name: FactConsolidated_VersionID_Hierarchy
+    label: VersionID Hierarchy
+    levels:
+      - unique_name: VersionID_VersionID
+is_degenerate: true
+level_attributes:
+  - unique_name: VersionID_VersionID
+    label: VersionID
+    contains_unique_names: false
+    dataset: FactConsolidated
+    key_columns:
+      - VersionID
+    name_column: VersionID
+type: standard
