@@ -1,0 +1,12 @@
+unique_name: Actual_Opening
+object_type: metric_calc
+label: Actual - Opening
+expression: |-
+  SUM(
+  PERIODSTODATE(
+      [dimDate].[Date_Hierarchy].[dimDate_Century],
+      [Date_Hierarchy].CurrentMember.PrevMember.LastChild
+  ),
+  [Measures].[Actual_NonGAAP])
+format: '#,###.0;(#,###.0)'
+is_hidden: false
