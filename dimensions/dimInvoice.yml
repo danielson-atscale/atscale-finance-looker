@@ -6,6 +6,47 @@ hierarchies:
     label: dimInvoice_dimension Hierarchy
     levels:
       - unique_name: dimInvoice_dimension Level
+        secondary_attributes:
+          - unique_name: dimInvoice.CustomerName
+            label: CustomerName
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Recordno
+            name_column: Customername
+          - unique_name: dimInvoice.WhenPosted
+            label: WhenPosted
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Recordno
+            name_column: Whenposted
+          - unique_name: dimInvoice.WhenDue
+            label: WhenDue
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Recordno
+            name_column: Whendue
+          - unique_name: dimInvoice.WhenPaid
+            label: WhenPaid
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Recordno
+            name_column: Whenpaid
+          - unique_name: dimInvoice.RecordID
+            label: RecordID
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Recordno
+            name_column: Recordid
 level_attributes:
   - unique_name: dimInvoice_dimension Level
     label: Recordno
@@ -15,4 +56,5 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
 type: standard
