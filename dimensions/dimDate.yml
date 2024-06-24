@@ -62,7 +62,7 @@ level_attributes:
     sort_column: empty_value
 type: time
 calculation_groups:
-  - unique_name: ToDate
+  - unique_name: TimeIntelligence
     name: Time Intelligence
     description: time intelligence to apply to other measures
     folder: Time Intelligence
