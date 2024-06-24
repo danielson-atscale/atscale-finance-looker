@@ -15,6 +15,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Contractid
+            sort_column: empty_value
 level_attributes:
   - unique_name: dimContract_Recordno
     label: dimContract_Recordno
