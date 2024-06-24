@@ -13,7 +13,7 @@ hierarchies:
             dataset: dimContract_dataset
             is_unique_key: false
             key_columns:
-              - Contractid
+              - Recordno
             name_column: Contractid
 level_attributes:
   - unique_name: dimContract_Recordno
