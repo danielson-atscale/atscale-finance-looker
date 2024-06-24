@@ -19,6 +19,7 @@ metrics:
   - unique_name: Budget_Ending
   - unique_name: Actual+Forecast_Ending
   - unique_name: Actual_Opening
+  - unique_name: m_factReceivables_Amount_sum
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

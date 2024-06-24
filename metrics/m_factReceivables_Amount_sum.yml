@@ -1,0 +1,7 @@
+unique_name: m_factReceivables_Amount_sum
+object_type: metric
+label: ReceivablesAmount
+calculation_method: sum
+column: Amount
+dataset: factReceivables
+format: '#,###.0;(#,###.0)'
