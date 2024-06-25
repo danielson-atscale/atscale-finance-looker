@@ -1,0 +1,13 @@
+unique_name: Total Cash Received
+object_type: metric_calc
+label: Total Cash Received
+expression: |
+  SUM(
+  [factReceivables],
+  IIF(
+  [factReceivables].Source.CurrentMember = "ARPayment",
+  [factReceivables].Amount,
+  NULL
+  )
+  )
+is_hidden: false
