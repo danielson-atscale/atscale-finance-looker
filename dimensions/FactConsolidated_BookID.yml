@@ -5,23 +5,22 @@ hierarchies:
   - unique_name: FactConsolidated_BookID_Hierarchy
     label: BookID Hierarchy
     levels:
-      - unique_name: BookID_BookID
+      - unique_name: FactConsolidated_BookID_BookID
   - unique_name: FactConsolidated_BookID_Filtered
     label: Filtered BookIDs
     levels:
-      - unique_name: BookID_Budget_Actuals
-      - unique_name: BookID_Trial_Balance
+      - unique_name: FactConsolidated_BookID_Budget_Actuals
+      - unique_name: FactConsolidated_BookID_Trial_Balance
 is_degenerate: true
 level_attributes:
-  - unique_name: BookID_BookID
+  - unique_name: FactConsolidated_BookID_BookID
     label: BookID
     contains_unique_names: false
     dataset: FactConsolidated
     key_columns:
       - BookID
     name_column: BookID
-    sort_column: empty_value
-  - unique_name: BookID_Budget_Actuals
+  - unique_name: FactConsolidated_BookID_Budget_Actuals
     label: BookID Set for Budget and Actuals
     contains_unique_names: false
     dataset: FactConsolidated
@@ -29,8 +28,7 @@ level_attributes:
     key_columns:
       - BookID_For_Budget_Actuals
     name_column: BookID_For_Budget_Actuals
-    sort_column: empty_value
-  - unique_name: BookID_Trial_Balance
+  - unique_name: FactConsolidated_BookID_Trial_Balance
     label: BookID Set for Trial Balance
     contains_unique_names: false
     dataset: FactConsolidated
@@ -38,5 +36,4 @@ level_attributes:
     key_columns:
       - BookID_For_TrialBalance
     name_column: BookID_For_TrialBalance
-    sort_column: empty_value
 type: standard
