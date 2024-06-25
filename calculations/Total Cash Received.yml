@@ -7,7 +7,7 @@ expression: |
   IIF(
   [factReceivables].Source.CurrentMember = "ARPayment",
   [factReceivables].Amount,
-  NULL
+  0
   )
   )
 is_hidden: false
