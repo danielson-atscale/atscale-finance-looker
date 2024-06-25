@@ -2,7 +2,7 @@ unique_name: Total.Scheduled.Invoices
 object_type: metric_calc
 label: Total Scheduled Invoices
 expression: |-
-    ([Source].[Source_Hierarchy].[Source_Level].&[Contractbillingscheduleentry],
+    ([FactReceivables_Source].[FactReceivables_Source_Hierarchy].[FactReceivables_Source_Source].&[Contractbillingscheduleentry],
     [Measures].[m_factReceivables_Amount_sum])
 format: '#,###.0;(#,###.0)'
 is_hidden: false

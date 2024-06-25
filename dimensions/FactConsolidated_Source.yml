@@ -11,7 +11,7 @@ level_attributes:
   - unique_name: Source_Source
     label: Source
     contains_unique_names: false
-    dataset: factReceivables
+    dataset: FactConsolidated
     key_columns:
       - Source
     name_column: Source
