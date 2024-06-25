@@ -1,6 +1,0 @@
-unique_name: TotalSales.2
-object_type: metric_calc
-label: TotalSales.2
-expression: >-
-    [Measures].[m_FactConsolidated_Amount_sum]
-is_hidden: false
