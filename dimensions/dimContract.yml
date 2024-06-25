@@ -20,10 +20,13 @@ level_attributes:
   - unique_name: dimContract_Recordno
     label: dimContract_Recordno
     contains_unique_names: false
+    custom_empty_member:
+      name: None
+      key:
+        - None
     dataset: dimContract_dataset
     is_unique_key: false
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
 type: standard
