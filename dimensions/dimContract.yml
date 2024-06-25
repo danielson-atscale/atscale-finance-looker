@@ -5,10 +5,10 @@ hierarchies:
   - unique_name: dimContract_Hierarchy
     label: dimContract Hierarchy
     levels:
-      - unique_name: Recordno
+      - unique_name: dimContract_Recordno
         secondary_attributes:
-          - unique_name: SageID_SageID
-            label: SageID_SageID
+          - unique_name: dimContract_SageID
+            label: SageID
             contains_unique_names: false
             dataset: dimContract_dataset
             is_unique_key: false
@@ -16,7 +16,7 @@ hierarchies:
               - Recordno
             name_column: Contractid
 level_attributes:
-  - unique_name: Recordno
+  - unique_name: dimContract_Recordno
     label: Recordno
     contains_unique_names: false
     custom_empty_member:
