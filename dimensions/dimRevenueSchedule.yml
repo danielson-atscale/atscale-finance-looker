@@ -2,8 +2,8 @@ unique_name: dimRevenueSchedule
 object_type: dimension
 label: dimRevenueSchedule
 hierarchies:
-  - unique_name: RevenueSchedule Hierarchy
-    label: RevenueSchedule Hierarchy
+  - unique_name: RevenueSchedule_Hierarchy
+    label: RevenueSchedule_Hierarchy
     levels:
       - unique_name: dimRevenueSchedule_Recordno
         secondary_attributes:
