@@ -2,14 +2,14 @@ unique_name: factRevenueScheduleEntry_Postable
 object_type: dimension
 label: factRevenueScheduleEntry_Postable
 hierarchies:
-  - unique_name: Postable_Hierarchy
-    label: Postable Hierarchy
+  - unique_name: factRevenueScheduleEntry_Postable_Hierarchy
+    label: factRevenueScheduleEntry_Postable_Hierarchy
     levels:
-      - unique_name: Postable_Level
+      - unique_name: factRevenueScheduleEntry_Postable_Postable
 is_degenerate: true
 level_attributes:
-  - unique_name: Postable_Level
-    label: Postable Level
+  - unique_name: factRevenueScheduleEntry_Postable_Postable
+    label: factRevenueScheduleEntry_Postable_Postable
     contains_unique_names: false
     dataset: factRevenueScheduleEntry
     key_columns:
