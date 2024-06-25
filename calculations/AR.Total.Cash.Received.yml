@@ -2,7 +2,7 @@ unique_name: AR.Total.Cash.Received
 object_type: metric_calc
 label: Total Cash Received (AR)
 expression: |-
-    ([FactConsolidated_Source].[FactConsolidated_Source_Hierarchy].[FactConsolidated_Source_Source].&[ARPayment],
+    ([FactReceivables_Source].[FactReceivables_Source_Hierarchy].[FactReceivables_Source_Source].&[ARPayment],
     [Measures].[m_factReceivables_Amount_sum])
 format: '#,###.0;(#,###.0)'
 is_hidden: false
