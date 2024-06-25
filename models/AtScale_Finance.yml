@@ -5,8 +5,7 @@ dimensions:
   - FactConsolidated_ScenarioID
   - FactConsolidated_BookID
   - FactConsolidated_VersionID
-  - Source
-  - factConsolidated_Source
+  - FactConsolidated_Source
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -95,7 +94,7 @@ relationships:
         - InvoiceID
     to:
       dimension: dimInvoice
-      level: dimInvoice_dimension Level
+      level: dimInvoice_Recordno
   - unique_name: factReceivables_TransactionDate_to_dimDate_dimDate_Date
     from:
       dataset: factReceivables
@@ -120,3 +119,11 @@ relationships:
     to:
       dimension: dimContract
       level: dimContract_Recordno
+  - unique_name: factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_Recordno
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Schedulekey
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_Recordno
