@@ -5,6 +5,7 @@ dimensions:
   - FactConsolidated_ScenarioID
   - FactConsolidated_BookID
   - FactConsolidated_VersionID
+  - Source
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -24,6 +25,7 @@ metrics:
   - unique_name: Forecast_Ending_DS
   - unique_name: Actual+Forecast_Ending_BC
   - unique_name: Actual+Forecast_Ending_DS
+  - unique_name: Total Cash Received
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
