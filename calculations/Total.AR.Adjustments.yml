@@ -3,7 +3,7 @@ object_type: metric_calc
 label: Total AR Adjustments
 expression: |-
     ([Source].[Source_Hierarchy].[Source_Level].&[GLDetail-AR Adjustments],
-    [Scenario].[Scenario_Hierarchy].[Scenario_Level].&[Actual],
-    [Measures].[m_factReceivables_Amount_sum])
+    [FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[ScenarioID_Level].&[Actual],
+    [Measures].[m_factConsolidated_Amount])
 format: '#,###.0;(#,###.0)'
 is_hidden: false
