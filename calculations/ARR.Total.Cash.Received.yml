@@ -2,13 +2,6 @@ unique_name: ARR.Total.Cash.Received
 object_type: metric_calc
 label: ARR Total Cash Received
 expression: |-
-  SUM(
-  [factReceivables],
-  IIF(
-  [factReceivables].Source.CurrentMember = "ARPayment",
-  [factReceivables].Amount,
   NULL
-  )
-  )
 format: '#,###.0;(#,###.0)'
 is_hidden: false
