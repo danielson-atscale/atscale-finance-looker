@@ -30,5 +30,9 @@ columns:
     data_type: string
   - name: Renewal_Probability__c
     data_type: double
+  - name: ContractLength
+    data_type: long
+    sql: |
+      DATE_DIFF(Enddate, Startdate, DAY)
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: dimRevenueSchedule
