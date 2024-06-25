@@ -7,6 +7,7 @@ dimensions:
   - FactConsolidated_VersionID
   - FactConsolidated_Source
   - FactReceivables_Source
+  - factRevenueScheduleEntry_Postable
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -31,6 +32,8 @@ metrics:
   - unique_name: Total.Scheduled.Invoices
   - unique_name: Total.Invoiced
   - unique_name: Total.AR.Adjustments
+  - unique_name: m_FactRevenueScheduleEntry_Amount_sum
+  - unique_name: ContractARR
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
