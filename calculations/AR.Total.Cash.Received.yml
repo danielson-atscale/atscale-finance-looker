@@ -1,0 +1,8 @@
+unique_name: AR.Total.Cash.Received
+object_type: metric_calc
+label: Total Cash Received (AR)
+expression: |-
+    ([Source].[Source_Hierarchy].[Source_Level].&[ARPayment],
+    [Measures].[m_factReceivables_Amount_sum])
+format: '#,###.0;(#,###.0)'
+is_hidden: false

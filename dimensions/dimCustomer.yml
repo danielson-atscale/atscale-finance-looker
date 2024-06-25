@@ -12,12 +12,15 @@ level_attributes:
   - unique_name: dimCustomer_crmIndustry
     label: crmIndustry
     contains_unique_names: false
+    custom_empty_member:
+      name: None
+      key:
+        - None
     dataset: dimCustomer_dataset
     is_unique_key: false
     key_columns:
       - crmIndustry
     name_column: crmIndustry
-    sort_column: empty_value
   - unique_name: dimCustomer_glName
     label: glName
     contains_unique_names: false

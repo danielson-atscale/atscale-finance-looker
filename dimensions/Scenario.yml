@@ -1,0 +1,18 @@
+unique_name: Scenario
+object_type: dimension
+label: Scenario
+hierarchies:
+  - unique_name: Scenario_Hierarchy
+    label: Scenario Hierarchy
+    levels:
+      - unique_name: Scenario_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Scenario_Level
+    label: Scenario Level
+    contains_unique_names: false
+    dataset: factReceivables
+    key_columns:
+      - Scenario
+    name_column: Scenario
+type: standard
