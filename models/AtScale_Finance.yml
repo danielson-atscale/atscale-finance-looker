@@ -120,10 +120,18 @@ relationships:
     to:
       dimension: ''
       level: ''
-  - unique_name: factRevenueScheduleEntry_empty_dimension
+  - unique_name: empty_dataset_dimRevenueSchedule_dimension
     from:
-      dataset: factRevenueScheduleEntry
+      dataset: ''
       join_columns: []
     to:
-      dimension: ''
+      dimension: dimRevenueSchedule_dimension
       level: ''
+  - unique_name: factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_Recordno
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Schedulekey
+    to:
+      dimension: dimRevenueSchedule
+      level: Recordno
