@@ -1,0 +1,18 @@
+unique_name: Account_ID
+object_type: dimension
+label: Account ID
+hierarchies:
+  - unique_name: Account_ID_Hierarchy
+    label: Account ID Hierarchy
+    levels:
+      - unique_name: Account_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Account_ID_Level
+    label: Account ID Level
+    contains_unique_names: false
+    dataset: factReceivables
+    key_columns:
+      - AccountID
+    name_column: AccountID
+type: standard

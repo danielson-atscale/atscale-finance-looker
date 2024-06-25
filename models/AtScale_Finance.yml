@@ -6,6 +6,7 @@ dimensions:
   - FactConsolidated_BookID
   - FactConsolidated_VersionID
   - Source
+  - factConsolidated_Source
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -25,7 +26,11 @@ metrics:
   - unique_name: Forecast_Ending_DS
   - unique_name: Actual+Forecast_Ending_BC
   - unique_name: Actual+Forecast_Ending_DS
-  - unique_name: Total Cash Received
+  - unique_name: ARR.Total.Cash.Received
+  - unique_name: AR.Total.Cash.Received
+  - unique_name: Total.Scheduled.Invoices
+  - unique_name: Total.Invoiced
+  - unique_name: Total.AR.Adjustments
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
