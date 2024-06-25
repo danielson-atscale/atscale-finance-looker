@@ -2,12 +2,12 @@ unique_name: dimInvoice
 object_type: dimension
 label: dimInvoice
 hierarchies:
-  - unique_name: dimInvoice_dimension Hierarchy
-    label: dimInvoice_dimension Hierarchy
+  - unique_name: dimInvoice_Hierarchy
+    label: dimInvoice Hierarchy
     levels:
-      - unique_name: dimInvoice_dimension Level
+      - unique_name: dimInvoice_Recordno
         secondary_attributes:
-          - unique_name: dimInvoice.CustomerName
+          - unique_name: dimInvoice_CustomerName
             label: CustomerName
             contains_unique_names: false
             dataset: dimInvoice.dataset
@@ -15,7 +15,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Customername
-          - unique_name: dimInvoice.WhenPosted
+          - unique_name: dimInvoice_WhenPosted
             label: WhenPosted
             contains_unique_names: false
             dataset: dimInvoice.dataset
@@ -23,7 +23,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whenposted
-          - unique_name: dimInvoice.WhenDue
+          - unique_name: dimInvoice_WhenDue
             label: WhenDue
             contains_unique_names: false
             dataset: dimInvoice.dataset
@@ -31,7 +31,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whendue
-          - unique_name: dimInvoice.WhenPaid
+          - unique_name: dimInvoice_WhenPaid
             label: WhenPaid
             contains_unique_names: false
             dataset: dimInvoice.dataset
@@ -39,7 +39,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whenpaid
-          - unique_name: dimInvoice.RecordID
+          - unique_name: dimInvoice_RecordID
             label: RecordID
             contains_unique_names: false
             dataset: dimInvoice.dataset
@@ -48,7 +48,7 @@ hierarchies:
               - Recordno
             name_column: Recordid
 level_attributes:
-  - unique_name: dimInvoice_dimension Level
+  - unique_name: dimInvoice_Recordno
     label: Recordno
     contains_unique_names: false
     dataset: dimInvoice.dataset
@@ -56,5 +56,4 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
 type: standard

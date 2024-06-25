@@ -2,7 +2,7 @@ unique_name: dimContract
 object_type: dimension
 label: dimContract
 hierarchies:
-  - unique_name: dimContract Hierarchy
+  - unique_name: dimContract_Hierarchy
     label: dimContract Hierarchy
     levels:
       - unique_name: dimContract_Recordno
@@ -29,4 +29,5 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
 type: standard

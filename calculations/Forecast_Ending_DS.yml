@@ -9,7 +9,7 @@ expression: >-
       [Date_Hierarchy].CurrentMember.LastChild
   ),
 
-  ([FactConsolidated_VersionID].[FactConsolidated_VersionID_Hierarchy].[VersionID_VersionID].&[Downside],
+  ([FactConsolidated_VersionID].[FactConsolidated_VersionID_Hierarchy].[FactConsolidated_VersionID_VersionID].&[Downside],
   [Measures].[Forecast]))
 format: '#,###.0;(#,###.0)'
 is_hidden: false
