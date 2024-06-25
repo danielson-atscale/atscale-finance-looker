@@ -113,20 +113,6 @@ relationships:
     to:
       dimension: dimContract
       level: dimContract_Recordno
-  - unique_name: ContractRevenueScheduleEntry_empty_dimension
-    from:
-      dataset: ContractRevenueScheduleEntry
-      join_columns: []
-    to:
-      dimension: ''
-      level: ''
-  - unique_name: empty_dataset_dimRevenueSchedule_dimension
-    from:
-      dataset: ''
-      join_columns: []
-    to:
-      dimension: dimRevenueSchedule_dimension
-      level: ''
   - unique_name: factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_Recordno
     from:
       dataset: factRevenueScheduleEntry
