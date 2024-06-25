@@ -1,0 +1,18 @@
+unique_name: dimRevenueSchedule
+object_type: dimension
+label: dimRevenueSchedule
+hierarchies:
+  - unique_name: dimRevenueSchedule_Hierarchy
+    label: dimRevenueSchedule_Hierarchy
+    levels:
+      - unique_name: dimRevenueSchedule Level
+level_attributes:
+  - unique_name: dimRevenueSchedule Level
+    label: dimRevenueSchedule Level
+    contains_unique_names: false
+    dataset: dimRevenueSchedule
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
+type: standard
