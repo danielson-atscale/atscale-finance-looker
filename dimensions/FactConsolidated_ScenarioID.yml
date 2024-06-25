@@ -5,10 +5,10 @@ hierarchies:
   - unique_name: FactConsolidated_ScenarioID_Hierarchy
     label: ScenarioID Hierarchy
     levels:
-      - unique_name: ScenarioID_ScenarioID
+      - unique_name: FactConsolidated_ScenarioID_ScenarioID
 is_degenerate: true
 level_attributes:
-  - unique_name: ScenarioID_ScenarioID
+  - unique_name: FactConsolidated_ScenarioID_ScenarioID
     label: ScenarioID
     contains_unique_names: false
     dataset: FactConsolidated
