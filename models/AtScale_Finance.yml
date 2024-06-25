@@ -127,13 +127,3 @@ relationships:
     to:
       dimension: dimRevenueSchedule
       level: dimRevenueSchedule_Recordno
-  - unique_name: >-
-      factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_dimRevenueSchedule
-      Level
-    from:
-      dataset: factRevenueScheduleEntry
-      join_columns:
-        - Schedulekey
-    to:
-      dimension: dimRevenueSchedule
-      level: dimRevenueSchedule Level

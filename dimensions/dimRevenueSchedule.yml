@@ -2,15 +2,15 @@ unique_name: dimRevenueSchedule
 object_type: dimension
 label: dimRevenueSchedule
 hierarchies:
-  - unique_name: dimRevenueSchedule_Hierarchy
-    label: dimRevenueSchedule_Hierarchy
+  - unique_name: RevenueSchedule Hierarchy
+    label: RevenueSchedule Hierarchy
     levels:
-      - unique_name: dimRevenueSchedule Level
+      - unique_name: dimRevenueSchedule_Recordno
 level_attributes:
-  - unique_name: dimRevenueSchedule Level
-    label: dimRevenueSchedule Level
+  - unique_name: dimRevenueSchedule_Recordno
+    label: Recordno
     contains_unique_names: false
-    dataset: dimRevenueSchedule
+    dataset: dimRevenueSchedule_dataset
     is_unique_key: false
     key_columns:
       - Recordno
