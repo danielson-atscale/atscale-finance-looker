@@ -27,6 +27,8 @@ metrics:
   - unique_name: Actual+Forecast_Ending_DS
   - unique_name: ARR.Total.Cash.Received
   - unique_name: AR.Total.Cash.Received
+  - unique_name: Total.Scheduled.Invoices
+  - unique_name: Total.Invoiced
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
