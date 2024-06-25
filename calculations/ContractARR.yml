@@ -1,7 +1,10 @@
 unique_name: ContractARR
 object_type: metric_calc
 label: ContractARR
-expression: |-
+expression: >
   [Measures].[m_factRevenueScheduleEntry_Amount_sum] 
-  / [Measures.m_factRevenueScheduleEntry_ContractLength_sum] 
+
+  /
+  [dimRevenueSchedule].[RevenueSchedule_Hierarchy].[dimReveneSchedule_ContractLength]
+  / 365
 is_hidden: false
