@@ -1,0 +1,9 @@
+unique_name: Total.AR.Adjustments
+object_type: metric_calc
+label: Total AR Adjustments
+expression: |-
+    ([FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[FactConsolidated_ScenarioID_ScenarioID].&[Actual],
+    [FactConsolidated_Source].[FactConsolidated_Source_Hierarchy].[FactConsolidated_Source_Source].&[GLDetail-AR Adjustments],
+    [Measures].[m_factConsolidated_Amount])
+format: '#,###.0;(#,###.0)'
+is_hidden: false

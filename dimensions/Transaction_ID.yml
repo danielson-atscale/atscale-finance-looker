@@ -1,0 +1,18 @@
+unique_name: Transaction_ID
+object_type: dimension
+label: Transaction ID
+hierarchies:
+  - unique_name: Transaction_ID_Hierarchy
+    label: Transaction ID Hierarchy
+    levels:
+      - unique_name: Transaction_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Transaction_ID_Level
+    label: Transaction ID Level
+    contains_unique_names: false
+    dataset: factReceivables
+    key_columns:
+      - TransactionID
+    name_column: TransactionID
+type: standard

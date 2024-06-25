@@ -1,0 +1,7 @@
+unique_name: ARR.Total.Cash.Received
+object_type: metric_calc
+label: ARR Total Cash Received
+expression: |-
+  NULL
+format: '#,###.0;(#,###.0)'
+is_hidden: false

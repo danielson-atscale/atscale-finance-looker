@@ -1,15 +1,15 @@
-unique_name: Source
+unique_name: FactConsolidated_Source
 object_type: dimension
 label: Source
 hierarchies:
-  - unique_name: Source_Hierarchy
+  - unique_name: FactConsolidated_Source_Hierarchy
     label: Source Hierarchy
     levels:
-      - unique_name: Source_Level
+      - unique_name: Source_Source
 is_degenerate: true
 level_attributes:
-  - unique_name: Source_Level
-    label: Source Level
+  - unique_name: Source_Source
+    label: Source
     contains_unique_names: false
     dataset: factReceivables
     key_columns:
