@@ -4,6 +4,6 @@ label: ContractARR
 expression: >
   [Measures].[m_factRevenueScheduleEntry_Amount_sum] 
   /
-  [dimRevenueSchedule].[RevenueSchedule_Hierarchy].[dimReveneSchedule_ContractLength]
+  [dimRevenueSchedule].[RevenueSchedule_Hierarchy].[dimReveneSchedule_ContractLength].CurrentMember
   / 365
 is_hidden: false
