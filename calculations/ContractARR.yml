@@ -1,9 +1,9 @@
 unique_name: ContractARR
 object_type: metric_calc
 label: ContractARR
-expression: >
-  [Measures].[m_factRevenueScheduleEntry_Amount_sum] 
-  /
-  [dimRevenueSchedule].[RevenueSchedule_Hierarchy].[dimReveneSchedule_ContractLength].CurrentMember
-  / 365
+expression: 
+  Divide
+  ([Measures].[m_factRevenueScheduleEntry_Amount_sum],
+   [Measures].[m_ContractLength]
+  )
 is_hidden: false
