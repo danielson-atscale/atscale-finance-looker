@@ -7,6 +7,15 @@ hierarchies:
     levels:
       - unique_name: dimRevenueSchedule_Contractkey
       - unique_name: dimRevenueSchedule_Recordno
+        secondary_attributes:
+          - unique_name: dimRevenueSchedule_State
+            label: dimRevenueSchedule_State
+            contains_unique_names: false
+            dataset: dimRevenueSchedule_dataset
+            is_unique_key: false
+            key_columns:
+              - State
+            name_column: State
 level_attributes:
   - unique_name: dimRevenueSchedule_Recordno
     label: Recordno

@@ -4,6 +4,8 @@ label: ContractARR
 expression: 
   Divide
   ([Measures].[m_factRevenueScheduleEntry_Amount_sum],
-   [Measures].[m_ContractLength] /365
+   ([Measures].[m_ContractLength] /365 )
   )
+
+  
 is_hidden: false
