@@ -15,6 +15,11 @@ hierarchies:
             key_columns:
               - ContractLength
             name_column: ContractLength
+            sort_column: empty_value
+  - unique_name: RevenueSchedule_HierarchyCL
+    label: RevenueSchedule_HierarchyCL
+    levels:
+      - unique_name: dimRevenueSchedule_ContractLength2
 level_attributes:
   - unique_name: dimRevenueSchedule_Recordno
     label: Recordno
@@ -25,4 +30,12 @@ level_attributes:
       - Recordno
     name_column: Recordno
     sort_column: empty_value
+  - unique_name: dimRevenueSchedule_ContractLength2
+    label: ContractLength
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - ContractLength
+    name_column: ContractLength
 type: standard
