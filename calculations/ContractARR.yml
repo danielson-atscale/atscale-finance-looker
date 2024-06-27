@@ -8,5 +8,5 @@ expression:
   
   [Measures].[ContractARRDIV]
   )
-
+format: '#,###.0;(#,###.0)'
 is_hidden: false
