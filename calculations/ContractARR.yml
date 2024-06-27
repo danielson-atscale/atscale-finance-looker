@@ -4,9 +4,10 @@ label: ContractARR
 expression: 
   
   (
-  [factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Postable].&[TRUE],
-  
-  [Measures].[ContractARRDIV]
+    [factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Postable].&[TRUE],
+      ([dimRevenueSchedule].[dimRevenueSchedule_State].&["In progress"]),
+      ([dimRevenueSchedule].[dimRevenueSchedule_State].&["Renewal forecast"]),
+    [Measures].[ContractARRDIV]
   )
 format: '#,###.0;(#,###.0)'
 is_hidden: false
