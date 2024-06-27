@@ -36,6 +36,7 @@ metrics:
   - unique_name: ContractARR
   - unique_name: m_ContractLength
   - unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
+  - unique_name: ContractARRDIV
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

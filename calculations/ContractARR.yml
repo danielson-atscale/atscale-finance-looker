@@ -2,9 +2,11 @@ unique_name: ContractARR
 object_type: metric_calc
 label: ContractARR
 expression: 
- ( [Measures].[m_factRevenueScheduleEntry_Amount_sum] /     
-   ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum] )
- )
-   
+  
+  (
+  [factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Postable].&[TRUE],
+  
+  [Measures].[ContractARRDIV]
+  )
 
 is_hidden: false
