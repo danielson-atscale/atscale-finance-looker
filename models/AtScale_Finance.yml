@@ -32,7 +32,10 @@ metrics:
   - unique_name: Total.Scheduled.Invoices
   - unique_name: Total.Invoiced
   - unique_name: Total.AR.Adjustments
-  - unique_name: m_factRevenueScheduleEntry_Amount_sum
+  - unique_name: m_FactRevenueScheduleEntry_Amount_sum
+  - unique_name: ContractARR
+  - unique_name: m_ContractLength
+  - unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

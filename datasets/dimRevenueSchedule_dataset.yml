@@ -1,0 +1,38 @@
+unique_name: dimRevenueSchedule_dataset
+object_type: dataset
+label: dimRevenueSchedule_dataset
+columns:
+  - name: Contractkey
+    data_type: string
+  - name: Recordno
+    data_type: long
+  - name: Type
+    data_type: string
+  - name: Contractid
+    data_type: string
+  - name: Contractdetailkey
+    data_type: long
+  - name: State
+    data_type: string
+  - name: Contractdetail_templatename
+    data_type: string
+  - name: Startdate
+    data_type: date
+  - name: Enddate
+    data_type: date
+  - name: Canceldate
+    data_type: date
+  - name: Whencreated
+    data_type: datetime
+  - name: Id
+    data_type: string
+  - name: RecordTypeId
+    data_type: string
+  - name: Renewal_Probability__c
+    data_type: double
+  - name: ContractLength
+    data_type: long
+    sql: |
+      DATE_DIFF(Enddate, Startdate, DAY)
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimRevenueSchedule
