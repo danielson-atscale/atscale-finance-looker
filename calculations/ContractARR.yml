@@ -5,8 +5,10 @@ expression:
   (
   [factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Level].&[TRUE],
   
-  [Measures].[m_factRevenueScheduleEntry_Amount_sum] /
-   ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum] )
+    ( [Measures].[m_factRevenueScheduleEntry_Amount_sum] /
+   [Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum]
+    )
+  
   )
   
 
