@@ -2,9 +2,8 @@ unique_name: ContractARR
 object_type: metric_calc
 label: ContractARR
 expression: 
-  Divide
-  ([Measures].[m_factRevenueScheduleEntry_Amount_sum],
-   ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum] /365 )
+  ([Measures].[m_factRevenueScheduleEntry_Amount_sum] /
+   ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum] )
   )
 
   
