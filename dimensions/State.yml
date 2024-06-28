@@ -1,6 +1,6 @@
 unique_name: State
 object_type: dimension
-label: State
+label: factRevenueScheduleEntry_State
 hierarchies:
   - unique_name: State_Hierarchy
     label: State Hierarchy
