@@ -4,7 +4,6 @@ label: ContractARR
 expression: 
   
   ([factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Postable].&[TRUE],
-  [factRevenueScheduleEntry_State].[factRevenueScheduleEntry_State_Filtered].[factRevenueScheduleEntry_State_ContractARR].&[TRUE],
   [Measures].[ContractARRDIV]
   )
 format: '#,###.0;(#,###.0)'
