@@ -1,0 +1,30 @@
+unique_name: State
+object_type: dimension
+label: State
+hierarchies:
+  - unique_name: State_Hierarchy
+    label: State Hierarchy
+    levels:
+      - unique_name: State
+  - unique_name: factRevenueScheduleEntry_State_Filtered
+    label: Filtered State
+    levels:
+      - unique_name: factRevenueScheduleEntry_State_ContractARR
+is_degenerate: true
+level_attributes:
+  - unique_name: State
+    label: State
+    contains_unique_names: false
+    dataset: factRevenueScheduleEntry
+    key_columns:
+      - State
+    name_column: State
+  - unique_name: factRevenueScheduleEntry_State_ContractARR
+    label: State For ContractARR
+    contains_unique_names: false
+    dataset: factRevenueScheduleEntry
+    is_unique_key: false
+    key_columns:
+      - StateForContractARR
+    name_column: StateForContractARR
+type: standard
