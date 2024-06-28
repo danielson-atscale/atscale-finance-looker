@@ -8,7 +8,7 @@ dimensions:
   - FactConsolidated_Source
   - FactReceivables_Source
   - factRevenueScheduleEntry_Postable
-  - State
+  - factRevenueScheduleEntry_State
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP

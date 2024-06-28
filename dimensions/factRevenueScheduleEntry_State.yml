@@ -1,4 +1,4 @@
-unique_name: State
+unique_name: factRevenueScheduleEntry_State
 object_type: dimension
 label: factRevenueScheduleEntry_State
 hierarchies:
