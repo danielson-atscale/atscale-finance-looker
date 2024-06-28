@@ -8,7 +8,6 @@ dimensions:
   - FactConsolidated_Source
   - FactReceivables_Source
   - factRevenueScheduleEntry_Postable
-  - factRevenueScheduleEntry_State
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -135,3 +134,30 @@ relationships:
     to:
       dimension: dimRevenueSchedule
       level: dimRevenueSchedule_Recordno
+  - unique_name: >-
+      dimRevenueSchedule_dataset_Recordno_to_dimRevenueSchedule_dimRevenueSchedule_Recordno
+    from:
+      dataset: dimRevenueSchedule_dataset
+      join_columns:
+        - Recordno
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_Recordno
+  - unique_name: >-
+      dimRevenueSchedule_dataset_StateForContractARR_to_dimRevenueSchedule_dimRevenueSchedule_State_ContractARR
+    from:
+      dataset: dimRevenueSchedule_dataset
+      join_columns:
+        - StateForContractARR
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_State_ContractARR
+  - unique_name: >-
+      factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_dimRevenueSchedule_State_Recordno
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Schedulekey
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_State_Recordno

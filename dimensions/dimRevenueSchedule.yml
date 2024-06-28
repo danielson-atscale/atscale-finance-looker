@@ -16,6 +16,12 @@ hierarchies:
             key_columns:
               - State
             name_column: State
+            sort_column: empty_value
+  - unique_name: dimRevenueSchedule_State_Hierarchy
+    label: State
+    levels:
+      - unique_name: dimRevenueSchedule_State_ContractARR
+      - unique_name: dimRevenueSchedule_State_Recordno
 level_attributes:
   - unique_name: dimRevenueSchedule_Recordno
     label: Recordno
@@ -34,6 +40,24 @@ level_attributes:
     key_columns:
       - Contractkey
     name_column: Contractkey
+    sort_column: empty_value
+  - unique_name: dimRevenueSchedule_State_ContractARR
+    label: State Filtered
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - StateForContractARR
+    name_column: StateForContractARR
+    sort_column: empty_value
+  - unique_name: dimRevenueSchedule_State_Recordno
+    label: Recordno
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - Recordno
+    name_column: Recordno
 relationships:
   - unique_name: dimRevenueSchedule_dataset_Contractkey_to_dimContract_dimContract_Recordno
     from:
