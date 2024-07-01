@@ -37,6 +37,8 @@ metrics:
   - unique_name: m_ContractLength
   - unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
   - unique_name: ContractARRDIV
+  - unique_name: ExpectedRenewalARR
+  - unique_name: RenewalDIV
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
