@@ -1,12 +1,14 @@
-unique_name: Actual_Ending_FY
+unique_name: Actual_Ending_2023
 object_type: metric_calc
-label: Actual - Ending FY
+label: Actual Ending 2023
 expression: |-
   SUM(
-  PERIODSTODATE(
+  PeriodsToDate(
       [dimDate].[Date_Hierarchy].[dimDate_Century],
       [dimDate].[Date_Hierarchy].[dimDate_Year].&[2023]
-  ),
-  [Measures].[Actual_NonGAAP])
+  )
+
+  [Measures].[Actual_NonGAAP]
+  )
 format: '#,###.0;(#,###.0)'
 is_hidden: false

@@ -31,7 +31,7 @@ metrics:
   - unique_name: Total.Scheduled.Invoices
   - unique_name: Total.Invoiced
   - unique_name: Total.AR.Adjustments
-  - unique_name: Actual_Ending_FY
+  - unique_name: Actual_Ending_2023
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
