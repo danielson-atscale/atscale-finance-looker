@@ -1,0 +1,6 @@
+unique_name: m_ContractLength
+object_type: metric
+label: m_ContractLength
+calculation_method: maximum
+column: ContractLength
+dataset: dimRevenueSchedule_dataset
