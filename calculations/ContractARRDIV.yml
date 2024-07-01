@@ -1,8 +1,8 @@
-unique_name: ContractARR
+unique_name: ContractARRDIV
 object_type: metric_calc
-label: ContractARR
-expression: |2
+label: ContractARRDIV
+expression: >
   ([Measures].[m_factRevenueScheduleEntry_Amount_sum] /
   ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum])
-  )
+  ) 
 is_hidden: false
