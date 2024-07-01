@@ -2,6 +2,6 @@ unique_name: RenewalDIV
 object_type: metric_calc
 label: RenewalDIV
 expression: >-
-  ExpectedRenewalARR /
+  [Measures].[m_factRevenueScheduleEntry_RenewalProbability_sum] /
   [Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum]
 is_hidden: false

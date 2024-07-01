@@ -39,6 +39,7 @@ metrics:
   - unique_name: ContractARRDIV
   - unique_name: ExpectedRenewalARR
   - unique_name: RenewalDIV
+  - unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

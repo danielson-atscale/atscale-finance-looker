@@ -1,0 +1,6 @@
+unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
+object_type: metric
+label: Renewal Probability
+calculation_method: sum
+column: RenewalProbability
+dataset: factRevenueScheduleEntry
