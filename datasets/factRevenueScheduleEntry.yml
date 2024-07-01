@@ -3,58 +3,24 @@ object_type: dataset
 label: factRevenueScheduleEntry
 columns:
   - name: Recordno
-    data_type: long
+    data_type: string
   - name: Schedulekey
-    data_type: long
+    data_type: string
   - name: Type
     data_type: string
-  - name: Schopkey
-    data_type: long
   - name: Amount
     data_type: decimal(38,9)
-  - name: Baseamount
-    data_type: decimal(38,9)
-  - name: Postedbaseamount
-    data_type: decimal(38,9)
-  - name: Exchange_rate
-    data_type: decimal(38,9)
-  - name: Postedexchange_rate
-    data_type: decimal(38,9)
   - name: Postingdate
-    data_type: date
-  - name: Actualpostingdate
-    data_type: date
-  - name: Derivedpostingdate
     data_type: date
   - name: Posted
     data_type: boolean
   - name: Postable
     data_type: boolean
-  - name: Historical
-    data_type: boolean
   - name: State
     data_type: string
-  - name: Glbatchkey
-    data_type: long
-  - name: Computationmemo
-    data_type: string
-  - name: Computation_detail
-    data_type: string
-  - name: Approvedhours
-    data_type: decimal(38,9)
-  - name: Sourceqty
-    data_type: decimal(38,9)
-  - name: Percentrecognized
-    data_type: decimal(38,9)
   - name: Whencreated
     data_type: datetime
-  - name: Whenmodified
-    data_type: datetime
-  - name: Createdby
-    data_type: long
-  - name: Modifiedby
-    data_type: long
-  - name: Record_url
-    data_type: string
+  - name: ContractDurationYears
+    data_type: float
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: ContractRevenueScheduleEntry

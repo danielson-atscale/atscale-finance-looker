@@ -2,17 +2,48 @@ unique_name: dimRevenueSchedule
 object_type: dimension
 label: dimRevenueSchedule
 hierarchies:
-  - unique_name: dimRevenueSchedule_Hierarchy
-    label: dimRevenueSchedule Hierarchy
+  - unique_name: RevenueSchedule_Hierarchy
+    label: RevenueSchedule_Hierarchy
     levels:
+      - unique_name: dimRevenueSchedule_Contractkey
       - unique_name: dimRevenueSchedule_Recordno
+        secondary_attributes:
+          - unique_name: dimRevenueSchedule_State
+            label: dimRevenueSchedule_State
+            contains_unique_names: false
+            dataset: dimRevenueSchedule_dataset
+            is_unique_key: false
+            key_columns:
+              - State
+            name_column: State
 level_attributes:
   - unique_name: dimRevenueSchedule_Recordno
     label: Recordno
     contains_unique_names: false
-    dataset: factRevenueScheduleEntry
+    dataset: dimRevenueSchedule_dataset
     is_unique_key: false
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
+  - unique_name: dimRevenueSchedule_Contractkey
+    label: Contractkey
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - Contractkey
+    name_column: Contractkey
+relationships:
+  - unique_name: dimRevenueSchedule_dataset_Contractkey_to_dimContract_dimContract_Recordno
+    from:
+      dataset: dimRevenueSchedule_dataset
+      hierarchy: RevenueSchedule_Hierarchy
+      join_columns:
+        - Contractkey
+      level: dimRevenueSchedule_Recordno
+    to:
+      dimension: dimContract
+      level: dimContract_Recordno
+    type: embedded
 type: standard
