@@ -22,6 +22,8 @@ columns:
     data_type: datetime
   - name: ContractDurationYears
     data_type: float
+  - name: RenewalProbability
+    data_type: float
 
 
 connection_id: con_atscale-data-warehouse_AIA_dbt
