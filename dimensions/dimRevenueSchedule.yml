@@ -22,6 +22,10 @@ hierarchies:
     levels:
       - unique_name: dimRevenueSchedule_State_ContractARR
       - unique_name: dimRevenueSchedule_State_Recordno
+  - unique_name: dimRevenueSchedule_Probability_Hierrachy
+    label: Probability
+    levels:
+      - unique_name: dimRevenueSchedule_Probability
 level_attributes:
   - unique_name: dimRevenueSchedule_Recordno
     label: Recordno
@@ -58,6 +62,15 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
+  - unique_name: dimRevenueSchedule_Probability
+    label: Probability
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - Renewal_Probability__c
+    name_column: Renewal_Probability__c
 relationships:
   - unique_name: dimRevenueSchedule_dataset_Contractkey_to_dimContract_dimContract_Recordno
     from:
