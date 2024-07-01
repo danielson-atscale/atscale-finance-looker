@@ -32,6 +32,7 @@ metrics:
   - unique_name: Total.Scheduled.Invoices
   - unique_name: Total.Invoiced
   - unique_name: Total.AR.Adjustments
+  - unique_name: Actual_Ending_2023
   - unique_name: m_factRevenueScheduleEntry_Amount_sum
   - unique_name: ContractARR
   - unique_name: m_ContractLength
