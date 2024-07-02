@@ -2,6 +2,7 @@ unique_name: ContractARRDIV
 object_type: metric_calc
 label: ContractARRDIV
 expression: >
-  [Measures].[m_factRevenueScheduleEntry_Amount_sum] /      
-  [Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum]
+  ([Measures].[m_factRevenueScheduleEntry_Amount_sum] /
+  ([Measures].[m_factRevenueScheduleEntry_ContractDurationYears_sum])
+  ) 
 is_hidden: false
