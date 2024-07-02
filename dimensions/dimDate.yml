@@ -75,7 +75,7 @@ hierarchies:
   - unique_name: CloseDate_Hierarchy
     label: Close Date Hierarchy
     levels:
-      - unique_name: dimDate_Century
+      - unique_name: dimDate_CloseDate_Century
         time_unit: undefined
       - unique_name: dimDate_CloseDate_Year
         time_unit: year
@@ -88,6 +88,8 @@ hierarchies:
   - unique_name: POCStartDate_Hierarchy
     label: POC Start Date Hierarchy
     levels:
+      - unique_name: dimDate_POCStartDate_Century
+        time_unit: undefined
       - unique_name: dimDate_POCStartDate_Year
         time_unit: year
       - unique_name: dimDate_POCStartDate_Quarter
@@ -96,8 +98,6 @@ hierarchies:
         time_unit: month
       - unique_name: dimDate_POCStartDate_Date
         time_unit: day
-      - unique_name: dimDate_POCStartDate_Century
-        time_unit: undefined
 level_attributes:
   - unique_name: dimDate_Year
     label: Year
@@ -215,7 +215,7 @@ level_attributes:
     key_columns:
       - Century
     name_column: Century
-  - unique_name: dimDate_Century
+  - unique_name: dimDate_CloseDate_Century
     label: Century
     contains_unique_names: false
     dataset: dimDate_dataset
@@ -224,14 +224,6 @@ level_attributes:
       - Century
     name_column: Century
   - unique_name: dimDate_POCStartDate_Century
-    label: Century
-    contains_unique_names: false
-    dataset: dimDate_dataset
-    is_unique_key: false
-    key_columns:
-      - Century
-    name_column: Century
-  - unique_name: dimDate_Century
     label: Century
     contains_unique_names: false
     dataset: dimDate_dataset
