@@ -15,4 +15,12 @@ dimensions:
   - dimPOCEndDate
   - dimLostReason
 metrics: []
-relationships: []
+relationships:
+  - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - OwnerId
+    to:
+      dimension: dimOwner
+      level: dimOwner_Name
