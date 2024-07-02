@@ -1,0 +1,98 @@
+unique_name: factOpportunity
+object_type: dataset
+label: factOpportunity
+columns:
+  - name: AccountID
+    data_type: string
+  - name: Amount
+    data_type: decimal(38,9)
+  - name: CloseDate
+    data_type: date
+  - name: CreatedBy
+    data_type: string
+  - name: CreatedDate
+    data_type: datetime
+  - name: Description
+    data_type: string
+  - name: ForecastCategory
+    data_type: string
+  - name: Id
+    data_type: string
+  - name: IsClosed
+    data_type: boolean
+  - name: IsDeleted
+    data_type: boolean
+  - name: IsWon
+    data_type: boolean
+  - name: AmountLastChanged
+    data_type: datetime
+  - name: CloseDateLastChanged
+    data_type: datetime
+  - name: StageLastChanged
+    data_type: datetime
+  - name: LeadSource
+    data_type: string
+  - name: Name
+    data_type: string
+  - name: NextStep
+    data_type: string
+  - name: OpportunityOwner
+    data_type: string
+  - name: OwnerId
+    data_type: string
+  - name: Probability
+    data_type: double
+  - name: RecordTypeId
+    data_type: string
+  - name: RecordType
+    data_type: string
+  - name: Stage
+    data_type: string
+  - name: Type
+    data_type: string
+  - name: SyncedQuoteId
+    data_type: string
+  - name: NetNewARR
+    data_type: decimal(38,9)
+  - name: ExpiringARR
+    data_type: decimal(38,9)
+  - name: OpportunityARR
+    data_type: decimal(38,9)
+  - name: CloudSpend
+    data_type: decimal(38,9)
+  - name: RenewalProbability
+    data_type: double
+  - name: SalesEngineerId
+    data_type: string
+  - name: SalesEngineer
+    data_type: string
+  - name: BDRId
+    data_type: string
+  - name: BDRName
+    data_type: string
+  - name: HighestLevelBusinessContactId
+    data_type: string
+  - name: HighestLevelBusinessContact
+    data_type: string
+  - name: POCStatus
+    data_type: string
+  - name: BITools
+    data_type: string
+  - name: Competition
+    data_type: string
+  - name: BusinessUseCase
+    data_type: string
+  - name: SuccessMetrics
+    data_type: string
+  - name: PositiveBusinessOutcomes
+    data_type: string
+  - name: PathtoClose
+    data_type: string
+  - name: TechnicalWin
+    data_type: string
+  - name: POCStartDate
+    data_type: date
+  - name: POCEndDate
+    data_type: date
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: FactOpportunity

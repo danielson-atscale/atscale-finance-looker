@@ -1,0 +1,9 @@
+unique_name: AtScale_RevenueOperations
+object_type: model
+label: AtScale_RevenueOperations
+dimensions:
+  - factOpportunity_ForecastCategory
+  - dimHighestLevelBusinessContact
+  - dimOpportunity_Name
+metrics: []
+relationships: []
