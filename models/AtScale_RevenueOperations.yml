@@ -5,5 +5,13 @@ dimensions:
   - factOpportunity_ForecastCategory
   - dimHighestLevelBusinessContact
   - dimOpportunity_Name
+  - dimCloudSpend
+  - dimCompetition
+  - dimBusinessUseCase
+  - dimPositiveBusinessOutcomes
+  - dimSuccessMetrics
+  - dimBITools
+  - dimPathToClose
+  - dimPOCEndDate
 metrics: []
 relationships: []
