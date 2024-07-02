@@ -15,4 +15,20 @@ dimensions:
   - dimPOCEndDate
   - dimLostReason
 metrics: []
-relationships: []
+relationships:
+  - unique_name: factOpportunity_POCStartDate_to_Date_POCStartDate
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - POCStartDate
+    to:
+      dimension: Date
+      level: POCStartDate
+  - unique_name: factOpportunity_CloseDate_to_Date_CloseDate
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - CloseDate
+    to:
+      dimension: Date
+      level: CloseDate
