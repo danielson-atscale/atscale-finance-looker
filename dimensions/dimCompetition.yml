@@ -1,0 +1,18 @@
+unique_name: dimCompetition
+object_type: dimension
+label: Competition
+hierarchies:
+  - unique_name: factOpportunity_dimCompetition_Hierarchy
+    label: Competition Hierarchy
+    levels:
+      - unique_name: factOpportunity_Competition_Competition
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_Competition_Competition
+    label: Competition
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - Competition
+    name_column: Competition
+type: standard

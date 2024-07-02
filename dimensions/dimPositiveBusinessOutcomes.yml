@@ -1,0 +1,18 @@
+unique_name: dimPositiveBusinessOutcomes
+object_type: dimension
+label: Positive Business Outcomes
+hierarchies:
+  - unique_name: dimPositiveBusinessOutcomes_Hierarchy
+    label: Positive Business Outcomes Hierarchy
+    levels:
+      - unique_name: factOpportunity_PositiveBusinessOutcomes_PositiveBusinessOutcomes
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_PositiveBusinessOutcomes_PositiveBusinessOutcomes
+    label: factOpportunity_dimPositiveBusinessOutcomes
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - PositiveBusinessOutcomes
+    name_column: PositiveBusinessOutcomes
+type: standard

@@ -1,0 +1,18 @@
+unique_name: AtScale_RevenueOperations
+object_type: model
+label: AtScale_RevenueOperations
+dimensions:
+  - factOpportunity_ForecastCategory
+  - dimHighestLevelBusinessContact
+  - dimOpportunity_Name
+  - dimCloudSpend
+  - dimCompetition
+  - dimBusinessUseCase
+  - dimPositiveBusinessOutcomes
+  - dimSuccessMetrics
+  - dimBITools
+  - dimPathToClose
+  - dimPOCEndDate
+  - dimLostReason
+metrics: []
+relationships: []

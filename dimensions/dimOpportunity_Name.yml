@@ -1,0 +1,20 @@
+unique_name: dimOpportunity_Name
+object_type: dimension
+label: Name
+hierarchies:
+  - unique_name: factOpportunity_dimName_Hierarchy
+    label: Name Hierarchy
+    levels:
+      - unique_name: factOpportunity_Name_Name
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_Name_Name
+    label: Name
+    contains_unique_names: false
+    dataset: factOpportunity
+    is_unique_key: false
+    key_columns:
+      - Name
+    name_column: Name
+    sort_column: empty_value
+type: standard
