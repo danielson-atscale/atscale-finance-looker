@@ -1,0 +1,6 @@
+unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+object_type: metric
+label: Expected Renewal ARR
+calculation_method: sum
+column: ExpectedRenewalARR
+dataset: factRevenueScheduleEntry

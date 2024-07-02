@@ -1,0 +1,18 @@
+unique_name: dimBusinessUseCase
+object_type: dimension
+label: Business Use Case
+hierarchies:
+  - unique_name: factOpportunity_dimBusinessUseCase_Hierarchy
+    label: Business Use Case Hierarchy
+    levels:
+      - unique_name: factOpportunity_BusinessUseCase_BusinessUseCase
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_BusinessUseCase_BusinessUseCase
+    label: Business Use Case Level
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - BusinessUseCase
+    name_column: BusinessUseCase
+type: standard
