@@ -1,0 +1,77 @@
+unique_name: dimCrmAccount
+object_type: dimension
+label: dimCrmAccount
+hierarchies:
+  - unique_name: dimCrmAccount_Hierarchy
+    label: dimCrmAccount_Hierarchy
+    levels:
+      - unique_name: dimCrmAccount_RecordTypeId
+      - unique_name: dimCrmAccount_Type
+      - unique_name: dimCrmAccount_AccountName
+        secondary_attributes:
+          - unique_name: dimCrmAccount_CustomerStage
+            label: dimCrmAccount_CustomerStage
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - CustomerStage
+            name_column: CustomerStage
+          - unique_name: dimCrmAccount_CloudSpend
+            label: dimCrmAccount_CloudSpend
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - CloudSpend
+            name_column: CloudSpend
+          - unique_name: dimCrmAccount_BITools
+            label: dimCrmAccount_BITools
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - BITools
+            name_column: BITools
+          - unique_name: dimCrmAccount_DataPlatforms
+            label: dimCrmAccount_DataPlatforms
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - DataPlatforms
+            name_column: DataPlatforms
+          - unique_name: dimCrmAccount_BusinessUseCase
+            label: dimCrmAccount_BusinessUseCase
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - BusinessUseCase
+            name_column: BusinessUseCase
+level_attributes:
+  - unique_name: dimCrmAccount_AccountName
+    label: dimCrmAccount_AccountName
+    contains_unique_names: false
+    dataset: dimCrmAccount_dataset
+    is_unique_key: false
+    key_columns:
+      - Id
+    name_column: Name
+  - unique_name: dimCrmAccount_Type
+    label: dimCrmAccount_Type
+    contains_unique_names: false
+    dataset: dimCrmAccount_dataset
+    is_unique_key: false
+    key_columns:
+      - Type
+    name_column: Type
+  - unique_name: dimCrmAccount_RecordTypeId
+    label: dimCrmAccount_RecordTypeId
+    contains_unique_names: false
+    dataset: dimCrmAccount_dataset
+    is_unique_key: false
+    key_columns:
+      - RecordTypeId
+    name_column: RecordTypeId
+type: standard
