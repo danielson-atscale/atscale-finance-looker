@@ -71,6 +71,16 @@ hierarchies:
       - unique_name: dimDate_YearMonthNum
         time_unit: month
       - unique_name: dimDate_Date
+        secondary_attributes:
+          - unique_name: dimDate_DateTime
+            label: Date
+            contains_unique_names: false
+            dataset: dimDate_dataset
+            is_unique_key: false
+            key_columns:
+              - DateTime
+            name_column: DateTime
+            sort_column: empty_value
         time_unit: day
   - unique_name: CloseDate_Hierarchy
     label: Close Date Hierarchy
@@ -130,10 +140,11 @@ level_attributes:
     label: Date
     contains_unique_names: false
     dataset: dimDate_dataset
+    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
-    name_column: Id
+    name_column: DateTime
     sort_column: empty_value
   - unique_name: dimDate_CloseDate_Year
     label: Year

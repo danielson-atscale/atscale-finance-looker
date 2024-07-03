@@ -1,0 +1,370 @@
+unique_name: CRMUser
+object_type: dataset
+label: CRMUser
+columns:
+  - name: Id
+    data_type: string
+  - name: Username
+    data_type: string
+  - name: LastName
+    data_type: string
+  - name: FirstName
+    data_type: string
+  - name: MiddleName
+    data_type: string
+  - name: Suffix
+    data_type: string
+  - name: Name
+    data_type: string
+  - name: CompanyName
+    data_type: string
+  - name: Division
+    data_type: string
+  - name: Department
+    data_type: string
+  - name: Title
+    data_type: string
+  - name: Street
+    data_type: string
+  - name: City
+    data_type: string
+  - name: State
+    data_type: string
+  - name: PostalCode
+    data_type: string
+  - name: Country
+    data_type: string
+  - name: StateCode
+    data_type: string
+  - name: CountryCode
+    data_type: string
+  - name: Latitude
+    data_type: double
+  - name: Longitude
+    data_type: double
+  - name: GeocodeAccuracy
+    data_type: string
+  - name: Email
+    data_type: string
+  - name: EmailPreferencesAutoBcc
+    data_type: boolean
+  - name: EmailPreferencesAutoBccStayInTouch
+    data_type: boolean
+  - name: EmailPreferencesStayInTouchReminder
+    data_type: boolean
+  - name: SenderEmail
+    data_type: string
+  - name: SenderName
+    data_type: string
+  - name: Signature
+    data_type: string
+  - name: StayInTouchSubject
+    data_type: string
+  - name: StayInTouchSignature
+    data_type: string
+  - name: StayInTouchNote
+    data_type: string
+  - name: Phone
+    data_type: string
+  - name: Fax
+    data_type: string
+  - name: MobilePhone
+    data_type: string
+  - name: Alias
+    data_type: string
+  - name: CommunityNickname
+    data_type: string
+  - name: BadgeText
+    data_type: string
+  - name: IsActive
+    data_type: boolean
+  - name: TimeZoneSidKey
+    data_type: string
+  - name: UserRoleId
+    data_type: string
+  - name: LocaleSidKey
+    data_type: string
+  - name: ReceivesInfoEmails
+    data_type: boolean
+  - name: ReceivesAdminInfoEmails
+    data_type: boolean
+  - name: EmailEncodingKey
+    data_type: string
+  - name: ProfileId
+    data_type: string
+  - name: UserType
+    data_type: string
+  - name: LanguageLocaleKey
+    data_type: string
+  - name: EmployeeNumber
+    data_type: string
+  - name: DelegatedApproverId
+    data_type: string
+  - name: ManagerId
+    data_type: string
+  - name: LastLoginDate
+    data_type: datetime
+  - name: LastPasswordChangeDate
+    data_type: datetime
+  - name: CreatedDate
+    data_type: datetime
+  - name: CreatedById
+    data_type: string
+  - name: LastModifiedDate
+    data_type: datetime
+  - name: LastModifiedById
+    data_type: string
+  - name: SystemModstamp
+    data_type: datetime
+  - name: NumberOfFailedLogins
+    data_type: long
+  - name: OfflineTrialExpirationDate
+    data_type: datetime
+  - name: OfflinePdaTrialExpirationDate
+    data_type: datetime
+  - name: UserPermissionsMarketingUser
+    data_type: boolean
+  - name: UserPermissionsOfflineUser
+    data_type: boolean
+  - name: UserPermissionsAvantgoUser
+    data_type: boolean
+  - name: UserPermissionsCallCenterAutoLogin
+    data_type: boolean
+  - name: UserPermissionsSFContentUser
+    data_type: boolean
+  - name: UserPermissionsKnowledgeUser
+    data_type: boolean
+  - name: UserPermissionsInteractionUser
+    data_type: boolean
+  - name: UserPermissionsSupportUser
+    data_type: boolean
+  - name: ForecastEnabled
+    data_type: boolean
+  - name: UserPreferencesActivityRemindersPopup
+    data_type: boolean
+  - name: UserPreferencesEventRemindersCheckboxDefault
+    data_type: boolean
+  - name: UserPreferencesTaskRemindersCheckboxDefault
+    data_type: boolean
+  - name: UserPreferencesReminderSoundOff
+    data_type: boolean
+  - name: UserPreferencesDisableAllFeedsEmail
+    data_type: boolean
+  - name: UserPreferencesDisableFollowersEmail
+    data_type: boolean
+  - name: UserPreferencesDisableProfilePostEmail
+    data_type: boolean
+  - name: UserPreferencesDisableChangeCommentEmail
+    data_type: boolean
+  - name: UserPreferencesDisableLaterCommentEmail
+    data_type: boolean
+  - name: UserPreferencesDisProfPostCommentEmail
+    data_type: boolean
+  - name: UserPreferencesContentNoEmail
+    data_type: boolean
+  - name: UserPreferencesContentEmailAsAndWhen
+    data_type: boolean
+  - name: UserPreferencesApexPagesDeveloperMode
+    data_type: boolean
+  - name: UserPreferencesReceiveNoNotificationsAsApprover
+    data_type: boolean
+  - name: UserPreferencesReceiveNotificationsAsDelegatedApprover
+    data_type: boolean
+  - name: UserPreferencesHideCSNGetChatterMobileTask
+    data_type: boolean
+  - name: UserPreferencesDisableMentionsPostEmail
+    data_type: boolean
+  - name: UserPreferencesDisMentionsCommentEmail
+    data_type: boolean
+  - name: UserPreferencesHideCSNDesktopTask
+    data_type: boolean
+  - name: UserPreferencesHideChatterOnboardingSplash
+    data_type: boolean
+  - name: UserPreferencesHideSecondChatterOnboardingSplash
+    data_type: boolean
+  - name: UserPreferencesDisCommentAfterLikeEmail
+    data_type: boolean
+  - name: UserPreferencesDisableLikeEmail
+    data_type: boolean
+  - name: UserPreferencesSortFeedByComment
+    data_type: boolean
+  - name: UserPreferencesDisableMessageEmail
+    data_type: boolean
+  - name: UserPreferencesDisableBookmarkEmail
+    data_type: boolean
+  - name: UserPreferencesDisableSharePostEmail
+    data_type: boolean
+  - name: UserPreferencesEnableAutoSubForFeeds
+    data_type: boolean
+  - name: UserPreferencesDisableFileShareNotificationsForApi
+    data_type: boolean
+  - name: UserPreferencesShowTitleToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowManagerToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowEmailToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowWorkPhoneToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowMobilePhoneToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowFaxToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowStreetAddressToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowCityToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowStateToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowPostalCodeToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowCountryToExternalUsers
+    data_type: boolean
+  - name: UserPreferencesShowProfilePicToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowTitleToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowCityToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowStateToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowPostalCodeToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowCountryToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowForecastingChangeSignals
+    data_type: boolean
+  - name: UserPreferencesHideS1BrowserUI
+    data_type: boolean
+  - name: UserPreferencesDisableEndorsementEmail
+    data_type: boolean
+  - name: UserPreferencesPathAssistantCollapsed
+    data_type: boolean
+  - name: UserPreferencesCacheDiagnostics
+    data_type: boolean
+  - name: UserPreferencesShowEmailToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowManagerToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowWorkPhoneToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowMobilePhoneToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowFaxToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesShowStreetAddressToGuestUsers
+    data_type: boolean
+  - name: UserPreferencesLightningExperiencePreferred
+    data_type: boolean
+  - name: UserPreferencesPreviewLightning
+    data_type: boolean
+  - name: UserPreferencesHideEndUserOnboardingAssistantModal
+    data_type: boolean
+  - name: UserPreferencesHideLightningMigrationModal
+    data_type: boolean
+  - name: UserPreferencesHideSfxWelcomeMat
+    data_type: boolean
+  - name: UserPreferencesHideBiggerPhotoCallout
+    data_type: boolean
+  - name: UserPreferencesGlobalNavBarWTShown
+    data_type: boolean
+  - name: UserPreferencesGlobalNavGridMenuWTShown
+    data_type: boolean
+  - name: UserPreferencesCreateLEXAppsWTShown
+    data_type: boolean
+  - name: UserPreferencesFavoritesWTShown
+    data_type: boolean
+  - name: UserPreferencesRecordHomeSectionCollapseWTShown
+    data_type: boolean
+  - name: UserPreferencesRecordHomeReservedWTShown
+    data_type: boolean
+  - name: UserPreferencesFavoritesShowTopFavorites
+    data_type: boolean
+  - name: UserPreferencesExcludeMailAppAttachments
+    data_type: boolean
+  - name: UserPreferencesSuppressTaskSFXReminders
+    data_type: boolean
+  - name: UserPreferencesSuppressEventSFXReminders
+    data_type: boolean
+  - name: UserPreferencesPreviewCustomTheme
+    data_type: boolean
+  - name: UserPreferencesHasCelebrationBadge
+    data_type: boolean
+  - name: UserPreferencesUserDebugModePref
+    data_type: boolean
+  - name: UserPreferencesSRHOverrideActivities
+    data_type: boolean
+  - name: UserPreferencesNewLightningReportRunPageEnabled
+    data_type: boolean
+  - name: UserPreferencesReverseOpenActivitiesView
+    data_type: boolean
+  - name: UserPreferencesHasSentWarningEmail
+    data_type: boolean
+  - name: UserPreferencesHasSentWarningEmail238
+    data_type: boolean
+  - name: UserPreferencesHasSentWarningEmail240
+    data_type: boolean
+  - name: UserPreferencesNativeEmailClient
+    data_type: boolean
+  - name: UserPreferencesSendListEmailThroughExternalService
+    data_type: boolean
+  - name: UserPreferencesHideBrowseProductRedirectConfirmation
+    data_type: boolean
+  - name: UserPreferencesHideOnlineSalesAppWelcomeMat
+    data_type: boolean
+  - name: ContactId
+    data_type: string
+  - name: AccountId
+    data_type: string
+  - name: CallCenterId
+    data_type: string
+  - name: Extension
+    data_type: string
+  - name: PortalRole
+    data_type: string
+  - name: IsPortalEnabled
+    data_type: boolean
+  - name: FederationIdentifier
+    data_type: string
+  - name: AboutMe
+    data_type: string
+  - name: FullPhotoUrl
+    data_type: string
+  - name: SmallPhotoUrl
+    data_type: string
+  - name: IsExtIndicatorVisible
+    data_type: boolean
+  - name: OutOfOfficeMessage
+    data_type: string
+  - name: MediumPhotoUrl
+    data_type: string
+  - name: DigestFrequency
+    data_type: string
+  - name: DefaultGroupNotificationFrequency
+    data_type: string
+  - name: LastViewedDate
+    data_type: datetime
+  - name: LastReferencedDate
+    data_type: datetime
+  - name: BannerPhotoUrl
+    data_type: string
+  - name: SmallBannerPhotoUrl
+    data_type: string
+  - name: MediumBannerPhotoUrl
+    data_type: string
+  - name: IsProfilePhotoActive
+    data_type: boolean
+  - name: IndividualId
+    data_type: string
+  - name: User_ID_18_digit__c
+    data_type: string
+  - name: Krow__Krow_User__c
+    data_type: boolean
+  - name: User_ID_18_Digit_Old_Org__c
+    data_type: string
+  - name: Permissions__c
+    data_type: string
+  - name: Support_Portal_Access__c
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_SFDC
+table: CRMUser
