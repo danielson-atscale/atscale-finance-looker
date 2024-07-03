@@ -5,7 +5,7 @@ columns:
   - name: Id
     data_type: long
   - name: Date
-    data_type: date
+    data_type: string
   - name: Month
     data_type: string
   - name: Quarter
