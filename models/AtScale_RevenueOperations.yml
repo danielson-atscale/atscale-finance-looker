@@ -20,7 +20,7 @@ relationships:
     from:
       dataset: factOpportunity
       join_columns:
-        - Id
+        - OwnerId
     to:
       dimension: dimOwner
       level: dimOwner_Name
