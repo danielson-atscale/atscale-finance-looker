@@ -1,0 +1,30 @@
+unique_name: dimRevenueSchedule_State
+object_type: dimension
+label: State
+hierarchies:
+  - unique_name: dimRevenueSchedule_State_Hierarchy
+    label: dimRevenueSchedule_State_Hierarchy
+    levels:
+      - unique_name: dimRevenueSchedule_State_State
+  - unique_name: dimRevenueSchedule_State_Filtered
+    label: dimRevenueSchedule_State_Filtered
+    levels:
+      - unique_name: dimRevenueSchedule_State_ContractARR
+is_degenerate: true
+level_attributes:
+  - unique_name: dimRevenueSchedule_State_State
+    label: dimRevenueSchedule_State_State
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    key_columns:
+      - State
+    name_column: State
+  - unique_name: dimRevenueSchedule_State_ContractARR
+    label: dimRevenueSchedule_State_ContractARR
+    contains_unique_names: false
+    dataset: dimRevenueSchedule_dataset
+    is_unique_key: false
+    key_columns:
+      - StateForContractARR
+    name_column: StateForContractARR
+type: standard

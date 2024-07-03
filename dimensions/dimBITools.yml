@@ -1,0 +1,18 @@
+unique_name: dimBITools
+object_type: dimension
+label: BI Tools
+hierarchies:
+  - unique_name: factOpportunity_dimBITools_Hierarchy
+    label: BI Tools Hierarchy
+    levels:
+      - unique_name: factConsolidated_BITools_BITools
+is_degenerate: true
+level_attributes:
+  - unique_name: factConsolidated_BITools_BITools
+    label: BI Tools
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - BITools
+    name_column: BITools
+type: standard

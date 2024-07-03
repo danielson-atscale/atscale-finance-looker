@@ -1,0 +1,34 @@
+unique_name: AtScale_RevenueOperations
+object_type: model
+label: AtScale_RevenueOperations
+dimensions:
+  - factOpportunity_ForecastCategory
+  - dimHighestLevelBusinessContact
+  - dimOpportunity_Name
+  - dimCloudSpend
+  - dimCompetition
+  - dimBusinessUseCase
+  - dimPositiveBusinessOutcomes
+  - dimSuccessMetrics
+  - dimBITools
+  - dimPathToClose
+  - dimPOCEndDate
+  - dimLostReason
+metrics: []
+relationships:
+  - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - OwnerId
+    to:
+      dimension: dimOwner
+      level: dimOwner_Name
+  - unique_name: factOpportunity_AccountID_to_dimCrmAccount_dimCrmAccount_AccountName
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - AccountID
+    to:
+      dimension: dimCrmAccount
+      level: dimCrmAccount_AccountName
