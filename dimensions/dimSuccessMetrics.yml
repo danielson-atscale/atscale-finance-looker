@@ -1,0 +1,18 @@
+unique_name: dimSuccessMetrics
+object_type: dimension
+label: Success Metrics
+hierarchies:
+  - unique_name: dimSuccessMetrics_Hierarchy
+    label: Success Metrics Hierarchy
+    levels:
+      - unique_name: factOpportunity_SuccessMetrics_SuccessMetrics
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_SuccessMetrics_SuccessMetrics
+    label: factOpportunity_dimSuccessMetrics
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - SuccessMetrics
+    name_column: SuccessMetrics
+type: standard
