@@ -1,0 +1,11 @@
+unique_name: ContractARR
+object_type: metric_calc
+label: ContractARR
+expression: 
+  
+  ([factRevenueScheduleEntry_Postable].[factRevenueScheduleEntry_Postable_Hierarchy].[factRevenueScheduleEntry_Postable_Postable].&[TRUE],
+  [dimRevenueSchedule].[dimRevenueSchedule_State_Hierarchy].[dimRevenueSchedule_State_ContractARR].&[TRUE],
+  [Measures].[ContractARRDIV]
+  )
+format: '#,###.0;(#,###.0)'
+is_hidden: false

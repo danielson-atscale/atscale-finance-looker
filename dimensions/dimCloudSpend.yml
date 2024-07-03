@@ -1,0 +1,18 @@
+unique_name: dimCloudSpend
+object_type: dimension
+label: Cloud Spend
+hierarchies:
+  - unique_name: factOpportunity_dimCloudSpend_Hierarchy
+    label: Cloud Spend Hierarchy
+    levels:
+      - unique_name: factOpportunity_CloudSpend_CloudSpend
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_CloudSpend_CloudSpend
+    label: Cloud Spend
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - CloudSpend
+    name_column: CloudSpend
+type: standard

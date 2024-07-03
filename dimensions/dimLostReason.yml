@@ -1,0 +1,18 @@
+unique_name: dimLostReason
+object_type: dimension
+label: Lost Reason
+hierarchies:
+  - unique_name: factOpportunity_dimLostReon_Hierarchy
+    label: Lost Reason Hierarchy
+    levels:
+      - unique_name: factOpportunity_LostReason_LostReason
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_LostReason_LostReason
+    label: Lost Reason
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - LostReason
+    name_column: LostReason
+type: standard
