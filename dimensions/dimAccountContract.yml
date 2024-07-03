@@ -1,0 +1,18 @@
+unique_name: dimAccountContract
+object_type: dimension
+label: dimAccountContract
+hierarchies:
+  - unique_name: dimAccountContract_Hierarchy
+    label: dimAccountContract_Hierarchy
+    levels:
+      - unique_name: dimAccountContract_AccountToId
+level_attributes:
+  - unique_name: dimAccountContract_AccountToId
+    label: AccountToId
+    contains_unique_names: false
+    dataset: RelatedAccountContacts_dataset
+    is_unique_key: false
+    key_columns:
+      - AccountToId
+    name_column: AccountToId
+type: standard

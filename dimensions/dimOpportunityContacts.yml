@@ -1,0 +1,18 @@
+unique_name: dimOpportunityContacts
+object_type: dimension
+label: dimOpportunityContacts
+hierarchies:
+  - unique_name: OpportunityContacts_Hierarchy
+    label: OpportunityContacts_Hierarchy
+    levels:
+      - unique_name: dimOpportunityContacts_OpportunityId
+level_attributes:
+  - unique_name: dimOpportunityContacts_OpportunityId
+    label: OpportunityId
+    contains_unique_names: false
+    dataset: RelatedOpportunityContacts_dataset
+    is_unique_key: false
+    key_columns:
+      - OpportunityId
+    name_column: OpportunityId
+type: standard
