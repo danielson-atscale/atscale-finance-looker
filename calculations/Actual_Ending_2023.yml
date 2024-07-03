@@ -1,14 +1,11 @@
 unique_name: Actual_Ending_2023
 object_type: metric_calc
 label: Actual Ending 2023
-expression: |-
-  SUM(
-  PeriodsToDate(
-      [dimDate].[Date_Hierarchy].[dimDate_Century],
-      [dimDate].[Date_Hierarchy].[dimDate_Year].&[2023]
-  )
-
-  [Measures].[Actual_NonGAAP]
-  )
+expression: >-
+  ([dimDate].[Date_Hierarchy].[All],
+  [FactConsolidated_BudgetYearTransaction].[FactConsolidated_BudgetYearTransaction_Hierarchy].[FactConsolidated_BudgetYearTransaction_BudgetYearTransaction].&[FALSE],
+  [FactConsolidated_ScenarioID].[FactConsolidated_ScenarioID_Hierarchy].[FactConsolidated_ScenarioID_ScenarioID].&[Actual],
+  [FactConsolidated_BookID].[FactConsolidated_BookID_Filtered].[FactConsolidated_BookID_Budget_Actuals].&[TRUE],
+  [Measures].[m_FactConsolidated_Amount])/1000
 format: '#,###.0;(#,###.0)'
 is_hidden: false

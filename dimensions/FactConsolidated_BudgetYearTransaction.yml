@@ -1,0 +1,19 @@
+unique_name: FactConsolidated_BudgetYearTransaction
+object_type: dimension
+label: Budget Year Transaction
+hierarchies:
+  - unique_name: FactConsolidated_BudgetYearTransaction_Hierarchy
+    label: BudgetYearTransaction Hierarchy
+    levels:
+      - unique_name: FactConsolidated_BudgetYearTransaction_BudgetYearTransaction
+is_degenerate: true
+level_attributes:
+  - unique_name: FactConsolidated_BudgetYearTransaction_BudgetYearTransaction
+    label: BudgetYearTransaction
+    contains_unique_names: false
+    dataset: FactConsolidated
+    is_unique_key: false
+    key_columns:
+      - BudgetYearTransaction
+    name_column: BudgetYearTransaction
+type: standard
