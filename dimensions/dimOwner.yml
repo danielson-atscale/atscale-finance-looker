@@ -1,0 +1,18 @@
+unique_name: dimOwner
+object_type: dimension
+label: dimOwner
+hierarchies:
+  - unique_name: dimOwner_Hierarchy
+    label: dimOwner_Hierarchy
+    levels:
+      - unique_name: dimOwner_Name
+level_attributes:
+  - unique_name: dimOwner_Name
+    label: dimOwner_Name
+    contains_unique_names: false
+    dataset: CRMUser
+    is_unique_key: false
+    key_columns:
+      - Id
+    name_column: Name
+type: standard

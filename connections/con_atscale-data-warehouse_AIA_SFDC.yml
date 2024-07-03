@@ -1,0 +1,6 @@
+unique_name: con_atscale-data-warehouse_AIA_SFDC
+object_type: connection
+label: con_atscale-data-warehouse_AIA_SFDC
+as_connection: atscale-data-warehouse
+database: atscale-data-warehouse
+schema: AIA_SFDC

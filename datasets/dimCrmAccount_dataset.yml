@@ -1,0 +1,86 @@
+unique_name: dimCrmAccount_dataset
+object_type: dataset
+label: dimCrmAccount_dataset
+columns:
+  - name: AccountOwner
+    data_type: string
+  - name: AnnualRevenue
+    data_type: decimal(38,9)
+  - name: BillingPostalCode
+    data_type: string
+  - name: BillingCity
+    data_type: string
+  - name: BillingCountry
+    data_type: string
+  - name: BillingState
+    data_type: string
+  - name: BillingStreet
+    data_type: string
+  - name: CreatedBy
+    data_type: string
+  - name: CreatedDate
+    data_type: datetime
+  - name: Description
+    data_type: string
+  - name: Employees
+    data_type: long
+  - name: Id
+    data_type: string
+  - name: Industry
+    data_type: string
+  - name: Ispartner
+    data_type: boolean
+  - name: LastActivityDate
+    data_type: date
+  - name: Source
+    data_type: string
+  - name: Name
+    data_type: string
+  - name: ParentAccountId
+    data_type: string
+  - name: ParentAccount
+    data_type: string
+  - name: Phone
+    data_type: string
+  - name: RecordTypeId
+    data_type: string
+  - name: ShippingStreet
+    data_type: string
+  - name: ShippingCity
+    data_type: string
+  - name: ShippingState
+    data_type: string
+  - name: ShippingCountry
+    data_type: string
+  - name: ShippingPostalCode
+    data_type: string
+  - name: Website
+    data_type: string
+  - name: ContractId
+    data_type: string
+  - name: Type
+    data_type: string
+  - name: CustomerARR
+    data_type: decimal(38,9)
+  - name: CloudSpend
+    data_type: decimal(38,9)
+  - name: SalesEngineer
+    data_type: string
+  - name: BDR
+    data_type: string
+  - name: LastSupportBundleDate
+    data_type: date
+  - name: NextRenewalDate
+    data_type: date
+  - name: CustomerStage
+    data_type: string
+  - name: BITools
+    data_type: string
+  - name: DataPlatforms
+    data_type: string
+  - name: BusinessUseCase
+    data_type: string
+  - name: PathtoExpansion
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimCrmAccount
