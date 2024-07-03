@@ -19,5 +19,8 @@ columns:
   - name: Century
     data_type: string
     sql: IF(Date > '2000-01-01','21','20')
+  - name: DateTime
+    data_type: datetime
+    sql: cast(Date as datetime)
 connection_id: con_atscale-data-warehouse_AIA_MasterData
 table: dimDate
