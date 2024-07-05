@@ -1,7 +1,7 @@
 unique_name: Budget_Change
 object_type: metric_calc
 label: Budget_Change
-expression: |2-
+expression: |-
   SUM(
   PeriodsToDate(
     [dimDate].[Date_Hierarchy].[dimDate_Year],
@@ -9,4 +9,4 @@ expression: |2-
   )
   [Measures].[Budget])
 format: '#,###.0;(#,###.0)'
-is_hidden: false
+is_hidden: true
