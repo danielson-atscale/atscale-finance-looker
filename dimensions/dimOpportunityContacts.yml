@@ -5,6 +5,8 @@ hierarchies:
   - unique_name: OpportunityContacts_Hierarchy
     label: OpportunityContacts_Hierarchy
     levels:
+      - unique_name: dimOpportunityContacts_AccountFrom
+      - unique_name: dimOpportunityContacts_ContactName
       - unique_name: dimOpportunityContacts_OpprtunityId
 level_attributes:
   - unique_name: dimOpportunityContacts_OpprtunityId
@@ -15,4 +17,20 @@ level_attributes:
     key_columns:
       - OpportunityId
     name_column: OpportunityId
+  - unique_name: dimOpportunityContacts_ContactName
+    label: ContactName
+    contains_unique_names: false
+    dataset: RelatedOpportunityContacts_dataset
+    is_unique_key: false
+    key_columns:
+      - ContactName
+    name_column: ContactName
+  - unique_name: dimOpportunityContacts_AccountFrom
+    label: AccountFrom
+    contains_unique_names: false
+    dataset: RelatedOpportunityContacts_dataset
+    is_unique_key: false
+    key_columns:
+      - AccountFrom
+    name_column: AccountFrom
 type: standard
