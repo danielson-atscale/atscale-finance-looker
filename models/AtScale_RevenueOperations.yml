@@ -56,20 +56,21 @@ relationships:
     to:
       dimension: dimDate
       level: dimDate_Date
-  - unique_name: factOpportunity_Id_to_dimAccountContract_dimAccountContract_AccountToId
+  - unique_name: >-
+      factOpportunity_AccountID_to_dimAccountContact_dimAccountContact_RelationshipId
     from:
       dataset: factOpportunity
       join_columns:
-        - Id
+        - AccountID
     to:
-      dimension: dimAccountContract
-      level: dimAccountContract_AccountToId
+      dimension: dimAccountContact
+      level: dimAccountContact_RelationshipId
   - unique_name: >-
-      factOpportunity_AccountID_to_dimOpportunityContacts_dimOpportunityContacts_OpportunityId
+      factOpportunity_AccountID_to_dimOpportunityContacts_dimOpportunityContacts_RelationshipId
     from:
       dataset: factOpportunity
       join_columns:
         - AccountID
     to:
       dimension: dimOpportunityContacts
-      level: dimOpportunityContacts_OpportunityId
+      level: dimOpportunityContacts_RelationshipId
