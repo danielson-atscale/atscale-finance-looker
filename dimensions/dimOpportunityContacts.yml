@@ -13,6 +13,6 @@ level_attributes:
     dataset: RelatedOpportunityContacts_dataset
     is_unique_key: false
     key_columns:
-      - OpportunityId
-    name_column: OpportunityId
+      - RelationshipId
+    name_column: RelationshipId
 type: standard
