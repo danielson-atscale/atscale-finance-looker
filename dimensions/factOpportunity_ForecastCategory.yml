@@ -1,0 +1,19 @@
+unique_name: factOpportunity_ForecastCategory
+object_type: dimension
+label: ForecastCategory
+hierarchies:
+  - unique_name: factOpportunity_dimForecastCategory_Hierarchy
+    label: ForecastCategory Hierarchy
+    levels:
+      - unique_name: factOpportunity_ForecastCategory_ForecastCategory
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_ForecastCategory_ForecastCategory
+    label: ForecastCategory
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - ForecastCategory
+    name_column: ForecastCategory
+    sort_column: empty_value
+type: standard

@@ -1,0 +1,6 @@
+unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
+object_type: metric
+label: Contract Duration Years
+calculation_method: maximum
+column: ContractDurationYears
+dataset: factRevenueScheduleEntry

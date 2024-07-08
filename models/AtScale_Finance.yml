@@ -5,6 +5,10 @@ dimensions:
   - FactConsolidated_ScenarioID
   - FactConsolidated_BookID
   - FactConsolidated_VersionID
+  - FactConsolidated_Source
+  - FactReceivables_Source
+  - factRevenueScheduleEntry_Postable
+  - FactConsolidated_BudgetYearTransaction
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -24,6 +28,22 @@ metrics:
   - unique_name: Forecast_Ending_DS
   - unique_name: Actual+Forecast_Ending_BC
   - unique_name: Actual+Forecast_Ending_DS
+  - unique_name: ARR.Total.Cash.Received
+  - unique_name: AR.Total.Cash.Received
+  - unique_name: Total.Scheduled.Invoices
+  - unique_name: Total.Invoiced
+  - unique_name: Total.AR.Adjustments
+  - unique_name: Actual_Ending_2023
+  - unique_name: m_factRevenueScheduleEntry_Amount_sum
+  - unique_name: ContractARR
+  - unique_name: m_ContractLength
+  - unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
+  - unique_name: ContractARRDIV
+  - unique_name: ExpectedRenewalARR
+  - unique_name: RenewalDIV
+  - unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
+  - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+  - unique_name: Budget_Change
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
@@ -88,7 +108,7 @@ relationships:
         - InvoiceID
     to:
       dimension: dimInvoice
-      level: dimInvoice_dimension Level
+      level: dimInvoice_Recordno
   - unique_name: factReceivables_TransactionDate_to_dimDate_dimDate_Date
     from:
       dataset: factReceivables
@@ -120,4 +140,31 @@ relationships:
         - Schedulekey
     to:
       dimension: dimRevenueSchedule
-      level: Recordno
+      level: dimRevenueSchedule_Recordno
+  - unique_name: >-
+      dimRevenueSchedule_dataset_Recordno_to_dimRevenueSchedule_dimRevenueSchedule_Recordno
+    from:
+      dataset: dimRevenueSchedule_dataset
+      join_columns:
+        - Recordno
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_Recordno
+  - unique_name: >-
+      dimRevenueSchedule_dataset_StateForContractARR_to_dimRevenueSchedule_dimRevenueSchedule_State_ContractARR
+    from:
+      dataset: dimRevenueSchedule_dataset
+      join_columns:
+        - StateForContractARR
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_State_ContractARR
+  - unique_name: >-
+      factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_dimRevenueSchedule_State_Recordno
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Schedulekey
+    to:
+      dimension: dimRevenueSchedule
+      level: dimRevenueSchedule_State_Recordno
