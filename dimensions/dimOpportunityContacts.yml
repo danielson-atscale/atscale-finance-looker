@@ -6,9 +6,9 @@ hierarchies:
     label: OpportunityContacts_Hierarchy
     levels:
       - unique_name: dimOpportunityContacts_AccountFrom
+      - unique_name: dimOpportunityContacts_ContactRole
       - unique_name: dimOpportunityContacts_ContactName
       - unique_name: dimOpportunityContacts_OpprtunityId
-      - unique_name: dimOpportunityContacts_ContactRole
 level_attributes:
   - unique_name: dimOpportunityContacts_OpprtunityId
     label: OpprtunityId
