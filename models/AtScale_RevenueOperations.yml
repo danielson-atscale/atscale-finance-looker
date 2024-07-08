@@ -70,7 +70,7 @@ relationships:
     from:
       dataset: factOpportunity
       join_columns:
-        - AccountID
+        - Id
     to:
       dimension: dimOpportunityContacts
       level: dimOpportunityContacts_RelationshipId
