@@ -73,7 +73,7 @@ hierarchies:
       - unique_name: dimDate_Date
         secondary_attributes:
           - unique_name: dimDate_Date_DateTime
-            label: dimDate_Date_DateTime
+            label: Date
             contains_unique_names: false
             dataset: dimDate_dataset
             is_hidden: true
@@ -96,10 +96,9 @@ hierarchies:
       - unique_name: dimDate_CloseDate_Date
         secondary_attributes:
           - unique_name: dimDate_CloseDate_DateTime
-            label: dimDate_CloseDate_DateTime
+            label: Close Date
             contains_unique_names: false
             dataset: dimDate_dataset
-            is_hidden: true
             is_unique_key: false
             key_columns:
               - DateTime
@@ -119,10 +118,9 @@ hierarchies:
       - unique_name: dimDate_POCStartDate_Date
         secondary_attributes:
           - unique_name: dimDate_POCStartDate_DateTime
-            label: dimDate_POCStartDate_DateTime
+            label: POC Start Date
             contains_unique_names: false
             dataset: dimDate_dataset
-            is_hidden: true
             is_unique_key: false
             key_columns:
               - DateTime
@@ -160,11 +158,11 @@ level_attributes:
     label: Date
     contains_unique_names: false
     dataset: dimDate_dataset
+    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
     name_column: Id
-    sort_column: empty_value
   - unique_name: dimDate_CloseDate_Year
     label: Year
     contains_unique_names: false
@@ -231,11 +229,11 @@ level_attributes:
     label: Date
     contains_unique_names: false
     dataset: dimDate_dataset
+    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
     name_column: Id
-    sort_column: empty_value
   - unique_name: dimDate_Century
     label: Century
     contains_unique_names: false
