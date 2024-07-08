@@ -5,10 +5,10 @@ hierarchies:
   - unique_name: OpportunityContacts_Hierarchy
     label: OpportunityContacts_Hierarchy
     levels:
-      - unique_name: dimOpportunityContacts_OpportunityId
+      - unique_name: dimOpportunityContacts_OpprtunityId
 level_attributes:
-  - unique_name: dimOpportunityContacts_OpportunityId
-    label: OpportunityId
+  - unique_name: dimOpportunityContacts_OpprtunityId
+    label: OpprtunityId
     contains_unique_names: false
     dataset: RelatedOpportunityContacts_dataset
     is_unique_key: false

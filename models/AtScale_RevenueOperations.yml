@@ -4,7 +4,7 @@ label: AtScale_RevenueOperations
 dimensions:
   - factOpportunity_ForecastCategory
   - dimHighestLevelBusinessContact
-  - dimOpportunity_Name
+  - factOpportunity_OpportunityName
   - dimCloudSpend
   - dimCompetition
   - dimBusinessUseCase
@@ -57,15 +57,6 @@ relationships:
       dimension: dimDate
       level: dimDate_Date
   - unique_name: >-
-      factOpportunity_AccountID_to_dimOpportunityContacts_dimOpportunityContacts_RelationshipId
-    from:
-      dataset: factOpportunity
-      join_columns:
-        - Id
-    to:
-      dimension: dimOpportunityContacts
-      level: dimOpportunityContacts_OpportunityId
-  - unique_name: >-
       factOpportunity_AccountID_to_dimAccountContact_dimAccountContact_AccountToId
     from:
       dataset: factOpportunity
@@ -74,3 +65,12 @@ relationships:
     to:
       dimension: dimAccountContact
       level: dimAccountContact_AccountToId
+  - unique_name: >-
+      factOpportunity_Id_to_dimOpportunityContacts_dimOpportunityContacts_OpprtunityId
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - Id
+    to:
+      dimension: dimOpportunityContacts
+      level: dimOpportunityContacts_OpprtunityId
