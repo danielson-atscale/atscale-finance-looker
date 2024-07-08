@@ -61,7 +61,7 @@ relationships:
     from:
       dataset: factOpportunity
       join_columns:
-        - AccountID
+        - Id
     to:
       dimension: dimAccountContact
       level: dimAccountContact_RelationshipId
