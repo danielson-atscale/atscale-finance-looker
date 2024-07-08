@@ -5,14 +5,14 @@ hierarchies:
   - unique_name: dimAccountCotact_Hierarchy
     label: dimAccountContact_Hierarchy
     levels:
-      - unique_name: dimAccountContact_RelationshipId
+      - unique_name: dimAccountContact_AccountToId
 level_attributes:
-  - unique_name: dimAccountContact_RelationshipId
-    label: RelationshipId
+  - unique_name: dimAccountContact_AccountToId
+    label: AccountToId
     contains_unique_names: false
     dataset: RelatedAccountContacts_dataset
     is_unique_key: false
     key_columns:
-      - RelationshipId
-    name_column: RelationshipId
+      - AccountToId
+    name_column: AccountToId
 type: standard
