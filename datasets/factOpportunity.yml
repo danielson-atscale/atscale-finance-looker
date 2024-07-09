@@ -101,7 +101,10 @@ columns:
   - name: ExpectedRenewalARR
     data_type: boolean
     sql: >-
-       IF(IsClosed IN("False), TRUE, FALSE)
+       (IF(IsClosed IN("False")
+       AND StageName IN("6-Closed Lost"))
+       THEN [Measures].[Prob]
+       )
 
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
