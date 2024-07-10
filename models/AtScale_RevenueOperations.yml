@@ -32,3 +32,27 @@ relationships:
     to:
       dimension: dimCrmAccount
       level: dimCrmAccount_AccountName
+  - unique_name: factOpportunity_CloseDate_to_dimDate_dimDate_CloseDate_Date
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - CloseDate
+    to:
+      dimension: dimDate
+      level: dimDate_CloseDate_Date
+  - unique_name: factOpportunity_POCStartDate_to_dimDate_dimDate_POCStartDate_Date
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - POCStartDate
+    to:
+      dimension: dimDate
+      level: dimDate_POCStartDate_Date
+  - unique_name: factOpportunity_POCStartDate_to_dimDate_dimDate_Date
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - POCStartDate
+    to:
+      dimension: dimDate
+      level: dimDate_Date
