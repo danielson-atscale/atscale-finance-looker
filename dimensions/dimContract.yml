@@ -5,6 +5,7 @@ hierarchies:
   - unique_name: dimContract_Hierarchy
     label: dimContract Hierarchy
     levels:
+      - unique_name: dimContract_State
       - unique_name: dimContract_Recordno
 level_attributes:
   - unique_name: dimContract_Recordno
@@ -20,6 +21,14 @@ level_attributes:
       - Recordno
     name_column: Contractid
     sort_column: empty_value
+  - unique_name: dimContract_State
+    label: State
+    contains_unique_names: false
+    dataset: dimContract_dataset
+    is_unique_key: false
+    key_columns:
+      - State
+    name_column: State
 relationships:
   - unique_name: dimContract_dataset_Enddate_to_dimDate_dimDate_Date
     from:
