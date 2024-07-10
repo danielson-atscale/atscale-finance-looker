@@ -1,0 +1,12 @@
+unique_name: Budget_Change
+object_type: metric_calc
+label: Budget_Change
+expression: |2-
+  SUM(
+  PeriodsToDate(
+    [dimDate].[Date_Hierarchy].[dimDate_Year],
+    [dimDate].[Date_Hierarchy].CurrentMember.LastChild
+  )
+  [Measures].[Budget])
+format: '#,###.0;(#,###.0)'
+is_hidden: false

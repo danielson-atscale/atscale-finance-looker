@@ -1,0 +1,5 @@
+unique_name: Prob
+object_type: metric_calc
+label: Prob
+expression: '[Measures].[m_factOpportunity_RenewalProbability_sum] / 100'
+is_hidden: false
