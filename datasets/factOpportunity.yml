@@ -107,12 +107,12 @@ columns:
   - name: POCStatus(Translated)
     data_type: decimal(38,9)
     sql: >-
-       IF(POCStatus = "N/A - POC Not Needed" "POC Not Needed" , 
-       IF(POCStartDate = True AND WonLostOpen = "Open", "Pre-POC", 
-       IF(POCStartDate = True AND WonLostOpen = "Lost", "No POC",
-       IF(POCStartDate = False AND POCEndDate = True AND WonLostOpen = "Open", "POC In Progress",
-       IF(POCSartDate = False AND POCEndDate = False AND WonLostOpen = "Open", "POC Complete",
-       IF(POCStartDate = False AND POCEndDate -= False AND WonLostOpen = "Lost", "Lost POC",
-       IF(POCStartDate = False AND WonLostOpen = "Lost", "Lost POC, NULL)))))))
+       IF(POCStatus IN('N/A - POC Not Needed', 'POC Not Needed') AND RecordType IN('Renewal', 'POC Not Needed') AND POCStatus IN('N/C - POC Stopped', 'POC Stopped'),
+       IF(ISNULL (POCStartDate = True, AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "Pre-POC"), 
+       IF(ISNULL (POCStartDate = True, AND Stage = "6-Closed Lost", "No POC"),
+       IF(ISNULL (POCStartDate = False, AND POCEndDate = True AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "POC In Progress"),
+       IF(ISNULL (POCSartDate = False, AND POCEndDate = False AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "POC Complete"),
+       IF(ISNULL (POCStartDate = False, AND POCEndDate -= False AND Stage = "6-Closed Lost", "Lost POC"),
+       IF(ISNULL (POCStartDate = False, AND Stage = "6-Closed Lost", "Lost POC), NULL)))))))       
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
