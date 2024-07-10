@@ -225,14 +225,6 @@ level_attributes:
       - Date
     name_column: Id
     sort_column: empty_value
-  - unique_name: dimDate_Century
-    label: Century
-    contains_unique_names: false
-    dataset: dimDate_dataset
-    is_unique_key: false
-    key_columns:
-      - Century
-    name_column: Century
   - unique_name: dimDate_CloseDate_Century
     label: Century
     contains_unique_names: false
