@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_RenewalProbability_sum
+object_type: metric
+label: Prob
+calculation_method: sum
+column: RenewalProbability
+dataset: factOpportunity
