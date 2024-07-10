@@ -19,4 +19,16 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Contractid
+relationships:
+  - unique_name: dimContract_dataset_Enddate_to_dimDate_dimDate_Date
+    from:
+      dataset: dimContract_dataset
+      hierarchy: dimContract_Hierarchy
+      join_columns:
+        - Enddate
+      level: dimContract_Recordno
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+    type: embedded
 type: standard
