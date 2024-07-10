@@ -72,15 +72,15 @@ hierarchies:
         time_unit: month
       - unique_name: dimDate_Date
         secondary_attributes:
-          - unique_name: dimDate_DateTime
+          - unique_name: dimDate_Date_DateTime
             label: Date
             contains_unique_names: false
             dataset: dimDate_dataset
+            is_hidden: true
             is_unique_key: false
             key_columns:
               - DateTime
             name_column: DateTime
-            sort_column: empty_value
         time_unit: day
 level_attributes:
   - unique_name: dimDate_Century
@@ -91,6 +91,7 @@ level_attributes:
     key_columns:
       - Century
     name_column: Century
+    sort_column: empty_value
   - unique_name: dimDate_Year
     label: Year
     contains_unique_names: false
@@ -122,9 +123,25 @@ level_attributes:
     label: Date
     contains_unique_names: false
     dataset: dimDate_dataset
-    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
-    name_column: DateTime
+    name_column: Id
+    sort_column: empty_value
+  - unique_name: dimDate_CloseDate_Century
+    label: Century
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_unique_key: false
+    key_columns:
+      - Century
+    name_column: Century
+  - unique_name: dimDate_POCStartDate_Century
+    label: Century
+    contains_unique_names: false
+    dataset: dimDate_dataset
+    is_unique_key: false
+    key_columns:
+      - Century
+    name_column: Century
 type: time

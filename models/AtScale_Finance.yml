@@ -8,6 +8,7 @@ dimensions:
   - FactConsolidated_Source
   - FactReceivables_Source
   - factRevenueScheduleEntry_Postable
+  - FactConsolidated_BudgetYearTransaction
 metrics:
   - unique_name: m_FactConsolidated_Amount
   - unique_name: Actual_NonGAAP
@@ -42,6 +43,7 @@ metrics:
   - unique_name: RenewalDIV
   - unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
   - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+  - unique_name: Budget_Change
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

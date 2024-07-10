@@ -4,7 +4,7 @@ label: AtScale_RevenueOperations
 dimensions:
   - factOpportunity_ForecastCategory
   - dimHighestLevelBusinessContact
-  - dimOpportunity_Name
+  - factOpportunity_OpportunityName
   - dimCloudSpend
   - dimCompetition
   - dimBusinessUseCase
@@ -14,7 +14,10 @@ dimensions:
   - dimPathToClose
   - dimPOCEndDate
   - dimLostReason
-metrics: []
+  - factOpportunity_ExpectedRenewalARR
+metrics:
+  - unique_name: m_factOpportunity_RenewalProbability_sum
+  - unique_name: Prob
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
@@ -32,3 +35,39 @@ relationships:
     to:
       dimension: dimCrmAccount
       level: dimCrmAccount_AccountName
+  - unique_name: >-
+      factOpportunity_AccountID_to_dimAccountContact_dimAccountContact_AccountToId
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - AccountID
+    to:
+      dimension: dimAccountContact
+      level: dimAccountContact_AccountToId
+  - unique_name: >-
+      factOpportunity_Id_to_dimOpportunityContacts_dimOpportunityContacts_OpprtunityId
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - Id
+    to:
+      dimension: dimOpportunityContacts
+      level: dimOpportunityContacts_OpprtunityId
+  - unique_name: factOpportunity_CloseDate_to_dimDate_dimDate_Date
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - CloseDate
+    role_play: CloseDate {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+  - unique_name: factOpportunity_POCStartDate_to_dimDate_dimDate_Date
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - POCStartDate
+    role_play: POCStartDate {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
