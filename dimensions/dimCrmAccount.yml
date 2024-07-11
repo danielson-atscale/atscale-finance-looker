@@ -75,7 +75,7 @@ level_attributes:
       - RecordTypeId
     name_column: RecordTypeId
 relationships:
-  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps_dimAccountNextSteps_Id
+  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps_dimAccountNextSteps_Account__c
     from:
       dataset: dimCrmAccount_dataset
       hierarchy: dimCrmAccount_Hierarchy
@@ -84,6 +84,6 @@ relationships:
       level: dimCrmAccount_AccountName
     to:
       dimension: dimAccountNextSteps
-      level: dimAccountNextSteps_Id
+      level: dimAccountNextSteps_Account__c
     type: embedded
 type: standard

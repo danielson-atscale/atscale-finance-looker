@@ -81,11 +81,3 @@ relationships:
     to:
       dimension: dimOpportunityNextStep
       level: dimOpportunityNextStep_Opportunity_c
-  - unique_name: factOpportunity_Id_to_dimAccountNextSteps_dimAccountNextSteps_Id
-    from:
-      dataset: factOpportunity
-      join_columns:
-        - AccountID
-    to:
-      dimension: dimAccountNextSteps
-      level: dimAccountNextSteps_Id
