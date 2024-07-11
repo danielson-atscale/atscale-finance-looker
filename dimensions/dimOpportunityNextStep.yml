@@ -1,0 +1,18 @@
+unique_name: dimOpportunityNextStep
+object_type: dimension
+label: dimOpportunityNextStep
+hierarchies:
+  - unique_name: dimOpportunityNextStep_Hierarchy
+    label: dimOpportunityNextStep Hierarchy
+    levels:
+      - unique_name: dimOpportunityNextStep_Opportunity_c
+level_attributes:
+  - unique_name: dimOpportunityNextStep_Opportunity_c
+    label: Opportunity_c
+    contains_unique_names: false
+    dataset: dimOpportunityNextStep_dataset
+    is_unique_key: false
+    key_columns:
+      - Opportunity__c
+    name_column: Opportunity__c
+type: standard
