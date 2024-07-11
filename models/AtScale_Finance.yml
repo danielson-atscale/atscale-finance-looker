@@ -44,6 +44,7 @@ metrics:
   - unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
   - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
   - unique_name: Budget_Change
+  - unique_name: m_factRevenueScheduleEntry_ContractARRSum
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
