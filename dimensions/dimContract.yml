@@ -20,7 +20,6 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Contractid
-    sort_column: empty_value
   - unique_name: dimContract_Status
     label: Status
     contains_unique_names: false
@@ -29,6 +28,7 @@ level_attributes:
     key_columns:
       - Status
     name_column: Status
+    sort_column: empty_value
 relationships:
   - unique_name: dimContract_dataset_Enddate_to_dimDate_dimDate_Date
     from:
