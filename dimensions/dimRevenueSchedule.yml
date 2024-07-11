@@ -82,7 +82,7 @@ level_attributes:
     name_column: Renewal_Probability__c
     sort_column: empty_value
 relationships:
-  - unique_name: dimRevenueSchedule_dataset_Contractkey_to_dimContract_dimContract_Recordno
+  - unique_name: dimRevenueSchedule_dataset_Contractkey_to_dimContract_dimContract_Contractid
     from:
       dataset: dimRevenueSchedule_dataset
       hierarchy: RevenueSchedule_Hierarchy
@@ -91,6 +91,6 @@ relationships:
       level: dimRevenueSchedule_Recordno
     to:
       dimension: dimContract
-      level: dimContract_Recordno
+      level: dimContract_Contractid
     type: embedded
 type: standard

@@ -93,14 +93,14 @@ relationships:
     to:
       dimension: dimCustomer
       level: dimCustomer_glInternalID
-  - unique_name: FactConsolidated_ContractID_to_dimContract_dimContract_Recordno
+  - unique_name: FactConsolidated_ContractID_to_dimContract_dimContract_Contractid
     from:
       dataset: FactConsolidated
       join_columns:
         - ContractID
     to:
       dimension: dimContract
-      level: dimContract_Recordno
+      level: dimContract_Contractid
   - unique_name: factReceivables_InvoiceID_to_dimInvoice_dimInvoice_dimension Level
     from:
       dataset: factReceivables
@@ -125,14 +125,14 @@ relationships:
     to:
       dimension: dimCustomer
       level: dimCustomer_glInternalID
-  - unique_name: factReceivables_ContractID_to_dimContract_dimContract_Recordno
+  - unique_name: factReceivables_ContractID_to_dimContract_dimContract_Contractid
     from:
       dataset: factReceivables
       join_columns:
         - ContractID
     to:
       dimension: dimContract
-      level: dimContract_Recordno
+      level: dimContract_Contractid
   - unique_name: factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_Recordno
     from:
       dataset: factRevenueScheduleEntry
