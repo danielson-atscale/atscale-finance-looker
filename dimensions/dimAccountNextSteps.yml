@@ -5,14 +5,14 @@ hierarchies:
   - unique_name: dimAccountNextSteps_Hierarchy
     label: dimAccountNextSteps Hierarchy
     levels:
-      - unique_name: dimAccountNextSteps_Accout_c
+      - unique_name: dimAccountNextSteps_Id
 level_attributes:
-  - unique_name: dimAccountNextSteps_Accout_c
-    label: Account_c
+  - unique_name: dimAccountNextSteps_Id
+    label: Id
     contains_unique_names: false
     dataset: dimAccountNextSteps_dataset
     is_unique_key: false
     key_columns:
-      - Account__c
-    name_column: Account__c
+      - Id
+    name_column: Id
 type: standard
