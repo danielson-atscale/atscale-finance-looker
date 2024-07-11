@@ -5,14 +5,23 @@ hierarchies:
   - unique_name: dimOpportunityNextStep_Hierarchy
     label: dimOpportunityNextStep Hierarchy
     levels:
-      - unique_name: dimOpportunityNextStep_Opportunity_c
+      - unique_name: dimOpportunityNextStep_OwnerId
+      - unique_name: dimOpportunityNextStep_Id
 level_attributes:
-  - unique_name: dimOpportunityNextStep_Opportunity_c
-    label: Opportunity_c
+  - unique_name: dimOpportunityNextStep_Id
+    label: Id
     contains_unique_names: false
     dataset: dimOpportunityNextStep_dataset
     is_unique_key: false
     key_columns:
-      - Opportunity__c
-    name_column: Opportunity__c
+      - Id
+    name_column: Id
+  - unique_name: dimOpportunityNextStep_OwnerId
+    label: OwnerId
+    contains_unique_names: false
+    dataset: dimOpportunityNextStep_dataset
+    is_unique_key: false
+    key_columns:
+      - OwnerId
+    name_column: OwnerId
 type: standard
