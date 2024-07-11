@@ -1,0 +1,18 @@
+unique_name: dimAccountNextSteps
+object_type: dimension
+label: dimAccountNextSteps
+hierarchies:
+  - unique_name: dimAccountNextSteps_Hierarchy
+    label: dimAccountNextSteps Hierarchy
+    levels:
+      - unique_name: dimAccountNextSteps_Id
+level_attributes:
+  - unique_name: dimAccountNextSteps_Id
+    label: Id
+    contains_unique_names: false
+    dataset: dimAccountNextSteps_dataset
+    is_unique_key: false
+    key_columns:
+      - Id
+    name_column: Id
+type: standard
