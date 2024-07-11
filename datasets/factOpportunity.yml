@@ -105,14 +105,16 @@ columns:
        IF(IsWon = True AND NetNewARR >=0, RenewalProbability*ExpiringARR, 
        IF(IsWon = True AND NetNewARR < 0, RenewalProbability*OpportunityARR, NULL)))  
   - name: POCStatus(Translated)
-    data_type: decimal(38,9)
+    data_type: string
     sql: >-
-       IF(POCStatus IN('N/A - POC Not Needed', 'POC Not Needed') AND RecordType IN('Renewal', 'POC Not Needed') AND POCStatus IN('N/C - POC Stopped', 'POC Stopped'),
-       IF(ISNULL (POCStartDate = True, AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "Pre-POC"), 
-       IF(ISNULL (POCStartDate = True, AND Stage = "6-Closed Lost", "No POC"),
-       IF(ISNULL (POCStartDate = False, AND POCEndDate = True AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "POC In Progress"),
-       IF(ISNULL (POCSartDate = False, AND POCEndDate = False AND Stage <> "5-Closed Won" AND Stage <> "6-Closed Lost", "POC Complete"),
-       IF(ISNULL (POCStartDate = False, AND POCEndDate -= False AND Stage = "6-Closed Lost", "Lost POC"),
-       IF(ISNULL (POCStartDate = False, AND Stage = "6-Closed Lost", "Lost POC), NULL)))))))       
+       IF(POCStatus = 'N/A - POC Not Needed', 'POC Not Needed',
+       IF(RecordType = 'Renewal', 'POC Not Needed',
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NULL, 'Pre-POC', 
+       IF(Stage = '6-Closed Lost' AND POCStartDate IS NULL, 'No POC',
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NULL, 'POC In Progress',
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'POC Complete',
+       IF(Stage = '5-Closed Won' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'Won POC',
+       IF(Stage = '6-Closed Lost' AND POCStartDate IS NOT NULL, 'Lost POC', 'No POC'))))))))
+
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
