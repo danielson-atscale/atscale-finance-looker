@@ -72,15 +72,6 @@ relationships:
     to:
       dimension: dimDate
       level: dimDate_Date
-  - unique_name: >-
-      factOpportunity_Id_to_dimOpportunityNextStep_dimOpportunityNextStep_Id
-    from:
-      dataset: factOpportunity
-      join_columns:
-        - Id
-    to:
-      dimension: dimOpportunityNextStep
-      level: dimOpportunityNextStep_Id
   - unique_name: factOpportunity_Id_to_dimAccountNextSteps_dimAccountNextSteps_Accout_c
     from:
       dataset: factOpportunity
