@@ -7,8 +7,8 @@ hierarchies:
     levels:
       - unique_name: dimRevenueSchedule_Contractkey
         secondary_attributes:
-          - unique_name: dimRevenueSchedule_Id
-            label: Id
+          - unique_name: dimRevenueSchedule_RenewalOppId
+            label: RenewalOppId
             contains_unique_names: false
             dataset: dimRevenueSchedule_dataset
             is_unique_key: false
