@@ -74,4 +74,16 @@ level_attributes:
     key_columns:
       - RecordTypeId
     name_column: RecordTypeId
+relationships:
+  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps_dimAccountNextSteps_Id
+    from:
+      dataset: dimCrmAccount_dataset
+      hierarchy: dimCrmAccount_Hierarchy
+      join_columns:
+        - Id
+      level: dimCrmAccount_AccountName
+    to:
+      dimension: dimAccountNextSteps
+      level: dimAccountNextSteps_Id
+    type: embedded
 type: standard
