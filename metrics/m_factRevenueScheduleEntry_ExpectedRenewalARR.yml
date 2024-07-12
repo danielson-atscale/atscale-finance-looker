@@ -4,3 +4,4 @@ label: Expected Renewal ARR
 calculation_method: sum
 column: ExpectedRenewalARR
 dataset: factRevenueScheduleEntry
+is_hidden: true
