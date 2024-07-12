@@ -15,6 +15,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Customername
+            sort_column: empty_value
           - unique_name: dimInvoice_WhenPosted
             label: WhenPosted
             contains_unique_names: false
@@ -23,6 +24,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whenposted
+            sort_column: empty_value
           - unique_name: dimInvoice_WhenDue
             label: WhenDue
             contains_unique_names: false
@@ -31,6 +33,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whendue
+            sort_column: empty_value
           - unique_name: dimInvoice_WhenPaid
             label: WhenPaid
             contains_unique_names: false
@@ -39,6 +42,7 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whenpaid
+            sort_column: empty_value
           - unique_name: dimInvoice_RecordID
             label: RecordID
             contains_unique_names: false
@@ -47,6 +51,16 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Recordid
+            sort_column: empty_value
+          - unique_name: dimInvoice_Totaldue
+            label: Totaldue
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Totaldue
+            name_column: Totaldue
+            sort_column: empty_value
 level_attributes:
   - unique_name: dimInvoice_Recordno
     label: Recordno
@@ -56,4 +70,5 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
+    sort_column: empty_value
 type: standard

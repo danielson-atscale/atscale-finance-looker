@@ -15,6 +15,7 @@ dimensions:
   - dimPOCEndDate
   - dimLostReason
   - factOpportunity_ExpectedRenewalARR
+  - factOpportunity_POCStatus(Translated)
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
@@ -71,3 +72,12 @@ relationships:
     to:
       dimension: dimDate
       level: dimDate_Date
+  - unique_name: >-
+      factOpportunity_Id_to_dimOpportunityNextStep_dimOpportunityNextStep_Opportunity_c
+    from:
+      dataset: factOpportunity
+      join_columns:
+        - Id
+    to:
+      dimension: dimOpportunityNextStep
+      level: dimOpportunityNextStep_Opportunity_c

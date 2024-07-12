@@ -1,0 +1,6 @@
+unique_name: m_factRevenueScheduleEntry_ContractARRSum
+object_type: metric
+label: m_factRevenueScheduleEntry_ContractARRSum
+calculation_method: sum
+column: ContractARRDIV2
+dataset: factRevenueScheduleEntry

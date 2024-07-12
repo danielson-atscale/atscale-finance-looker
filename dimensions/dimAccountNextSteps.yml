@@ -1,0 +1,28 @@
+unique_name: dimAccountNextSteps
+object_type: dimension
+label: dimAccountNextSteps
+hierarchies:
+  - unique_name: dimAccountNextSteps_Hierarchy
+    label: dimAccountNextSteps Hierarchy
+    levels:
+      - unique_name: dimAccountNextSteps_Account__c
+        secondary_attributes:
+          - unique_name: dimAccountNextSteps_Next_Step__c
+            label: Next_Step__c
+            contains_unique_names: false
+            dataset: dimAccountNextSteps_dataset
+            is_unique_key: false
+            key_columns:
+              - Next_Step__c
+            name_column: Next_Step__c
+level_attributes:
+  - unique_name: dimAccountNextSteps_Account__c
+    label: Account__c
+    contains_unique_names: false
+    dataset: dimAccountNextSteps_dataset
+    is_unique_key: false
+    key_columns:
+      - Account__c
+    name_column: Account__c
+    sort_column: empty_value
+type: standard

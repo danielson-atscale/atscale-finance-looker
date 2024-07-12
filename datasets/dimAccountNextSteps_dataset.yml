@@ -1,0 +1,32 @@
+unique_name: dimAccountNextSteps_dataset
+object_type: dataset
+label: dimAccountNextSteps_dataset
+columns:
+  - name: Id
+    data_type: string
+  - name: OwnerId
+    data_type: string
+  - name: IsDeleted
+    data_type: boolean
+  - name: Name
+    data_type: string
+  - name: CreatedDate
+    data_type: datetime
+  - name: CreatedById
+    data_type: string
+  - name: LastModifiedDate
+    data_type: datetime
+  - name: LastModifiedById
+    data_type: string
+  - name: SystemModstamp
+    data_type: datetime
+  - name: LastViewedDate
+    data_type: datetime
+  - name: LastReferencedDate
+    data_type: datetime
+  - name: Next_Step__c
+    data_type: string
+  - name: Account__c
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_SFDC
+table: Account_Next_Steps__c
