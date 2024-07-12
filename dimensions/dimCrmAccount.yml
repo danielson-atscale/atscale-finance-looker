@@ -10,7 +10,7 @@ hierarchies:
       - unique_name: dimCrmAccount_AccountName
         secondary_attributes:
           - unique_name: dimCrmAccount_CustomerStage
-            label: dimCrmAccount_CustomerStage
+            label: CustomerStage
             contains_unique_names: false
             dataset: dimCrmAccount_dataset
             is_unique_key: false
@@ -18,7 +18,7 @@ hierarchies:
               - CustomerStage
             name_column: CustomerStage
           - unique_name: dimCrmAccount_CloudSpend
-            label: dimCrmAccount_CloudSpend
+            label: CloudSpend
             contains_unique_names: false
             dataset: dimCrmAccount_dataset
             is_unique_key: false
@@ -26,7 +26,7 @@ hierarchies:
               - CloudSpend
             name_column: CloudSpend
           - unique_name: dimCrmAccount_BITools
-            label: dimCrmAccount_BITools
+            label: BITools
             contains_unique_names: false
             dataset: dimCrmAccount_dataset
             is_unique_key: false
@@ -34,7 +34,7 @@ hierarchies:
               - BITools
             name_column: BITools
           - unique_name: dimCrmAccount_DataPlatforms
-            label: dimCrmAccount_DataPlatforms
+            label: DataPlatforms
             contains_unique_names: false
             dataset: dimCrmAccount_dataset
             is_unique_key: false
@@ -42,7 +42,7 @@ hierarchies:
               - DataPlatforms
             name_column: DataPlatforms
           - unique_name: dimCrmAccount_BusinessUseCase
-            label: dimCrmAccount_BusinessUseCase
+            label: BusinessUseCase
             contains_unique_names: false
             dataset: dimCrmAccount_dataset
             is_unique_key: false
@@ -51,7 +51,7 @@ hierarchies:
             name_column: BusinessUseCase
 level_attributes:
   - unique_name: dimCrmAccount_AccountName
-    label: dimCrmAccount_AccountName
+    label: AccountName
     contains_unique_names: false
     dataset: dimCrmAccount_dataset
     is_unique_key: false
@@ -59,7 +59,7 @@ level_attributes:
       - Id
     name_column: Name
   - unique_name: dimCrmAccount_Type
-    label: dimCrmAccount_Type
+    label: Type
     contains_unique_names: false
     dataset: dimCrmAccount_dataset
     is_unique_key: false
@@ -67,11 +67,23 @@ level_attributes:
       - Type
     name_column: Type
   - unique_name: dimCrmAccount_RecordTypeId
-    label: dimCrmAccount_RecordTypeId
+    label: RecordTypeId
     contains_unique_names: false
     dataset: dimCrmAccount_dataset
     is_unique_key: false
     key_columns:
       - RecordTypeId
     name_column: RecordTypeId
+relationships:
+  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps_dimAccountNextSteps_Account__c
+    from:
+      dataset: dimCrmAccount_dataset
+      hierarchy: dimCrmAccount_Hierarchy
+      join_columns:
+        - Id
+      level: dimCrmAccount_AccountName
+    to:
+      dimension: dimAccountNextSteps
+      level: dimAccountNextSteps_Account__c
+    type: embedded
 type: standard
