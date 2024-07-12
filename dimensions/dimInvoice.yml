@@ -71,4 +71,16 @@ level_attributes:
       - Recordno
     name_column: Recordno
     sort_column: empty_value
+relationships:
+  - unique_name: dimInvoice.dataset_Whenposted_to_dimDate_dimDate_Date
+    from:
+      dataset: dimInvoice.dataset
+      hierarchy: dimInvoice_Hierarchy
+      join_columns:
+        - Whenposted
+      level: dimInvoice_Recordno
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+    type: embedded
 type: standard
