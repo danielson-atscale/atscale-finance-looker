@@ -5,6 +5,7 @@ hierarchies:
   - unique_name: dimContract_Hierarchy
     label: dimContract Hierarchy
     levels:
+      - unique_name: dimContract_Status
       - unique_name: dimContract_Recordno
 level_attributes:
   - unique_name: dimContract_Recordno
@@ -19,4 +20,25 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Contractid
+  - unique_name: dimContract_Status
+    label: Status
+    contains_unique_names: false
+    dataset: dimContract_dataset
+    is_unique_key: false
+    key_columns:
+      - Status
+    name_column: Status
+    sort_column: empty_value
+relationships:
+  - unique_name: dimContract_dataset_Enddate_to_dimDate_dimDate_Date
+    from:
+      dataset: dimContract_dataset
+      hierarchy: dimContract_Hierarchy
+      join_columns:
+        - Enddate
+      level: dimContract_Recordno
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+    type: embedded
 type: standard
