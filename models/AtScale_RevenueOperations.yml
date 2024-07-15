@@ -16,6 +16,7 @@ dimensions:
   - dimLostReason
   - factOpportunity_ExpectedRenewalARR
   - factOpportunity_POCStatus(Translated)
+  - dimRecordTypeID
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
@@ -24,6 +25,7 @@ metrics:
   - unique_name: m_factOpportunity_ExpectedRenewalARR_sum
   - unique_name: ExpectedARRChurn
   - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+  - unique_name: ARRRetentionRateDIV
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
