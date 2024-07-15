@@ -1,0 +1,6 @@
+unique_name: m_factReceivables_InvoiceAge
+object_type: metric
+label: InvoiceAge
+calculation_method: count non-null
+column: InvoiceID
+dataset: factReceivables
