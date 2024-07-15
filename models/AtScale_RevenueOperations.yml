@@ -20,6 +20,10 @@ metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
   - unique_name: m_factOpportunity_NetNewARR_sum
+  - unique_name: m_factOpportunity_ExpiringARR_sum
+  - unique_name: m_factOpportunity_ExpectedRenewalARR_sum
+  - unique_name: ExpectedARRChurn
+  - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
