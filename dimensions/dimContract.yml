@@ -7,9 +7,9 @@ hierarchies:
     levels:
       - unique_name: dimContract_Customername
       - unique_name: dimContract_Status
-      - unique_name: dimContract_ContractID
+      - unique_name: dimContract_Recordno
 level_attributes:
-  - unique_name: dimContract_ContractID
+  - unique_name: dimContract_Recordno
     label: SageID
     contains_unique_names: false
     custom_empty_member:
@@ -20,7 +20,7 @@ level_attributes:
     is_unique_key: false
     key_columns:
       - Recordno
-    name_column: ContractID
+    name_column: Recordno
   - unique_name: dimContract_Status
     label: Status
     contains_unique_names: false
@@ -29,6 +29,7 @@ level_attributes:
     key_columns:
       - Status
     name_column: Status
+    sort_column: empty_value
   - unique_name: dimContract_Customername
     label: Customername
     contains_unique_names: false
@@ -37,6 +38,7 @@ level_attributes:
     key_columns:
       - BillTo
     name_column: BillTo
+    sort_column: empty_value
 relationships:
   - unique_name: dimContract_dataset_EndDate_to_dimDate_dimDate_Date
     from:

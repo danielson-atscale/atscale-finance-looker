@@ -91,6 +91,6 @@ relationships:
       level: dimRevenueSchedule_Recordno
     to:
       dimension: dimContract
-      level: dimContract_ContractID
+      level: dimContract_Recordno
     type: embedded
 type: standard
