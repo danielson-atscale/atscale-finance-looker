@@ -46,7 +46,7 @@ relationships:
       hierarchy: dimContract_Hierarchy
       join_columns:
         - EndDate
-      level: dimContract_ContractID
+      level: dimContract_Recordno
     to:
       dimension: dimDate
       level: dimDate_Date
