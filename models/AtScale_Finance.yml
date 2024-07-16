@@ -169,3 +169,20 @@ relationships:
     to:
       dimension: dimRevenueSchedule
       level: dimRevenueSchedule_State_Recordno
+  - unique_name: factRevenueScheduleEntry_Postingdate_to_dimDate_dimDate_Date
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Postingdate
+    role_play: Postingdate {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+  - unique_name: FactConsolidated_CustomerID_to_dimContract_dimContract_Recordno
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - CustomerID
+    to:
+      dimension: dimContract
+      level: dimContract_Recordno
