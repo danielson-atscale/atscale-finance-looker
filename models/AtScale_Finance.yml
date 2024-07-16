@@ -101,7 +101,7 @@ relationships:
         - ContractID
     to:
       dimension: dimContract
-      level: dimContract_Recordno
+      level: dimContract_ContractID
   - unique_name: factReceivables_InvoiceID_to_dimInvoice_dimInvoice_dimension Level
     from:
       dataset: factReceivables
@@ -133,7 +133,7 @@ relationships:
         - ContractID
     to:
       dimension: dimContract
-      level: dimContract_Recordno
+      level: dimContract_ContractID
   - unique_name: factRevenueScheduleEntry_Schedulekey_to_dimRevenueSchedule_Recordno
     from:
       dataset: factRevenueScheduleEntry
@@ -169,3 +169,20 @@ relationships:
     to:
       dimension: dimRevenueSchedule
       level: dimRevenueSchedule_State_Recordno
+  - unique_name: factRevenueScheduleEntry_Postingdate_to_dimDate_dimDate_Date
+    from:
+      dataset: factRevenueScheduleEntry
+      join_columns:
+        - Postingdate
+    role_play: Postingdate {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+  - unique_name: FactConsolidated_CustomerID_to_dimContract_dimContract_ContractID
+    from:
+      dataset: FactConsolidated
+      join_columns:
+        - CustomerID
+    to:
+      dimension: dimContract
+      level: dimContract_ContractID
