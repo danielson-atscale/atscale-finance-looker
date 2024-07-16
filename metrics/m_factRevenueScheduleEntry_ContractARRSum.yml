@@ -4,4 +4,3 @@ label: m_factRevenueScheduleEntry_ContractARRSum
 calculation_method: sum
 column: ContractARRDIV2
 dataset: factRevenueScheduleEntry
-format: '#,###.0;(#,###.0)'
