@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_ExpiringARR_sum
+object_type: metric
+label: ExpiringARR
+calculation_method: sum
+column: ExpiringARR
+dataset: factOpportunity

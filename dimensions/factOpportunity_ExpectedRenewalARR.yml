@@ -6,6 +6,15 @@ hierarchies:
     label: ExpectedRenewalARR
     levels:
       - unique_name: factOpportunity_ExpectedRenewalARR
+        secondary_attributes:
+          - unique_name: factOpportunity_NetNewARR
+            label: NetNewARR
+            contains_unique_names: false
+            dataset: factOpportunity
+            is_unique_key: false
+            key_columns:
+              - NetNewARR
+            name_column: NetNewARR
 is_degenerate: true
 level_attributes:
   - unique_name: factOpportunity_ExpectedRenewalARR
@@ -15,4 +24,5 @@ level_attributes:
     key_columns:
       - ExpectedRenewalARR
     name_column: ExpectedRenewalARR
+    sort_column: empty_value
 type: standard
