@@ -61,6 +61,14 @@ hierarchies:
               - Totaldue
             name_column: Totaldue
             sort_column: empty_value
+          - unique_name: dimInvoice_InvoiceAge
+            label: InvoiceAge
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - InvoiceAge
+            name_column: InvoiceAge
 level_attributes:
   - unique_name: dimInvoice_Recordno
     label: Recordno
