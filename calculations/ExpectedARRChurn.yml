@@ -1,0 +1,5 @@
+unique_name: ExpectedARRChurn
+object_type: metric_calc
+label: Expected ARR Churn
+expression: '([Measures].[m_factOpportunity_ExpiringARR_sum] - [Measures].[m_factOpportunity_ExpectedRenewalARR_sum])*-1'
+is_hidden: false
