@@ -16,9 +16,12 @@ dimensions:
   - dimLostReason
   - factOpportunity_ExpectedRenewalARR
   - factOpportunity_POCStatus(Translated)
+  - factOpportunity_ReachedPOCYesorNo
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
+  - unique_name: m_factOpportunity_ReachedPOCYesorNo_sum
+  - unique_name: m_factOpportunity_POCStartDate_count
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:

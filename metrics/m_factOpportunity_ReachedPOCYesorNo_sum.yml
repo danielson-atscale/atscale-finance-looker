@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_ReachedPOCYesorNo_sum
+object_type: metric
+label: ReachedPOCYesorNo
+calculation_method: sum
+column: ReachedPOCYesorNo
+dataset: factOpportunity

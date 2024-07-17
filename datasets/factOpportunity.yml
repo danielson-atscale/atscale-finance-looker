@@ -119,5 +119,9 @@ columns:
     data_type: string
     sql: >-
       MAX([dimOpportunityNextStep].[CreatedDate])
+  - name: ReachedPOCYesorNo
+    data_type: decimal
+    sql: >-
+      IF(POCStartDate IS NULL, 0, 1)
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
