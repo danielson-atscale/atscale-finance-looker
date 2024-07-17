@@ -37,10 +37,6 @@ columns:
   - name: TransactionDate
     data_type: date
   - name: Amount
-    data_type: decimal(38,9)
-  - name: InvoiceAge
-    data_type: string
-    sql: >-
-       IF(dimInvoice(Whenpaid IS NULL), 1, 0)  
+    data_type: decimal(38,9) 
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: factCustomerWolf3
