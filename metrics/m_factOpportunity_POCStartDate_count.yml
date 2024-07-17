@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_POCStartDate_count
+object_type: metric
+label: Poc Start Date
+calculation_method: count distinct
+column: POCStartDate
+dataset: factOpportunity
