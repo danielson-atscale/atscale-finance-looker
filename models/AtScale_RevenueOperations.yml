@@ -31,6 +31,8 @@ metrics:
   - unique_name: ARRRetentionRateDIV
   - unique_name: ARRRetentionRate
   - unique_name: factOpportunity_TotalNewLogoOpportunities_sum
+  - unique_name: m_factOpportunity_Id_count
+  - unique_name: '%ReachedPOC'
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:

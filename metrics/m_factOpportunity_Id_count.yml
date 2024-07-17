@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_Id_count
+object_type: metric
+label: m_factOpportunity_Id_count
+calculation_method: count distinct
+column: Id
+dataset: factOpportunity
