@@ -34,8 +34,8 @@ hierarchies:
               - Recordno
             name_column: Whendue
             sort_column: empty_value
-          - unique_name: dimInvoice_WhenPaid
-            label: WhenPaid
+          - unique_name: dimInvoice_Whenpaid
+            label: Whenpaid
             contains_unique_names: false
             dataset: dimInvoice.dataset
             is_unique_key: false
@@ -79,6 +79,31 @@ relationships:
       join_columns:
         - Whenposted
       level: dimInvoice_Recordno
+    role_play: Whenposted {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+    type: embedded
+  - unique_name: dimInvoice.dataset_Whenpaid_to_dimDate_dimDate_Date
+    from:
+      dataset: dimInvoice.dataset
+      hierarchy: dimInvoice_Hierarchy
+      join_columns:
+        - Whenpaid
+      level: dimInvoice_Recordno
+    role_play: Whenpaid {0}
+    to:
+      dimension: dimDate
+      level: dimDate_Date
+    type: embedded
+  - unique_name: dimInvoice.dataset_Whendue_to_dimDate_dimDate_Date
+    from:
+      dataset: dimInvoice.dataset
+      hierarchy: dimInvoice_Hierarchy
+      join_columns:
+        - Whendue
+      level: dimInvoice_Recordno
+    role_play: Whendue {0}
     to:
       dimension: dimDate
       level: dimDate_Date
