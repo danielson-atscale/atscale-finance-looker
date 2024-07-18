@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_Id_sum
+object_type: metric
+label: Id
+calculation_method: sum
+column: Id
+dataset: factOpportunity
