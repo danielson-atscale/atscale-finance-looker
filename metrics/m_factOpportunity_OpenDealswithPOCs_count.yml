@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_OpenDealswithPOCs_count
+object_type: metric
+label: OpenDealswithPOCs
+calculation_method: estimated count distinct
+column: OpenDealswithPOCs
+dataset: factOpportunity
