@@ -3,7 +3,7 @@ object_type: dimension
 label: POC Status (Translated)
 hierarchies:
   - unique_name: factOpportunity_POCStatus(Translated)_Hierarchy
-    label: POCStatus(Translated)
+    label: POCStatus(Translated) Hierarchy
     levels:
       - unique_name: factOpportunity_POCStatus(Translated)_POCStatus(Translated)
 is_degenerate: true
