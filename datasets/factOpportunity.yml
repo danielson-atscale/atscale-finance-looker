@@ -120,7 +120,7 @@ columns:
     data_type: decimal
     sql: >-
       IF(POCStartDate IS NULL, 0, 1)
-  - name: TotalNewLogoOpportunities
+  - name: TotalNewLogoOpportunitiesYesorNo
     data_type: decimal
     sql: >-
       IF(RecordType = "New", 1, 0)
