@@ -1,0 +1,6 @@
+unique_name: '%ReachedPOC'
+object_type: metric_calc
+label: '% Reached POC'
+expression: >-
+  [Measures].[m_factOpportunity_ReachedPOCYesorNo_sum]/[Measures].[factOpportunity_TotalNewLogoOpportunities_sum]
+is_hidden: false

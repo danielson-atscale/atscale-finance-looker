@@ -1,0 +1,7 @@
+unique_name: WonPOCs
+object_type: metric_calc
+label: Won POCs
+expression: >-
+  ([FactOpportunity_POCStatus(Translated)].[factOpportunity_POCStatus(Translated)_Hierarchy].[factOpportunity_POCStatus(Translated)_POCStatus(Translated)].&[Won POC], 
+  [Measures].[m_factOpportunity_Id_Count])
+is_hidden: false

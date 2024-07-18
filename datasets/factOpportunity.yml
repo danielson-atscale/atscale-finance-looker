@@ -109,6 +109,7 @@ columns:
     sql: >-
        IF(POCStatus = 'N/A - POC Not Needed', 'POC Not Needed',
        IF(RecordType = 'Renewal', 'POC Not Needed',
+       IF(POCStatus = 'N/C - POC Stopped', 'POC Stopped'),
        IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NULL, 'Pre-POC', 
        IF(Stage = '6-Closed Lost' AND POCStartDate IS NULL, 'No POC',
        IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NULL, 'POC In Progress',
@@ -119,9 +120,14 @@ columns:
     data_type: decimal
     sql: >-
       IF(POCStartDate IS NULL, 0, 1)
-  - name: TotalNewLogoOpportunities
+  - name: TotalNewLogoOpportunitiesYesorNo
     data_type: decimal
     sql: >-
       IF(RecordType = "New", 1, 0)
+  - name: OpenDealswithPOCs
+    data_type: decimal
+    sql: >-
+      IF(ForecastCategory <> 'Omitted' AND ForecastCategory <> '5-Won' AND IsClosed = False AND POCStartDate IS NOT NULL,
+      1, 0)
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
