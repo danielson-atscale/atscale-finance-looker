@@ -34,6 +34,9 @@ metrics:
   - unique_name: factOpportunity_TotalNewLogoOpportunities_sum
   - unique_name: m_factOpportunity_OpenDealswithPOCs_count
   - unique_name: m_factOpportunity_Id_sum
+  - unique_name: m_factOpportunity_Id_count
+  - unique_name: '%ReachedPOC'
+  - unique_name: WonPOCs
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
