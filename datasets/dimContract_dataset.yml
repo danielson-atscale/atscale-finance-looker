@@ -4,56 +4,69 @@ label: dimContract_dataset
 columns:
   - name: Recordno
     data_type: string
-  - name: Parentkey
-    data_type: long
-  - name: Description
+  - name: ContractID
     data_type: string
-  - name: Contractid
+  - name: glCustomerID
     data_type: string
-  - name: State
-    data_type: string
-  - name: Termtype
-    data_type: string
-  - name: Begindate
-    data_type: date
-  - name: Enddate
-    data_type: date
-  - name: Canceldate
-    data_type: date
   - name: Name
     data_type: string
-  - name: Customerkey
-    data_type: long
-  - name: Customerid
+  - name: BillTo
     data_type: string
-  - name: Customername
+  - name: ShipTo
     data_type: string
-  - name: Billingfrequency
-    data_type: string
-  - name: Termname
-    data_type: string
-  - name: Renewal
+  - name: IsActive
     data_type: boolean
-  - name: Renewalmacrokey
-    data_type: long
-  - name: Renewedcontractkey
-    data_type: long
-  - name: Renewedcontractid
+  - name: Status
+    data_type: string
+  - name: StartDate
+    data_type: date
+  - name: EndDate
+    data_type: date
+  - name: BillingFrequency
+    data_type: string
+  - name: PaymentTerms
+    data_type: string
+  - name: RenewalType
+    data_type: string
+  - name: LocationID
+    data_type: string
+  - name: DepartmentID
     data_type: string
   - name: Currency
     data_type: string
-  - name: Whencreated
-    data_type: datetime
-  - name: Status
+  - name: ExchangeRate
     data_type: string
-  - name: Contracttype
-    data_type: string
-  - name: Summarytotal
-    data_type: decimal(38,9)
-  - name: Summarybilled
-    data_type: decimal(38,9)
-  - name: ContractLength
+  - name: AutoRenew
+    data_type: boolean
+  - name: RenewTermMonthLength
     data_type: long
-    sql: DATE_DIFF(Enddate, Startdate, DAY)
+  - name: TotalBilled
+    data_type: long
+  - name: TotalContractValue
+    data_type: long
+  - name: BillToEmail
+    data_type: string
+  - name: ShipToEmail
+    data_type: string
+  - name: BillToCity
+    data_type: string
+  - name: BillToState
+    data_type: string
+  - name: BillToZip
+    data_type: string
+  - name: BillToCountry
+    data_type: string
+  - name: BillToCountryCode
+    data_type: string
+  - name: ShipToCity
+    data_type: long
+  - name: ShipToState
+    data_type: long
+  - name: ShipToZip
+    data_type: long
+  - name: ShiptoCountry
+    data_type: long
+  - name: ShipToCountryCode
+    data_type: long
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: dimContract

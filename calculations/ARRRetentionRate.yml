@@ -1,0 +1,7 @@
+unique_name: ARRRetentionRate
+object_type: metric_calc
+label: ARRRetentionRate
+expression: >-
+  ([factOpportunity_RecordType].[factOpportunity_RecordType_Hierarchy].[factOpportunity_RecordType_RecordType].&[Renewal],
+  [Measures].[ARRRetentionRateDIV])
+is_hidden: false
