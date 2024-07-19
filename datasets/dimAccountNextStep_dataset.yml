@@ -1,0 +1,12 @@
+unique_name: dimAccountNextStep_dataset
+object_type: dataset
+label: dimAccountNextStep
+columns:
+  - name: AccountId
+    data_type: string
+  - name: NextAction
+    data_type: string
+  - name: LastAction
+    data_type: string
+connection_id: con_atscale-data-warehouse_AIA_dbt
+table: dimAccountNextStep
