@@ -1,0 +1,18 @@
+unique_name: Close_Date_Last_Changed
+object_type: dimension
+label: Close Date Last Changed
+hierarchies:
+  - unique_name: Close_Date_Last_Changed_Hierarchy
+    label: Close Date Last Changed Hierarchy
+    levels:
+      - unique_name: Close_Date_Last_Changed_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Close_Date_Last_Changed_Level
+    label: Close Date Last Changed Level
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - CloseDateLastChanged
+    name_column: CloseDateLastChanged
+type: standard
