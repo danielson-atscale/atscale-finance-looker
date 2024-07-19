@@ -12,6 +12,7 @@ level_attributes:
     label: Postable
     contains_unique_names: false
     dataset: factRevenueScheduleEntry
+    is_hidden: true
     key_columns:
       - Postable
     name_column: Postable
