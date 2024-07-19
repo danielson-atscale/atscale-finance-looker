@@ -17,6 +17,7 @@ hierarchies:
             key_columns:
               - CustomerStage
             name_column: CustomerStage
+            sort_column: empty_value
           - unique_name: dimCrmAccount_CloudSpend
             label: CloudSpend
             contains_unique_names: false
@@ -25,6 +26,7 @@ hierarchies:
             key_columns:
               - CloudSpend
             name_column: CloudSpend
+            sort_column: empty_value
           - unique_name: dimCrmAccount_BITools
             label: BITools
             contains_unique_names: false
@@ -33,6 +35,7 @@ hierarchies:
             key_columns:
               - BITools
             name_column: BITools
+            sort_column: empty_value
           - unique_name: dimCrmAccount_DataPlatforms
             label: DataPlatforms
             contains_unique_names: false
@@ -41,6 +44,7 @@ hierarchies:
             key_columns:
               - DataPlatforms
             name_column: DataPlatforms
+            sort_column: empty_value
           - unique_name: dimCrmAccount_BusinessUseCase
             label: BusinessUseCase
             contains_unique_names: false
@@ -49,6 +53,7 @@ hierarchies:
             key_columns:
               - BusinessUseCase
             name_column: BusinessUseCase
+            sort_column: empty_value
 level_attributes:
   - unique_name: dimCrmAccount_AccountName
     label: AccountName
@@ -66,6 +71,7 @@ level_attributes:
     key_columns:
       - Type
     name_column: Type
+    sort_column: empty_value
   - unique_name: dimCrmAccount_RecordTypeId
     label: RecordTypeId
     contains_unique_names: false
@@ -74,8 +80,9 @@ level_attributes:
     key_columns:
       - RecordTypeId
     name_column: RecordTypeId
+    sort_column: empty_value
 relationships:
-  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps_dimAccountNextSteps_Account__c
+  - unique_name: dimCrmAccount_dataset_Id_to_dimAccountNextSteps
     from:
       dataset: dimCrmAccount_dataset
       hierarchy: dimCrmAccount_Hierarchy
@@ -83,7 +90,7 @@ relationships:
         - Id
       level: dimCrmAccount_AccountName
     to:
-      dimension: dimAccountNextSteps
-      level: dimAccountNextSteps_Account__c
+      dimension: dimAccountNextStep
+      level: dimAccountNextStep_AccountId
     type: embedded
 type: standard
