@@ -1,0 +1,36 @@
+unique_name: dimAccountNextStep
+object_type: dimension
+label: dimAccountNextStep
+hierarchies:
+  - unique_name: dimAccountNextStep_Hierarchy
+    label: Account Next StepHierarchy
+    levels:
+      - unique_name: dimAccountNextStep_AccountId
+        secondary_attributes:
+          - unique_name: dimAccountNextStep_NextAction
+            label: Next Action
+            contains_unique_names: false
+            dataset: dimAccountNextStep_dataset
+            is_unique_key: false
+            key_columns:
+              - NextAction
+            name_column: NextAction
+          - unique_name: dimAccountNextStep_LastAction
+            label: Last Action
+            contains_unique_names: false
+            dataset: dimAccountNextStep_dataset
+            is_unique_key: false
+            key_columns:
+              - LastAction
+            name_column: LastAction
+level_attributes:
+  - unique_name: dimAccountNextStep_AccountId
+    label: AccountId
+    contains_unique_names: false
+    dataset: dimAccountNextStep_dataset
+    is_unique_key: false
+    key_columns:
+      - AccountId
+    name_column: AccountId
+    sort_column: empty_value
+type: standard
