@@ -76,7 +76,6 @@ hierarchies:
             label: Date
             contains_unique_names: false
             dataset: dimDate_dataset
-            is_hidden: true
             is_unique_key: false
             key_columns:
               - DateTime
@@ -127,7 +126,6 @@ level_attributes:
     key_columns:
       - Date
     name_column: Id
-    sort_column: empty_value
   - unique_name: dimDate_CloseDate_Century
     label: Century
     contains_unique_names: false

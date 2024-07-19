@@ -1,0 +1,18 @@
+unique_name: factOpportunity_ReachedPOCYesorNo
+object_type: dimension
+label: ReachedPOCYesorNo
+hierarchies:
+  - unique_name: factOpportunity_ReachedPOCYesorNo Hierarchy
+    label: ReachedPOCYesorNo Hierarchy
+    levels:
+      - unique_name: factOpportunity_ReachedPOCYesorNo
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_ReachedPOCYesorNo
+    label: ReachedPOCYesorNo
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - ReachedPOCYesorNo
+    name_column: ReachedPOCYesorNo
+type: standard

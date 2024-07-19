@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_ExpectedRenewalARR_sum
+object_type: metric
+label: ExpectedRenewalARR
+calculation_method: sum
+column: ExpectedRenewalARR
+dataset: factOpportunity

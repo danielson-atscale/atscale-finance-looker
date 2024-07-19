@@ -16,9 +16,27 @@ dimensions:
   - dimLostReason
   - factOpportunity_ExpectedRenewalARR
   - factOpportunity_POCStatus(Translated)
+  - factOpportunity_ReachedPOCYesorNo
+  - factOpportunity_RecordType
+  - dimOpenDealswithPOCs
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
+  - unique_name: m_factOpportunity_ReachedPOCYesorNo_sum
+  - unique_name: m_factOpportunity_POCStartDate_count
+  - unique_name: m_factOpportunity_NetNewARR_sum
+  - unique_name: m_factOpportunity_ExpiringARR_sum
+  - unique_name: m_factOpportunity_ExpectedRenewalARR_sum
+  - unique_name: ExpectedARRChurn
+  - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+  - unique_name: ARRRetentionRateDIV
+  - unique_name: ARRRetentionRate
+  - unique_name: factOpportunity_TotalNewLogoOpportunities_sum
+  - unique_name: m_factOpportunity_OpenDealswithPOCs_count
+  - unique_name: m_factOpportunity_Id_sum
+  - unique_name: m_factOpportunity_Id_count
+  - unique_name: '%ReachedPOC'
+  - unique_name: WonPOCs
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:

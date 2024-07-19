@@ -1,0 +1,18 @@
+unique_name: dimOpenDealswithPOCs
+object_type: dimension
+label: Open Deals with POCs
+hierarchies:
+  - unique_name: factOpportunity_OpenDealswithPOCs_Hierarchy
+    label: OpenDealswithPOCs Hierarchy
+    levels:
+      - unique_name: factOpportunity_OpenDealswithPOCs_OpenDealswithPOCs
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_OpenDealswithPOCs_OpenDealswithPOCs
+    label: OpenDealswithPOCs
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - OpenDealswithPOCs
+    name_column: OpenDealswithPOCs
+type: standard
