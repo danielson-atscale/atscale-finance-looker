@@ -4,3 +4,4 @@ label: Net New Arr
 calculation_method: sum
 column: NetNewARR
 dataset: factOpportunity
+format: $#,###
