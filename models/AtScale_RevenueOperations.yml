@@ -38,6 +38,8 @@ metrics:
   - unique_name: m_factOpportunity_Id_count
   - unique_name: '%ReachedPOC'
   - unique_name: WonPOCs
+  - unique_name: m_dimDate_DateTime_min
+  - unique_name: m_dimDate_DateTime_max
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
