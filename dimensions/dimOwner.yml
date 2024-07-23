@@ -5,6 +5,8 @@ hierarchies:
   - unique_name: dimOwner_Hierarchy
     label: Hierarchy
     levels:
+      - unique_name: dimOwner_Role
+      - unique_name: dimOwner_IsActive
       - unique_name: dimOwner_Name
 level_attributes:
   - unique_name: dimOwner_Name
@@ -15,4 +17,21 @@ level_attributes:
     key_columns:
       - Id
     name_column: Name
+    sort_column: empty_value
+  - unique_name: dimOwner_Role
+    label: Role
+    contains_unique_names: false
+    dataset: CRMUser
+    is_unique_key: false
+    key_columns:
+      - UserRoleId
+    name_column: UserRoleId
+  - unique_name: dimOwner_IsActive
+    label: Active
+    contains_unique_names: false
+    dataset: CRMUser
+    is_unique_key: false
+    key_columns:
+      - IsActive
+    name_column: IsActive
 type: standard
