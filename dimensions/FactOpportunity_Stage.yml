@@ -1,0 +1,18 @@
+unique_name: FactOpportunity_Stage
+object_type: dimension
+label: Opportunity Stage
+hierarchies:
+  - unique_name: FactOpportunity_Stage_Hierarchy
+    label: Stage Hierarchy
+    levels:
+      - unique_name: FactOpportunity_FactOpportunity_Stage
+is_degenerate: true
+level_attributes:
+  - unique_name: FactOpportunity_FactOpportunity_Stage
+    label: Opportunity Stage
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - Stage
+    name_column: Stage
+type: standard
