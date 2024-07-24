@@ -1,0 +1,5 @@
+unique_name: POCWinRate
+object_type: metric_calc
+label: POC Win Rate
+expression: '[Measures].[WonPOCs] / [Measures].[StartedPOCs]'
+is_hidden: false

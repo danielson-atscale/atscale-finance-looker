@@ -22,6 +22,8 @@ dimensions:
   - Close_Date_Last_Changed
   - FactOpportunity_Stage
   - factOpportunity_SalesEngineer
+  - POCStartDate
+  - OpportunityIsClosed
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
@@ -43,6 +45,10 @@ metrics:
   - unique_name: m_dimDate_DateTime_max
   - unique_name: OppARRADD
   - unique_name: Opportunity ARR
+  - unique_name: LostPOCs
+  - unique_name: StartedPOCs
+  - unique_name: POCWinRate
+  - unique_name: StoppedPOCs
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:

@@ -1,0 +1,7 @@
+unique_name: StoppedPOCs
+object_type: metric_calc
+label: Stopped POCs
+expression: >-
+  ([FactOpportunity_POCStatus(Translated)].[factOpportunity_POCStatus(Translated)_Hierarchy].[factOpportunity_POCStatus(Translated)_POCStatus(Translated)].&[POC Stopped], 
+  [Measures].[m_factOpportunity_Id_Count])
+is_hidden: false
