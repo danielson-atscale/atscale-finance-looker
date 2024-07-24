@@ -4,3 +4,4 @@ label: ExpectedRenewalARR
 calculation_method: sum
 column: ExpectedRenewalARR
 dataset: factOpportunity
+format: $#,###
