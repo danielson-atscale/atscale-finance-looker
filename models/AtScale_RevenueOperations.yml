@@ -49,6 +49,7 @@ metrics:
   - unique_name: StartedPOCs
   - unique_name: POCWinRate
   - unique_name: StoppedPOCs
+  - unique_name: TotalLostPOCs
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:

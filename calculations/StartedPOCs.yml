@@ -1,5 +1,5 @@
 unique_name: StartedPOCs
 object_type: metric_calc
 label: Started POCs
-expression: '[Measures].[LostPOCs] + [Measures].[WonPOCs]'
+expression: '[Measures].[TotalLostPOCs] + [Measures].[WonPOCs]'
 is_hidden: false
