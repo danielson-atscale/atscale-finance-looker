@@ -1,0 +1,38 @@
+unique_name: dimNextStep
+object_type: dimension
+label: dimNextStep
+hierarchies:
+  - unique_name: dimNextStep_Hierarchy
+    label: Next Step Hierarchy
+    levels:
+      - unique_name: dimNextStep_OpportunityId
+        secondary_attributes:
+          - unique_name: dimNextStep_NextAction
+            label: Next Action
+            contains_unique_names: false
+            dataset: dimNextStep_dataset
+            is_unique_key: false
+            key_columns:
+              - NextAction
+            name_column: NextAction
+            sort_column: empty_value
+          - unique_name: dimNextStep_LastAction
+            label: Last Action
+            contains_unique_names: false
+            dataset: dimNextStep_dataset
+            is_unique_key: false
+            key_columns:
+              - LastAction
+            name_column: LastAction
+            sort_column: empty_value
+level_attributes:
+  - unique_name: dimNextStep_OpportunityId
+    label: OpportunityId
+    contains_unique_names: false
+    dataset: dimNextStep_dataset
+    is_unique_key: false
+    key_columns:
+      - OpportunityId
+    name_column: OpportunityId
+    sort_column: empty_value
+type: standard

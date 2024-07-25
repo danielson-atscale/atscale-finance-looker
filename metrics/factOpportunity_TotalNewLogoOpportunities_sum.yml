@@ -1,0 +1,6 @@
+unique_name: factOpportunity_TotalNewLogoOpportunities_sum
+object_type: metric
+label: m_factOpportunity_TotalNewLogoOpportunities_sum
+calculation_method: sum
+column: TotalNewLogoOpportunitiesYesorNo
+dataset: factOpportunity
