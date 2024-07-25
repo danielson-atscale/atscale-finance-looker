@@ -4,3 +4,4 @@ label: ExpiringARR
 calculation_method: sum
 column: ExpiringARR
 dataset: factOpportunity
+format: $#,###
