@@ -64,13 +64,9 @@ hierarchies:
     label: Date Hierarchy
     levels:
       - unique_name: dimDate_Century
-        time_unit: undefined
       - unique_name: dimDate_Year
-        time_unit: year
       - unique_name: dimDate_Quarter
-        time_unit: quarter
       - unique_name: dimDate_YearMonthNum
-        time_unit: month
       - unique_name: dimDate_Date
         secondary_attributes:
           - unique_name: dimDate Secondary Attribute
@@ -81,7 +77,6 @@ hierarchies:
             key_columns:
               - DateTime
             name_column: DateTime
-        time_unit: day
 level_attributes:
   - unique_name: dimDate_Century
     label: Century
@@ -91,7 +86,7 @@ level_attributes:
     key_columns:
       - Century
     name_column: Century
-    sort_column: empty_value
+    time_unit: undefined
   - unique_name: dimDate_Year
     label: Year
     contains_unique_names: false
@@ -100,7 +95,7 @@ level_attributes:
     key_columns:
       - Year
     name_column: Year
-    sort_column: empty_value
+    time_unit: year
   - unique_name: dimDate_Quarter
     label: Quarter
     contains_unique_names: false
@@ -109,7 +104,7 @@ level_attributes:
     key_columns:
       - Quarter
     name_column: Quarter
-    sort_column: empty_value
+    time_unit: quarter
   - unique_name: dimDate_YearMonthNum
     label: Month
     contains_unique_names: false
@@ -118,7 +113,7 @@ level_attributes:
     key_columns:
       - YearMonthNum
     name_column: YearMonthNum
-    sort_column: empty_value
+    time_unit: month
   - unique_name: dimDate_Date
     label: Date
     contains_unique_names: false
@@ -128,21 +123,5 @@ level_attributes:
     key_columns:
       - Date
     name_column: Id
-    sort_column: empty_value
-  - unique_name: dimDate_CloseDate_Century
-    label: Century
-    contains_unique_names: false
-    dataset: dimDate_dataset
-    is_unique_key: false
-    key_columns:
-      - Century
-    name_column: Century
-  - unique_name: dimDate_POCStartDate_Century
-    label: Century
-    contains_unique_names: false
-    dataset: dimDate_dataset
-    is_unique_key: false
-    key_columns:
-      - Century
-    name_column: Century
+    time_unit: day
 type: time
