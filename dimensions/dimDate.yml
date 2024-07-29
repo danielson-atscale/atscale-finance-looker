@@ -46,11 +46,12 @@ calculation_groups:
         name: YoY Pct
         description: Year over Year
         expression: >-
-          (([dimDate].[Date_Hierarchy].CurrentMember, [Measures].currentMember)
-          -  (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1,
-          [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember ))
-          / (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1,
-          [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember)
+          DIVIDE((([dimDate].[Date_Hierarchy].CurrentMember,
+          [Measures].currentMember) - 
+          (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1,
+          [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember
+          )), (ParallelPeriod([dimDate].[Date_Hierarchy].[dimDate_Year], 1,
+          [dimDate].[Date_Hierarchy].CurrentMember), [Measures].currentMember))
         format: percent
       - unique_name: CurrentMember
         name: CurrentMember
@@ -68,8 +69,8 @@ hierarchies:
       - unique_name: dimDate_YearMonthNum
       - unique_name: dimDate_Date
         secondary_attributes:
-          - unique_name: dimDate_Date_DateTime
-            label: Date
+          - unique_name: dimDate Secondary Attribute
+            label: dimDate Secondary Attribute
             contains_unique_names: false
             dataset: dimDate_dataset
             is_unique_key: false
@@ -117,6 +118,7 @@ level_attributes:
     label: Date
     contains_unique_names: false
     dataset: dimDate_dataset
+    is_hidden: true
     is_unique_key: false
     key_columns:
       - Date
