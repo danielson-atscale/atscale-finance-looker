@@ -4,3 +4,4 @@ label: OpenDealswithPOCs
 calculation_method: sum
 column: OpenDealswithPOCs
 dataset: factOpportunity
+format: general number

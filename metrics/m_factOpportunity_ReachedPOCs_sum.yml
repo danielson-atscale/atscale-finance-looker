@@ -4,3 +4,4 @@ label: Reached POCs
 calculation_method: sum
 column: ReachedPOCYesorNo
 dataset: factOpportunity
+format: general number
