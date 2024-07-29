@@ -1,6 +1,7 @@
-unique_name: m_factOpportunity_ReachedPOCYesorNo_sum
+unique_name: m_factOpportunity_ReachedPOCs_sum
 object_type: metric
-label: ReachedPOCYesorNo
+label: Reached POCs
 calculation_method: sum
 column: ReachedPOCYesorNo
 dataset: factOpportunity
+format: general number
