@@ -1,8 +1,8 @@
-unique_name: ARRRetentionRate
+unique_name: Opportunity ARR
 object_type: metric_calc
-label: ARRRetentionRate
+label: Opportunity ARR
 expression: >-
   ([factOpportunity_RecordType].[factOpportunity_RecordType_Hierarchy].[factOpportunity_RecordType_RecordType].&[Renewal],
-  [Measures].[ARRRetentionRateDIV])
+
+  [Measures].[OppARRADD])
 is_hidden: false
-format: '#0.00%'
