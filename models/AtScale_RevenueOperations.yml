@@ -27,7 +27,7 @@ dimensions:
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
-  - unique_name: m_factOpportunity_ReachedPOCYesorNo_sum
+  - unique_name: m_factOpportunity_ReachedPOCs_sum
   - unique_name: m_factOpportunity_POCStartDate_count
   - unique_name: m_factOpportunity_NetNewARR_sum
   - unique_name: m_factOpportunity_ExpiringARR_sum
@@ -36,7 +36,7 @@ metrics:
   - unique_name: ARRRetentionRateDIV
   - unique_name: ARRRetentionRate
   - unique_name: factOpportunity_TotalNewLogoOpportunities_sum
-  - unique_name: m_factOpportunity_OpenDealswithPOCs_count
+  - unique_name: m_factOpportunity_OpenDealswithPOCs_sum
   - unique_name: m_factOpportunity_Id_sum
   - unique_name: m_factOpportunity_Id_count
   - unique_name: '%ReachedPOC'
