@@ -7,6 +7,15 @@ hierarchies:
     levels:
       - unique_name: dimAccountCotact_ContactRole
       - unique_name: dimAccountCotact_ContactName
+        secondary_attributes:
+          - unique_name: dimAccountContact_SupportBundle
+            label: Most Recent Support Bundle
+            contains_unique_names: false
+            dataset: dimCrmAccount_dataset
+            is_unique_key: false
+            key_columns:
+              - LastSupportBundleDate
+            name_column: LastSupportBundleDate
       - unique_name: dimAccountContact_AccountToId
         secondary_attributes:
           - unique_name: dimAccountContact_DataPlatforms
@@ -17,14 +26,6 @@ hierarchies:
             key_columns:
               - DataPlatforms
             name_column: DataPlatforms
-          - unique_name: dimAccountContact_SupportBundle
-            label: Most Recent Support Bundle
-            contains_unique_names: false
-            dataset: dimCrmAccount_dataset
-            is_unique_key: false
-            key_columns:
-              - LastSupportBundleDate
-            name_column: LastSupportBundleDate
 level_attributes:
   - unique_name: dimAccountContact_AccountToId
     label: AccountToId
