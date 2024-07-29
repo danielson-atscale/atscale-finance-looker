@@ -2,6 +2,6 @@ unique_name: LostPOCs
 object_type: metric_calc
 label: Lost POCs
 expression: >-
-  ([FactOpportunity_POCStatus(Translated)].[factOpportunity_POCStatus(Translated)_Hierarchy].[factOpportunity_POCStatus(Translated)_POCStatus(Translated)].&[Lost POC], 
+  ([FactOpportunity_POCStatus_Translated].[factOpportunity_POCStatus_Translated_Hierarchy].[factOpportunity_POCStatus_Translated_POCStatus_Translated].&[Lost POC], 
   [Measures].[m_factOpportunity_Id_Count])
 is_hidden: false
