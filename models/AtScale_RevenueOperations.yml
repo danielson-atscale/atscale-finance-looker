@@ -15,7 +15,7 @@ dimensions:
   - dimPOCEndDate
   - dimLostReason
   - factOpportunity_ExpectedRenewalARR
-  - factOpportunity_POCStatus(Translated)
+  - factOpportunity_POCStatus_Translated
   - factOpportunity_ReachedPOCYesorNo
   - factOpportunity_RecordType
   - dimOpenDealswithPOCs
