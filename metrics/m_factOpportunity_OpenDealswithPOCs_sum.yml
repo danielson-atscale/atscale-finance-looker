@@ -1,0 +1,7 @@
+unique_name: m_factOpportunity_OpenDealswithPOCs_sum
+object_type: metric
+label: OpenDealswithPOCs
+calculation_method: sum
+column: OpenDealswithPOCs
+dataset: factOpportunity
+format: general number

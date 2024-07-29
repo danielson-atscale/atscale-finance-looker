@@ -1,0 +1,5 @@
+unique_name: TotalLostPOCs
+object_type: metric_calc
+label: Total Lost POCs
+expression: '[Measures].[LostPOCs] + [Measures].[StoppedPOCs]'
+is_hidden: false
