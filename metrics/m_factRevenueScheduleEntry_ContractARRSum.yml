@@ -4,3 +4,4 @@ label: m_factRevenueScheduleEntry_ContractARRSum
 calculation_method: sum
 column: ContractARRDIV2
 dataset: factRevenueScheduleEntry
+is_hidden: true

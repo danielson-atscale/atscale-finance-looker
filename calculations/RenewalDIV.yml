@@ -1,6 +1,5 @@
 unique_name: RenewalDIV
 object_type: metric_calc
 label: RenewalDIV
-expression: >-
-  [Measures].[m_factRevenueScheduleEntry_ExpectedRenewalARR]
-is_hidden: false
+expression: '[Measures].[m_factRevenueScheduleEntry_ExpectedRenewalARR]'
+is_hidden: true
