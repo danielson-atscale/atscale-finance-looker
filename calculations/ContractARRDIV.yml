@@ -1,6 +1,5 @@
 unique_name: ContractARRDIV
 object_type: metric_calc
 label: ContractARRDIV
-expression: >
-  ([Measures].[m_factRevenueScheduleEntry_ContractARRSum]) 
-is_hidden: false
+expression: ([Measures].[m_factRevenueScheduleEntry_ContractARRSum])
+is_hidden: true
