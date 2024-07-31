@@ -1,6 +1,0 @@
-unique_name: m_dimDate_DateTime_max
-object_type: metric
-label: Latest Close Date
-calculation_method: maximum
-column: DateTime
-dataset: dimDate_dataset

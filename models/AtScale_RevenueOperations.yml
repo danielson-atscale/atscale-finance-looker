@@ -41,8 +41,6 @@ metrics:
   - unique_name: m_factOpportunity_Id_count
   - unique_name: '%ReachedPOC'
   - unique_name: WonPOCs
-  - unique_name: m_dimDate_DateTime_min
-  - unique_name: m_dimDate_DateTime_max
   - unique_name: OppARRADD
   - unique_name: Opportunity ARR
   - unique_name: LostPOCs

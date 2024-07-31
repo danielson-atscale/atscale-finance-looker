@@ -4,3 +4,4 @@ label: Contract Duration Years
 calculation_method: maximum
 column: ContractDurationYears
 dataset: factRevenueScheduleEntry
+is_hidden: true
