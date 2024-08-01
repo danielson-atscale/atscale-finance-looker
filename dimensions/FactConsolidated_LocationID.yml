@@ -4,7 +4,6 @@ label: LocationID
 hierarchies:
   - unique_name: LocationID_Hierarchy
     label: LocationID Hierarchy
-    folder: ID's
     levels:
       - unique_name: FactConsolidated_LocationID_LocationID
 is_degenerate: true
