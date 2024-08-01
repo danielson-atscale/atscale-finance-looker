@@ -1,0 +1,19 @@
+unique_name: FactConsolidated_LocationID
+object_type: dimension
+label: LocationID
+hierarchies:
+  - unique_name: LocationID_Hierarchy
+    label: LocationID Hierarchy
+    folder: ID's
+    levels:
+      - unique_name: FactConsolidated_LocationID_LocationID
+is_degenerate: true
+level_attributes:
+  - unique_name: FactConsolidated_LocationID_LocationID
+    label: LocationID
+    contains_unique_names: false
+    dataset: FactConsolidated
+    key_columns:
+      - LocationID
+    name_column: LocationID
+type: standard
