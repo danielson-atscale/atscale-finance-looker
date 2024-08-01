@@ -9,6 +9,7 @@ dimensions:
   - FactReceivables_Source
   - factRevenueScheduleEntry_Postable
   - FactConsolidated_BudgetYearTransaction
+  - FactConsolidated_LocationID
 metrics:
   - unique_name: m_FactConsolidated_Amount
     folder: Customer
