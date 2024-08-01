@@ -12,6 +12,7 @@ level_attributes:
     label: Source
     contains_unique_names: false
     dataset: FactConsolidated
+    is_hidden: true
     key_columns:
       - Source
     name_column: Source
