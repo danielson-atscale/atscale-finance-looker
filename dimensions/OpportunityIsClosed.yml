@@ -1,0 +1,18 @@
+unique_name: OpportunityIsClosed
+object_type: dimension
+label: Opportunity Is Closed
+hierarchies:
+  - unique_name: OpportunityIsClosed_Hierarchy
+    label: OpportunityIsClosed Hierarchy
+    levels:
+      - unique_name: OpportunityIsClosed_OpportunityIsClosed
+is_degenerate: true
+level_attributes:
+  - unique_name: OpportunityIsClosed_OpportunityIsClosed
+    label: OpportunityIsClosed
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - IsClosed
+    name_column: IsClosed
+type: standard
