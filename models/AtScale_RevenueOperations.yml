@@ -24,6 +24,7 @@ dimensions:
   - factOpportunity_SalesEngineer
   - POCStartDate
   - OpportunityIsClosed
+  - DataPlatforms
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
