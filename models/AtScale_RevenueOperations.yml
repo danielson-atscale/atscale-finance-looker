@@ -27,27 +27,44 @@ dimensions:
 metrics:
   - unique_name: m_factOpportunity_RenewalProbability_sum
   - unique_name: Prob
+    folder: ARR
   - unique_name: m_factOpportunity_ReachedPOCs_sum
+    folder: POCs
   - unique_name: m_factOpportunity_POCStartDate_count
   - unique_name: m_factOpportunity_NetNewARR_sum
+    folder: ARR
   - unique_name: m_factOpportunity_ExpiringARR_sum
+    folder: ARR
   - unique_name: m_factOpportunity_ExpectedRenewalARR_sum
+    folder: ARR
   - unique_name: ExpectedARRChurn
+    folder: ARR
   - unique_name: ARRRetentionRateDIV
+    is_hidden: true
   - unique_name: ARRRetentionRate
+    folder: ARR
   - unique_name: factOpportunity_TotalNewLogoOpportunities_sum
   - unique_name: m_factOpportunity_OpenDealswithPOCs_sum
   - unique_name: m_factOpportunity_Id_sum
   - unique_name: m_factOpportunity_Id_count
+    folder: POCs
   - unique_name: '%ReachedPOC'
+    folder: POCs
   - unique_name: WonPOCs
+    folder: POCs
   - unique_name: OppARRADD
   - unique_name: Opportunity ARR
+    folder: ARR
   - unique_name: LostPOCs
+    folder: POCs
   - unique_name: StartedPOCs
+    folder: POCs
   - unique_name: POCWinRate
+    folder: POCs
   - unique_name: StoppedPOCs
+    folder: POCs
   - unique_name: TotalLostPOCs
+    folder: POCs
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
