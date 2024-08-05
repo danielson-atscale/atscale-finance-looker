@@ -98,6 +98,8 @@ columns:
     data_type: date
   - name: LostReason
     data_type: string
+  - name: Data_Platforms
+    data_type: string
   - name: ExpectedRenewalARR
     data_type: decimal(38,9)
     sql: >-
