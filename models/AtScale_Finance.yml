@@ -9,43 +9,80 @@ dimensions:
   - FactReceivables_Source
   - factRevenueScheduleEntry_Postable
   - FactConsolidated_BudgetYearTransaction
+  - FactConsolidated_LocationID
 metrics:
   - unique_name: m_FactConsolidated_Amount
+    folder: Customer
   - unique_name: Actual_NonGAAP
+    folder: Totals
   - unique_name: Budget
+    folder: Totals
   - unique_name: Forecast
+    folder: Totals
   - unique_name: Trial Balance
+    folder: Totals
   - unique_name: Actual+Forecast
+    folder: Totals
   - unique_name: BvA
+    folder: Totals
   - unique_name: Actual_Ending
+    folder: Balances
   - unique_name: FvB
+    folder: Totals
   - unique_name: BvA_variance
+    folder: Totals
   - unique_name: FvB_variance
+    folder: Totals
   - unique_name: Budget_Ending
+    folder: Balances
   - unique_name: Actual_Opening
+    folder: Balances
   - unique_name: m_factReceivables_Amount_sum
+    folder: Customer
   - unique_name: Forecast_Ending_BC
+    folder: Balances
   - unique_name: Forecast_Ending_DS
+    folder: Balances
   - unique_name: Actual+Forecast_Ending_BC
+    folder: Balances
   - unique_name: Actual+Forecast_Ending_DS
+    folder: Balances
   - unique_name: ARR.Total.Cash.Received
+    folder: Customer
   - unique_name: AR.Total.Cash.Received
+    folder: Customer
   - unique_name: Total.Scheduled.Invoices
+    folder: Customer
   - unique_name: Total.Invoiced
+    folder: Customer
   - unique_name: Total.AR.Adjustments
+    folder: Customer
   - unique_name: Actual_Ending_2023
+    folder: Balances
   - unique_name: m_factRevenueScheduleEntry_Amount_sum
+    folder: Customer
   - unique_name: ContractARR
+    folder: Customer
   - unique_name: m_ContractLength
+    folder: Customer
   - unique_name: m_factRevenueScheduleEntry_ContractDurationYears_sum
+    folder: Customer
   - unique_name: ContractARRDIV
+    folder: Customer
   - unique_name: ExpectedRenewalARR
+    folder: Customer
   - unique_name: RenewalDIV
+    folder: Customer
   - unique_name: m_factRevenueScheduleEntry_RenewalProbability_sum
+    folder: Customer
   - unique_name: m_factRevenueScheduleEntry_ExpectedRenewalARR
+    folder: Customer
   - unique_name: Budget_Change
+    folder: Totals
   - unique_name: m_factRevenueScheduleEntry_ContractARRSum
+    folder: Customer
   - unique_name: m_factReceivables_InvoiceAge
+    folder: Customer
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:

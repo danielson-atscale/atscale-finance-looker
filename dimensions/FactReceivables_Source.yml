@@ -4,6 +4,7 @@ label: Source
 hierarchies:
   - unique_name: FactReceivables_Source_Hierarchy
     label: Source Hierarchy
+    is_hidden: true
     levels:
       - unique_name: FactReceivables_Source_Source
 is_degenerate: true
@@ -12,6 +13,7 @@ level_attributes:
     label: Source
     contains_unique_names: false
     dataset: factReceivables
+    is_hidden: true
     key_columns:
       - Source
     name_column: Source

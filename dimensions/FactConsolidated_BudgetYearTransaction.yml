@@ -4,6 +4,7 @@ label: Budget Year Transaction
 hierarchies:
   - unique_name: FactConsolidated_BudgetYearTransaction_Hierarchy
     label: BudgetYearTransaction Hierarchy
+    is_hidden: true
     levels:
       - unique_name: FactConsolidated_BudgetYearTransaction_BudgetYearTransaction
 is_degenerate: true
@@ -12,6 +13,7 @@ level_attributes:
     label: BudgetYearTransaction
     contains_unique_names: false
     dataset: FactConsolidated
+    is_hidden: true
     is_unique_key: false
     key_columns:
       - BudgetYearTransaction
