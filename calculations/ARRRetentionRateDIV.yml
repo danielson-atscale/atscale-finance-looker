@@ -4,4 +4,4 @@ label: ARRRetentionRateDIV
 expression: >-
   ([Measures].[m_factOpportunity_ExpectedRenewalARR_sum] /
   [Measures].[m_factOpportunity_ExpiringARR_sum])
-is_hidden: false
+is_hidden: true
