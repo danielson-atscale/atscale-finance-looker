@@ -1,0 +1,5 @@
+unique_name: POCWinRate
+object_type: metric_calc
+label: POC Win Rate
+expression: '[Measures].[WonPOCs] / ([Measures].[m_factOpportunity_ReachedPOCs_sum] - [Measures].[m_factOpportunity_OpenDealswithPOCs_sum])'
+is_hidden: false

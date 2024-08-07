@@ -1,0 +1,18 @@
+unique_name: DataPlatforms
+object_type: dimension
+label: Data Platforms
+hierarchies:
+  - unique_name: DataPlatforms_Hierarchy
+    label: Data Platforms Hierarchy
+    levels:
+      - unique_name: DataPlatforms_DataPlatforms
+is_degenerate: true
+level_attributes:
+  - unique_name: DataPlatforms_DataPlatforms
+    label: Data Platforms
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - Data_Platforms
+    name_column: Data_Platforms
+type: standard
