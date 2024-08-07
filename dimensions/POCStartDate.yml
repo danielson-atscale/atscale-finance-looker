@@ -1,0 +1,18 @@
+unique_name: POCStartDate
+object_type: dimension
+label: POC Start Date
+hierarchies:
+  - unique_name: POCStartDate_Hierarchy
+    label: POC Start Date Hierarchy
+    levels:
+      - unique_name: POCStartDate_POCStartDate
+is_degenerate: true
+level_attributes:
+  - unique_name: POCStartDate_POCStartDate
+    label: POCStartDate
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - POCStartDate
+    name_column: POCStartDate
+type: standard

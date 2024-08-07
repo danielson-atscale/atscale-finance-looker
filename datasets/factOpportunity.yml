@@ -98,6 +98,8 @@ columns:
     data_type: date
   - name: LostReason
     data_type: string
+  - name: Data_Platforms
+    data_type: string
   - name: ExpectedRenewalARR
     data_type: decimal(38,9)
     sql: >-
@@ -114,7 +116,7 @@ columns:
        IF(Stage = '6-Closed Lost' AND POCStartDate IS NULL, 'No POC',
        IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NULL, 'POC In Progress',
        IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'POC Complete',
-       IF(Stage = '5-Closed Won' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'Won POC',
+       IF(Stage = '5-Closed Won' AND POCStartDate IS NOT NULL, 'Won POC',
        IF(Stage = '6-Closed Lost' AND POCStartDate IS NOT NULL, 'Lost POC', 'No POC')))))))))
   - name: ReachedPOCYesorNo
     data_type: decimal
