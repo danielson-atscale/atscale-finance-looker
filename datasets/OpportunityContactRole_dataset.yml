@@ -1,0 +1,32 @@
+unique_name: OpportunityContactRole_dataset
+object_type: dataset
+label: OpportunityContactRole_dataset
+columns:
+  - name: Id
+    data_type: string
+  - name: OpportunityId
+    data_type: string
+  - name: ContactId
+    data_type: string
+  - name: Role
+    data_type: string
+  - name: IsPrimary
+    data_type: boolean
+  - name: CreatedDate
+    data_type: datetime
+  - name: CreatedById
+    data_type: string
+  - name: LastModifiedDate
+    data_type: datetime
+  - name: LastModifiedById
+    data_type: string
+  - name: SystemModstamp
+    data_type: datetime
+  - name: IsDeleted
+    data_type: boolean
+  - name: CloudPartner
+    data_type: string
+    sql: >-
+      IF(Partner Name IS NOT NULL AND Channel Partner = 'Yes' AND Contact Role = 'Partner', Partner Name, NULL)
+connection_id: con_atscale-data-warehouse_AIA_SFDC
+table: OpportunityContactRole

@@ -4,3 +4,4 @@ label: Prob
 calculation_method: sum
 column: RenewalProbability
 dataset: factOpportunity
+is_hidden: true
