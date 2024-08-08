@@ -1,0 +1,6 @@
+unique_name: m_dimInvoice_Amount_sum(InvoiceAmountDue)
+object_type: metric
+label: Sum(InvoiceAmountDue)
+calculation_method: sum
+column: Totaldue
+dataset: dimInvoice.dataset
