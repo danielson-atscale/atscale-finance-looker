@@ -1,0 +1,6 @@
+unique_name: m_dimInvoice_NumberofDaysPaid_Avg
+object_type: metric
+label: Average Number of Days Paid
+calculation_method: average
+column: NumberOfDaysPaid
+dataset: dimInvoice.dataset
