@@ -15,7 +15,6 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Customername
-            sort_column: empty_value
           - unique_name: dimInvoice_WhenPosted
             label: WhenPosted
             contains_unique_names: false
@@ -33,7 +32,6 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whendue
-            sort_column: empty_value
           - unique_name: dimInvoice_Whenpaid
             label: Whenpaid
             contains_unique_names: false
@@ -42,7 +40,6 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Whenpaid
-            sort_column: empty_value
           - unique_name: dimInvoice_RecordID
             label: RecordID
             contains_unique_names: false
@@ -51,7 +48,6 @@ hierarchies:
             key_columns:
               - Recordno
             name_column: Recordid
-            sort_column: empty_value
           - unique_name: dimInvoice_Totaldue
             label: Totaldue
             contains_unique_names: false
@@ -60,7 +56,6 @@ hierarchies:
             key_columns:
               - Totaldue
             name_column: Totaldue
-            sort_column: empty_value
           - unique_name: dimInvoice_InvoiceAge
             label: InvoiceAge
             contains_unique_names: false
@@ -69,7 +64,14 @@ hierarchies:
             key_columns:
               - InvoiceAge
             name_column: InvoiceAge
-            sort_column: empty_value
+          - unique_name: dimInvoice_NumberOfDaysPaid
+            label: Number of Days Paid
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - NumberOfDaysPaid
+            name_column: NumberOfDaysPaid
 level_attributes:
   - unique_name: dimInvoice_Recordno
     label: Recordno
@@ -79,7 +81,6 @@ level_attributes:
     key_columns:
       - Recordno
     name_column: Recordno
-    sort_column: empty_value
 relationships:
   - unique_name: dimInvoice.dataset_Whenposted_to_dimDate_dimDate_Date
     from:
