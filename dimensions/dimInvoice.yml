@@ -69,6 +69,9 @@ hierarchies:
             contains_unique_names: false
             dataset: dimInvoice.dataset
             is_hidden: true
+            key_columns:
+              - InvoiceAmount
+            name_column: InvoiceAmount
           - unique_name: dimInvoice_NumberOfDaysUntilPaid
             label: Number of Days Until Paid
             contains_unique_names: false
