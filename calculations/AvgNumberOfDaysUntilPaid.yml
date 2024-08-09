@@ -1,0 +1,6 @@
+unique_name: AvgNumberOfDaysUntilPaid
+object_type: metric_calc
+label: Avg Number Of Days Until Paid
+expression: >-
+    [Measures].[m_dimInvoice_NumberOfDaysUntilPaid_sum]/[Measures].[m_dimInvoice_NumberOfDaysPaidNOTNULL_sum]
+is_hidden: false
