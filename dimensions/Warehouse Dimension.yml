@@ -1,0 +1,44 @@
+unique_name: Warehouse Dimension
+object_type: dimension
+label: Warehouse Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Warehouse Dimension
+    label: Warehouse Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Warehouse Dimension
+
+      - unique_name: Database ID
+
+      - unique_name: Schema ID
+
+level_attributes:
+
+  - unique_name: Database ID
+    label: Database
+    dataset: Warehouse Dim
+    name_column: DATABASE_NAME
+    key_columns:
+      - DATABASE_ID
+      - WAREHOUSE_ID
+
+  - unique_name: Schema ID
+    label: Schema
+    dataset: Warehouse Dim
+    name_column: SCHEMA_NAME
+    key_columns:
+      - SCHEMA_ID
+      - DATABASE_ID
+      - WAREHOUSE_ID
+
+  - unique_name: Warehouse Dimension
+    label: Warehouse
+    dataset: Warehouse Dim
+    name_column: WAREHOUSE_NAME
+    key_columns:
+      - WAREHOUSE_ID

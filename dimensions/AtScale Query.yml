@@ -1,0 +1,23 @@
+unique_name: AtScale Query
+object_type: dimension
+label: AtScale Query
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: At_Scale_Query Hierarchy
+    label: AtScale Query Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: At_Scale_Query Level
+
+level_attributes:
+
+  - unique_name: At_Scale_Query Level
+    label: AtScale Query
+    dataset: QUERY_HISTORY
+    name_column: AtScale_Query
+    key_columns:
+      - AtScale_Query
