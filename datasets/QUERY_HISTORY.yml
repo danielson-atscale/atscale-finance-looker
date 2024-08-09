@@ -1,0 +1,161 @@
+unique_name: QUERY_HISTORY
+object_type: dataset
+label: QUERY_HISTORY
+connection_id: con1
+table: QUERY_HISTORY
+
+columns:
+  - name: AtScale_Query
+    data_type: "decimal(1,0)"
+    sql: "CASE WHEN CHARINDEX('queryId', QUERY_TEXT) > 0 THEN 1 ELSE 0 END"
+  - name: BYTES_DELETED
+    data_type: "decimal(38,0)"
+  - name: BYTES_READ_FROM_RESULT
+    data_type: "decimal(38,0)"
+  - name: BYTES_SCANNED
+    data_type: "decimal(38,0)"
+  - name: BYTES_SENT_OVER_THE_NETWORK
+    data_type: "decimal(38,0)"
+  - name: BYTES_SPILLED_TO_LOCAL_STORAGE
+    data_type: "decimal(38,0)"
+  - name: BYTES_SPILLED_TO_REMOTE_STORAGE
+    data_type: "decimal(38,0)"
+  - name: BYTES_WRITTEN
+    data_type: "decimal(38,0)"
+  - name: BYTES_WRITTEN_TO_RESULT
+    data_type: "decimal(38,0)"
+  - name: CHILD_QUERIES_WAIT_TIME
+    data_type: "decimal(38,0)"
+  - name: CLUSTER_NUMBER
+    data_type: "decimal(38,0)"
+  - name: COMPILATION_TIME
+    data_type: "decimal(38,0)"
+  - name: CREDITS_USED_CLOUD_SERVICES
+    data_type: double
+  - name: DATABASE_ID
+    data_type: "decimal(38,0)"
+  - name: DATABASE_NAME
+    data_type: string
+  - name: Date
+    data_type: date
+    sql: TO_DATE(START_TIME)
+  - name: END_DATE_KEY
+    data_type: "decimal(38,0)"
+    sql: "Cast(CONCAT(Substring(Cast(TO_DATE(END_TIME) AS varchar), 1,4) , Substring(Cast(TO_DATE(END_TIME)\
+      \ AS varchar), 6,2) , Substring(Cast(TO_DATE(END_TIME) as varchar), 9,2)) as\
+      \ int)"
+  - name: END_DATE
+    data_type: date
+    sql: TO_DATE(END_TIME)
+  - name: END_TIME
+    data_type: datetime
+  - name: ERROR_CODE
+    data_type: string
+  - name: ERROR_MESSAGE
+    data_type: string
+  - name: EXECUTION_STATUS
+    data_type: string
+  - name: EXECUTION_TIME
+    data_type: "decimal(38,0)"
+  - name: EXTERNAL_FUNCTION_TOTAL_INVOCATIONS
+    data_type: "decimal(38,0)"
+  - name: EXTERNAL_FUNCTION_TOTAL_RECEIVED_BYTES
+    data_type: "decimal(38,0)"
+  - name: EXTERNAL_FUNCTION_TOTAL_RECEIVED_ROWS
+    data_type: "decimal(38,0)"
+  - name: EXTERNAL_FUNCTION_TOTAL_SENT_BYTES
+    data_type: "decimal(38,0)"
+  - name: EXTERNAL_FUNCTION_TOTAL_SENT_ROWS
+    data_type: "decimal(38,0)"
+  - name: INBOUND_DATA_TRANSFER_BYTES
+    data_type: "decimal(38,0)"
+  - name: INBOUND_DATA_TRANSFER_CLOUD
+    data_type: string
+  - name: INBOUND_DATA_TRANSFER_REGION
+    data_type: string
+  - name: IS_CLIENT_GENERATED_STATEMENT
+    data_type: boolean
+  - name: LIST_EXTERNAL_FILES_TIME
+    data_type: "decimal(38,0)"
+  - name: OUTBOUND_DATA_TRANSFER_BYTES
+    data_type: "decimal(38,0)"
+  - name: OUTBOUND_DATA_TRANSFER_CLOUD
+    data_type: string
+  - name: OUTBOUND_DATA_TRANSFER_REGION
+    data_type: string
+  - name: PARTITIONS_SCANNED
+    data_type: "decimal(38,0)"
+  - name: PARTITIONS_TOTAL
+    data_type: "decimal(38,0)"
+  - name: PERCENTAGE_SCANNED_FROM_CACHE
+    data_type: double
+  - name: QUERY_ACCELERATION_BYTES_SCANNED
+    data_type: "decimal(38,0)"
+  - name: QUERY_ACCELERATION_PARTITIONS_SCANNED
+    data_type: "decimal(38,0)"
+  - name: QUERY_ACCELERATION_UPPER_LIMIT_SCALE_FACTOR
+    data_type: "decimal(38,0)"
+  - name: QUERY_ID
+    data_type: string
+  - name: QUERY_LOAD_PERCENT
+    data_type: "decimal(38,0)"
+  - name: QUERY_TAG
+    data_type: string
+  - name: QUERY_TEXT
+    data_type: string
+  - name: QUERY_TYPE
+    data_type: string
+  - name: QUEUED_OVERLOAD_TIME
+    data_type: "decimal(38,0)"
+  - name: QUEUED_PROVISIONING_TIME
+    data_type: "decimal(38,0)"
+  - name: QUEUED_REPAIR_TIME
+    data_type: "decimal(38,0)"
+  - name: RELEASE_VERSION
+    data_type: string
+  - name: ROLE_NAME
+    data_type: string
+  - name: ROLE_TYPE
+    data_type: string
+  - name: ROWS_DELETED
+    data_type: "decimal(38,0)"
+  - name: ROWS_INSERTED
+    data_type: "decimal(38,0)"
+  - name: ROWS_PRODUCED
+    data_type: "decimal(38,0)"
+  - name: ROWS_UNLOADED
+    data_type: "decimal(38,0)"
+  - name: ROWS_UPDATED
+    data_type: "decimal(38,0)"
+  - name: SCHEMA_ID
+    data_type: "decimal(38,0)"
+  - name: SCHEMA_NAME
+    data_type: string
+  - name: SESSION_ID
+    data_type: "decimal(38,0)"
+  - name: START_DATE_KEY
+    data_type: "decimal(38,0)"
+    sql: "Cast(CONCAT(Substring(Cast(TO_DATE(START_TIME) AS varchar), 1,4) ,Substring(Cast(TO_DATE(START_TIME)\
+      \ AS varchar), 6,2) , Substring(Cast(TO_DATE(START_TIME) as varchar), 9,2))\
+      \ as int)"
+  - name: START_DATE
+    data_type: date
+    sql: TO_DATE(START_TIME)
+  - name: START_TIME
+    data_type: datetime
+  - name: TOTAL_ELAPSED_TIME
+    data_type: "decimal(38,0)"
+  - name: TRANSACTION_BLOCKED_TIME
+    data_type: "decimal(38,0)"
+  - name: TRANSACTION_ID
+    data_type: "decimal(38,0)"
+  - name: USER_NAME
+    data_type: string
+  - name: WAREHOUSE_ID
+    data_type: "decimal(38,0)"
+  - name: WAREHOUSE_NAME
+    data_type: string
+  - name: WAREHOUSE_SIZE
+    data_type: string
+  - name: WAREHOUSE_TYPE
+    data_type: string
