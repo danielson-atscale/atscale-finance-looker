@@ -69,10 +69,30 @@ hierarchies:
             contains_unique_names: false
             dataset: dimInvoice.dataset
             is_hidden: true
+          - unique_name: dimInvoice_NumberOfDaysUntilPaid
+            label: Number of Days Until Paid
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
             is_unique_key: false
             key_columns:
-              - InvoiceAmount
-            name_column: InvoiceAmount
+              - NumberOfDaysUntilPaid
+            name_column: NumberOfDaysUntilPaid
+          - unique_name: dimInvoice_NumberOfDaysPaidNOTNULL
+            label: Number of Days Paid NOT NULL
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - NumberOfDaysPaidNOTNULL
+            name_column: NumberOfDaysPaidNOTNULL
+          - unique_name: dimInvoice_TotalPaid
+            label: Total Paid
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_unique_key: false
+            key_columns:
+              - Totalpaid
+            name_column: Totalpaid
 level_attributes:
   - unique_name: dimInvoice_Recordno
     label: Recordno
