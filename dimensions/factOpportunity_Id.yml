@@ -1,0 +1,27 @@
+unique_name: factOpportunity_Id
+object_type: dimension
+label: Id
+hierarchies:
+  - unique_name: factOpportunity_ID_Hierarchy
+    label: Id Hierarchy
+    levels:
+      - unique_name: factOpportunity_Id_Id
+        secondary_attributes:
+          - unique_name: factOpportunity_CloudPartner
+            label: Cloud Partner
+            contains_unique_names: false
+            dataset: OpportunityContactRole_dataset
+            is_unique_key: false
+            key_columns:
+              - CloudPartner
+            name_column: CloudPartner
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_Id_Id
+    label: Id
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - Id
+    name_column: Id
+type: standard

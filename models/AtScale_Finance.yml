@@ -84,7 +84,12 @@ metrics:
   - unique_name: m_factReceivables_InvoiceAge
     folder: Customer
   - unique_name: m_dimInvoice_Amount_sum(InvoiceAmountDue)
+    folder: Customer
   - unique_name: m_dimInvoice_InvoiceAmount_sum(InvoiceAmount)
+    folder: Customer
+  - unique_name: AvgNumberOfDaysUntilPaid
+  - unique_name: m_dimInvoice_NumberofDaysPaidNOTNULL_sum
+  - unique_name: m_dimInvoice_NumberofDaysUntilPaid_sum
 relationships:
   - unique_name: FactConsolidated_TransactionDate_to_dimDate_Day
     from:
