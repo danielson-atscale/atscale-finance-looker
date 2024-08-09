@@ -1,0 +1,6 @@
+unique_name: m_BYTES_SCANNED_avg
+object_type: metric
+label: Avg Bytes Scanned
+calculation_method: average
+dataset: QUERY_HISTORY
+column: BYTES_SCANNED

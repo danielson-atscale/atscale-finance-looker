@@ -1,0 +1,7 @@
+unique_name: m_CREDITS_USED_sum
+object_type: metric
+label: Sum Credits Used
+calculation_method: sum
+unrelated_dimensions_handling: empty
+dataset: WAREHOUSE_METERING_HISTORY
+column: CREDITS_USED
