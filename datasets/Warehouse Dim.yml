@@ -1,7 +1,7 @@
 unique_name: Warehouse Dim
 object_type: dataset
 label: Warehouse Dim
-connection_id: con1
+connection_id: atscale-snowflake
 sql: |
   SELECT QH.WAREHOUSE_ID, QH.WAREHOUSE_NAME, DATABASE_ID, DATABASE_NAME, SCHEMA_ID, SCHEMA_NAME FROM "SNOWFLAKE"."ACCOUNT_USAGE".QUERY_HISTORY QH
 

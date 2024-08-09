@@ -1,7 +1,7 @@
 unique_name: QUERY_HISTORY
 object_type: dataset
 label: QUERY_HISTORY
-connection_id: con1
+connection_id: atscale-snowflake
 table: QUERY_HISTORY
 
 columns:

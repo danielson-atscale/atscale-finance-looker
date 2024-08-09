@@ -1,7 +1,7 @@
 unique_name: WAREHOUSE_METERING_HISTORY
 object_type: dataset
 label: WAREHOUSE_METERING_HISTORY
-connection_id: con1
+connection_id: atscale-snowflake
 table: WAREHOUSE_METERING_HISTORY
 
 columns:
