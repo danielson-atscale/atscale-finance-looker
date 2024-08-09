@@ -1,0 +1,6 @@
+unique_name: m_dimInvoice_NumberofDaysPaidNOTNULL_sum
+object_type: metric
+label: Sum Number of Days Paid NOT NULL
+calculation_method: count non-null
+column: NumberOfDaysPaidNOTNULL
+dataset: dimInvoice.dataset

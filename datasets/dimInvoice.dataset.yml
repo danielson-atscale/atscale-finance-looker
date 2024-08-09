@@ -28,6 +28,8 @@ columns:
     data_type: decimal(38,9)
   - name: Due_in_days
     data_type: string
+  - name: InvoiceAmount
+    data_type: decimal(38,9)
   - name: InvoiceAge
     data_type: string
     sql: >-
