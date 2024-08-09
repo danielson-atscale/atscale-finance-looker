@@ -1,0 +1,6 @@
+unique_name: m_dimInvoice_NumberOfDaysUntilPaid_sum
+object_type: metric
+label: Sum Number of Days Until Paid
+calculation_method: sum
+column: NumberOfDaysUntilPaid
+dataset: dimInvoice.dataset
