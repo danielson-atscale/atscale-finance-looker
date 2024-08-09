@@ -1,0 +1,72 @@
+unique_name: SNF Usage History  Cube
+object_type: model
+label: SNF Usage History  Cube
+include_default_drillthrough: true
+
+relationships:
+
+  - unique_name: QUERY_HISTORY_Date_Dimension
+    from:
+      dataset: QUERY_HISTORY
+      join_columns:
+        - START_DATE
+    to:
+      dimension: Date Dimension
+      level: full_date
+
+  - unique_name: QUERY_HISTORY_Warehouse_Dimension
+    from:
+      dataset: QUERY_HISTORY
+      join_columns:
+        - SCHEMA_ID
+        - DATABASE_ID
+        - WAREHOUSE_ID
+    to:
+      dimension: Warehouse Dimension
+      level: Schema ID
+
+  - unique_name: WAREHOUSE_METERING_HISTORY_Date_Dimension
+    from:
+      dataset: WAREHOUSE_METERING_HISTORY
+      join_columns:
+        - START_DATE
+    to:
+      dimension: Date Dimension
+      level: full_date
+
+  - unique_name: WAREHOUSE_METERING_HISTORY_Warehouse_Dimension
+    from:
+      dataset: WAREHOUSE_METERING_HISTORY
+      join_columns:
+        - WAREHOUSE_ID
+    to:
+      dimension: Warehouse Dimension
+      level: Warehouse Dimension
+
+dimensions:
+  - AtScale Query
+  - Query ID
+
+metrics:
+
+  - unique_name: m_BYTES_SCANNED_avg
+
+  - unique_name: m_BYTES_SCANNED_sum
+
+  - unique_name: m_COMPILATION_TIME_avg
+
+  - unique_name: m_CREDITS_USED_sum
+
+  - unique_name: m_EXECUTION_TIME_avg
+
+  - unique_name: m_EXECUTION_TIME_sum
+
+  - unique_name: m_QUERY_ID_distinct
+
+  - unique_name: m_ROWS_PRODUCED_avg
+
+  - unique_name: m_ROWS_PRODUCED_sum
+
+  - unique_name: m_TOTAL_ELAPSED_TIME_avg
+
+  - unique_name: m_TOTAL_ELAPSED_TIME_sum
