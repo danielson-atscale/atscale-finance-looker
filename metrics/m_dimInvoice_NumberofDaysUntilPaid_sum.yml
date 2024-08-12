@@ -1,4 +1,4 @@
-unique_name: m_dimInvoice_NumberOfDaysUntilPaid_sum
+unique_name: m_dimInvoice_NumberofDaysUntilPaid_sum
 object_type: metric
 label: Sum Number of Days Until Paid
 calculation_method: sum
