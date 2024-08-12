@@ -64,6 +64,14 @@ hierarchies:
             key_columns:
               - InvoiceAge
             name_column: InvoiceAge
+          - unique_name: dimInvoice_InvoiceAmount
+            label: InvoiceAmount
+            contains_unique_names: false
+            dataset: dimInvoice.dataset
+            is_hidden: true
+            key_columns:
+              - InvoiceAmount
+            name_column: InvoiceAmount
           - unique_name: dimInvoice_NumberOfDaysUntilPaid
             label: Number of Days Until Paid
             contains_unique_names: false
@@ -72,14 +80,6 @@ hierarchies:
             key_columns:
               - NumberOfDaysUntilPaid
             name_column: NumberOfDaysUntilPaid
-          - unique_name: dimInvoice_InvoiceAmount
-            label: Invoice Amount
-            contains_unique_names: false
-            dataset: dimInvoice.dataset
-            is_unique_key: false
-            key_columns:
-              - InvoiceAmount
-            name_column: InvoiceAmount
           - unique_name: dimInvoice_NumberOfDaysPaidNOTNULL
             label: Number of Days Paid NOT NULL
             contains_unique_names: false
