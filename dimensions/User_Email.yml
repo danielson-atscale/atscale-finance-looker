@@ -1,0 +1,27 @@
+unique_name: User_Email
+object_type: dimension
+label: User_Email
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: User_Email Hierarchy
+    label: User Email
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: User_Email Level
+
+level_attributes:
+
+  - unique_name: User_Email Level
+    label: User Email
+    dataset: qds_jobs
+    name_column: user_email
+    key_columns:
+      - user_email
+
+modeler_metadata:
+  version: 0
+  modified: "false"

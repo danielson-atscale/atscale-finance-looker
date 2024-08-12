@@ -1,0 +1,6 @@
+unique_name: m_total_bytes_billed_sum
+object_type: metric
+label: Total Bytes Billed
+calculation_method: sum
+dataset: qds_jobs
+column: total_bytes_billed

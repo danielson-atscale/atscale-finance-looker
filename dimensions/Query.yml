@@ -1,0 +1,26 @@
+unique_name: Query
+object_type: dimension
+label: Query
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Query Hierarchy
+    label: Query Hierarchy
+
+    levels:
+
+      - unique_name: Query Level
+
+level_attributes:
+
+  - unique_name: Query Level
+    label: Query Level
+    dataset: qds_jobs
+    name_column: query
+    key_columns:
+      - query
+
+modeler_metadata:
+  version: 0
+  modified: "false"
