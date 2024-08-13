@@ -1,6 +1,0 @@
-unique_name: m_query_distinct_est
-object_type: metric
-label: DCE Number of Queries
-calculation_method: estimated count distinct
-dataset: qds_jobs
-column: query

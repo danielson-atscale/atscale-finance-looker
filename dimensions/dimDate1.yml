@@ -1,0 +1,75 @@
+unique_name: dimDate1
+object_type: dimension
+label: dimDate1
+hierarchies:
+  - unique_name: dimDate_Hierarchy
+    label: dimDate Hierarchy
+    levels:
+      - unique_name: dimDate_Year
+      - unique_name: dimDate_Quarter
+      - unique_name: dimDate_Month
+      - unique_name: dimDate_Date
+  - unique_name: dimDate_Month Hierarchy
+    label: dimDate_Month Hierarchy
+    levels:
+      - unique_name: dimDate_MonthYear
+      - unique_name: dimDate_MonthCode
+      - unique_name: dimDate_YearMonthNum
+level_attributes:
+  - unique_name: dimDate_Date
+    label: Date
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - Date
+    name_column: Date
+  - unique_name: dimDate_Month
+    label: Month
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - Month
+    name_column: Month
+  - unique_name: dimDate_Quarter
+    label: Quarter
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - Quarter
+    name_column: Quarter
+  - unique_name: dimDate_Year
+    label: Year
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - Year
+    name_column: Year
+  - unique_name: dimDate_MonthYear
+    label: MonthYear
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - MonthYear
+    name_column: MonthYear
+  - unique_name: dimDate_MonthCode
+    label: MonthCode
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - MonthCode
+    name_column: MonthCode
+  - unique_name: dimDate_YearMonthNum
+    label: YearMonthNum
+    contains_unique_names: false
+    dataset: dimDate (1)
+    is_unique_key: false
+    key_columns:
+      - YearMonthNum
+    name_column: YearMonthNum
+type: standard

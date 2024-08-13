@@ -9,9 +9,9 @@ columns:
   - name: usage_end_time
     data_type: datetime
   - name: project
-    data_type: record
+    data_type: string
   - name: labels
-    data_type: record
+    data_type: string
   - name: export_time
     data_type: datetime
   - name: cost
@@ -21,9 +21,11 @@ columns:
   - name: currency_conversion_rate
     data_type: double
   - name: usage
-    data_type: record
-  - name: invoice
-    data_type: record
+    data_type: string
+  - name: credits
+    data_type: string
+  - name: invoice.month
+    data_type: string
   - name: cost_type
     data_type: string
   - name: _PARTITIONTIME
