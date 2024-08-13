@@ -1,0 +1,32 @@
+unique_name: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+object_type: dataset
+label: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+columns:
+  - name: billing_account_id
+    data_type: string
+  - name: usage_start_time
+    data_type: datetime
+  - name: usage_end_time
+    data_type: datetime
+  - name: project
+    data_type: record
+  - name: labels
+    data_type: record
+  - name: export_time
+    data_type: datetime
+  - name: cost
+    data_type: double
+  - name: currency
+    data_type: string
+  - name: currency_conversion_rate
+    data_type: double
+  - name: usage
+    data_type: record
+  - name: invoice
+    data_type: record
+  - name: cost_type
+    data_type: string
+  - name: _PARTITIONTIME
+    data_type: datetime
+connection_id: con_benchmark-251817_cost
+table: gcp_billing_export_v1_0166FD_D409B8_13D5E7

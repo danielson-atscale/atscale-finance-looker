@@ -1,0 +1,6 @@
+unique_name: con_benchmark-251817_cost
+object_type: connection
+label: con_benchmark-251817_cost
+as_connection: benchmark-251817
+database: benchmark-251817
+schema: cost
