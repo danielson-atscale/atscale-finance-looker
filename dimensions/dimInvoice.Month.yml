@@ -1,0 +1,18 @@
+unique_name: dimInvoice.Month
+object_type: dimension
+label: Invoice.Month
+hierarchies:
+  - unique_name: Invoice.Month_Hierarchy
+    label: Invoice.Month Hierarchy
+    levels:
+      - unique_name: factGCPBilling_Invoice.Month
+is_degenerate: true
+level_attributes:
+  - unique_name: factGCPBilling_Invoice.Month
+    label: Invoice.Month
+    contains_unique_names: false
+    dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+    key_columns:
+      - invoice.month
+    name_column: invoice.month
+type: standard

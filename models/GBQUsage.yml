@@ -1,12 +1,8 @@
 unique_name: GBQUsage
 object_type: model
 label: GBQUsage
+dimensions:
+  - dimInvoice.Month
+  - dimCost
 metrics: []
-relationships:
-  - unique_name: gcp_billing_export_v1_0166FD_D409B8_13D5E7_empty_dimension
-    from:
-      dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
-      join_columns: []
-    to:
-      dimension: ''
-      level: ''
+relationships: []
