@@ -20,8 +20,6 @@ columns:
     data_type: string
   - name: currency_conversion_rate
     data_type: double
-  - name: usage
-    data_type: string
   - name: credits
     data_type: string
   - name: invoice.month
@@ -39,5 +37,8 @@ columns:
   - name: invoicemonth
     data_type: string
     sql: invoice.month
+  - name: usage
+    data_type: decimal
+    sql: usage.amount
 connection_id: con_benchmark-251817_cost
 table: gcp_billing_export_v1_0166FD_D409B8_13D5E7

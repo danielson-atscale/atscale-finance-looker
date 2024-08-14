@@ -9,6 +9,7 @@ dimensions:
   - InvoiceMonth
 metrics:
   - unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
+  - unique_name: m_gcpBilling_usage_sum
 relationships:
   - unique_name: >-
       gcp_billing_export_v1_0166FD_D409B8_13D5E7_invoice.month_to_dimDate1_dimDate_YearMonthNum
