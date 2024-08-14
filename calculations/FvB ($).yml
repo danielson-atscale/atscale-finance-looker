@@ -1,4 +1,4 @@
-unique_name: FvB
+unique_name: FvB ($)
 object_type: metric_calc
 label: FvB ($)
 expression: '[Measures].[Actual+Forecast]-[Measures].[Budget]'

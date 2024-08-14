@@ -1,0 +1,18 @@
+unique_name: CreditsName
+object_type: dimension
+label: Credits Name
+hierarchies:
+  - unique_name: CreditsName_Hierarchy
+    label: Credits Name Hierarchy
+    levels:
+      - unique_name: gcp_CreditsName_CreditsName
+is_degenerate: true
+level_attributes:
+  - unique_name: gcp_CreditsName_CreditsName
+    label: Credits Name
+    contains_unique_names: false
+    dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+    key_columns:
+      - creditsname
+    name_column: creditsname
+type: standard
