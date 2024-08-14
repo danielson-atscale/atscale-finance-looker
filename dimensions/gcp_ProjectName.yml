@@ -1,0 +1,18 @@
+unique_name: gcp_ProjectName
+object_type: dimension
+label: Project Name
+hierarchies:
+  - unique_name: ProjectName_Hierarchy
+    label: Project Name Hierarchy
+    levels:
+      - unique_name: gcp_ProjectName_ProjectName
+is_degenerate: true
+level_attributes:
+  - unique_name: gcp_ProjectName_ProjectName
+    label: Name
+    contains_unique_names: false
+    dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+    key_columns:
+      - projectname
+    name_column: projectname
+type: standard

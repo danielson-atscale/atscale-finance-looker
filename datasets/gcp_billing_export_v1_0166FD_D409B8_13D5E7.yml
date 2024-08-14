@@ -30,5 +30,14 @@ columns:
     data_type: string
   - name: _PARTITIONTIME
     data_type: datetime
+  - name: projectname
+    data_type: string
+    sql: project.name
+  - name: creditsname
+    data_type: string
+    sql: credits.name
+  - name: invoicemonth
+    data_type: string
+    sql: invoice.month
 connection_id: con_benchmark-251817_cost
 table: gcp_billing_export_v1_0166FD_D409B8_13D5E7

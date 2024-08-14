@@ -2,12 +2,13 @@ unique_name: GBQUsage
 object_type: model
 label: GBQUsage
 dimensions:
-  - dimInvoice.Month
   - dimCost
-  - dimCredits
-  - dimProject
   - dimBillingAccountID
-metrics: []
+  - gcp_ProjectName
+  - CreditsName
+  - InvoiceMonth
+metrics:
+  - unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
 relationships:
   - unique_name: >-
       gcp_billing_export_v1_0166FD_D409B8_13D5E7_invoice.month_to_dimDate1_dimDate_YearMonthNum

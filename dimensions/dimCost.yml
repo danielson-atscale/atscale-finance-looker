@@ -2,23 +2,12 @@ unique_name: dimCost
 object_type: dimension
 label: Cost
 hierarchies:
-  - unique_name: Cost_Hierarchy
-    label: Cost Hierarchy
-    levels:
-      - unique_name: factGCPBilling_Cost
   - unique_name: CostType_Hierarchy
     label: CostType
     levels:
       - unique_name: dimCost_CostType
 is_degenerate: true
 level_attributes:
-  - unique_name: factGCPBilling_Cost
-    label: Cost
-    contains_unique_names: false
-    dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
-    key_columns:
-      - cost
-    name_column: cost
   - unique_name: dimCost_CostType
     label: CostType
     contains_unique_names: false
