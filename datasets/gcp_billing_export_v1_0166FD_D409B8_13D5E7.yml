@@ -40,5 +40,8 @@ columns:
   - name: usage
     data_type: decimal
     sql: usage.amount
+  - name: service
+    data_type: string
+    sql: service.description
 connection_id: con_benchmark-251817_cost
 table: gcp_billing_export_v1_0166FD_D409B8_13D5E7

@@ -7,6 +7,7 @@ dimensions:
   - gcp_ProjectName
   - CreditsName
   - InvoiceMonth
+  - gcp_billing_export_Service
 metrics:
   - unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
   - unique_name: m_gcpBilling_usage_sum
