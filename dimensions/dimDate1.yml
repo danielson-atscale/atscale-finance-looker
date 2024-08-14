@@ -13,8 +13,8 @@ hierarchies:
     label: dimDate_Month Hierarchy
     levels:
       - unique_name: dimDate_MonthYear
-      - unique_name: dimDate_MonthCode
       - unique_name: dimDate_YearMonthNum
+      - unique_name: dimDate_MonthCode
 level_attributes:
   - unique_name: dimDate_Date
     label: Date
