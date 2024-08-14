@@ -1,0 +1,6 @@
+unique_name: m_TOTAL_ELAPSED_TIME_avg
+object_type: metric
+label: Avg Total Elapsed Time
+calculation_method: average
+dataset: QUERY_HISTORY
+column: TOTAL_ELAPSED_TIME

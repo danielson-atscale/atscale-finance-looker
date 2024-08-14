@@ -1,0 +1,40 @@
+unique_name: WAREHOUSE_METERING_HISTORY
+object_type: dataset
+label: WAREHOUSE_METERING_HISTORY
+connection_id: atscale-snowflake
+table: WAREHOUSE_METERING_HISTORY
+
+columns:
+  - name: CREDITS_USED
+    data_type: "decimal(38,9)"
+  - name: CREDITS_USED_CLOUD_SERVICES
+    data_type: "decimal(38,9)"
+  - name: CREDITS_USED_COMPUTE
+    data_type: "decimal(38,9)"
+  - name: Date
+    data_type: date
+    sql: TO_DATE(START_TIME)
+  - name: END_DATE_KEY
+    data_type: "decimal(38,0)"
+    sql: "Cast(CONCAT(Substring(Cast(TO_DATE(END_TIME) AS varchar), 1,4) , Substring(Cast(TO_DATE(END_TIME)\
+      \ AS varchar), 6,2) , Substring(Cast(TO_DATE(END_TIME) as varchar), 9,2)) as\
+      \ int)"
+  - name: END_DATE
+    data_type: date
+    sql: TO_DATE(END_TIME)
+  - name: END_TIME
+    data_type: datetime
+  - name: START_DATE_KEY
+    data_type: "decimal(38,0)"
+    sql: "Cast(CONCAT(Substring(Cast(TO_DATE(START_TIME) AS varchar), 1,4) ,Substring(Cast(TO_DATE(START_TIME)\
+      \ AS varchar), 6,2) , Substring(Cast(TO_DATE(START_TIME) as varchar), 9,2))\
+      \ as int)"
+  - name: START_DATE
+    data_type: date
+    sql: TO_DATE(START_TIME)
+  - name: START_TIME
+    data_type: datetime
+  - name: WAREHOUSE_ID
+    data_type: "decimal(38,0)"
+  - name: WAREHOUSE_NAME
+    data_type: string
