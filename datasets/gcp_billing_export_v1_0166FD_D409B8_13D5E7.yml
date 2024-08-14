@@ -1,6 +1,6 @@
 unique_name: gcp_billing_export_v1_0166FD_D409B8_13D5E7
 object_type: dataset
-label: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+label: factGCP_Billing
 columns:
   - name: billing_account_id
     data_type: string

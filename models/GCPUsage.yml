@@ -1,6 +1,6 @@
-unique_name: GBQUsage
+unique_name: GCPUsage
 object_type: model
-label: GBQUsage
+label: GCPUsage
 dimensions:
   - dimCost
   - dimBillingAccountID
@@ -12,12 +12,12 @@ metrics:
   - unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
   - unique_name: m_gcpBilling_usage_sum
 relationships:
-  - unique_name: >-
-      gcp_billing_export_v1_0166FD_D409B8_13D5E7_invoice.month_to_dimDate1_dimDate_YearMonthNum
+  - unique_name: invoicemonth_to_dimdate_gcpusage_monthcode
     from:
       dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
       join_columns:
         - invoice.month
     to:
-      dimension: dimDate1
-      level: dimDate_MonthCode
+      dimension: dimDate_gcpusage
+      level: dimDate_gcpusage_monthcode
+

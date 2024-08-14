@@ -1,6 +1,6 @@
-unique_name: dimDate (2)
+unique_name: dimDate_dataset_gcpusage
 object_type: dataset
-label: dimDate (2)
+label: dimDate
 columns:
   - name: Date
     data_type: date
