@@ -6,6 +6,7 @@ dimensions:
   - dimCost
   - dimCredits
   - dimProject
+  - dimBillingAccountID
 metrics: []
 relationships:
   - unique_name: >-

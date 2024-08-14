@@ -1,6 +1,0 @@
-unique_name: FvB_variance
-object_type: metric_calc
-label: FvB (%)
-expression: IIF([Measures].[Budget] = 0 OR ISEMPTY([Measures].[Budget]), 0,(([Measures].[Actual+Forecast]-[Measures].[Budget])/ABS([Measures].[Budget])))
-format: '#,##0.0%;(#,##0.0%)'
-is_hidden: false
