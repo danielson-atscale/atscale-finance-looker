@@ -23,15 +23,15 @@ metrics:
     folder: Totals
   - unique_name: Actual+Forecast
     folder: Totals
-  - unique_name: BvA
+  - unique_name: BvA ($)
     folder: Totals
   - unique_name: Actual_Ending
     folder: Balances
-  - unique_name: FvB
+  - unique_name: FvB ($)
     folder: Totals
-  - unique_name: BvA_variance
+  - unique_name: BvA (%)
     folder: Totals
-  - unique_name: FvB_variance
+  - unique_name: FvB (%)
     folder: Totals
   - unique_name: Budget_Ending
     folder: Balances

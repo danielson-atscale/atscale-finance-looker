@@ -1,0 +1,20 @@
+unique_name: dimDate (2)
+object_type: dataset
+label: dimDate (2)
+columns:
+  - name: Date
+    data_type: date
+  - name: Month
+    data_type: string
+  - name: Quarter
+    data_type: string
+  - name: Year
+    data_type: string
+  - name: MonthYear
+    data_type: string
+  - name: MonthCode
+    data_type: string
+  - name: YearMonthNum
+    data_type: string
+connection_id: con_benchmark-251817_Master_Data_Dimensions
+table: dimDate

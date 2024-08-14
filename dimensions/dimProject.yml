@@ -1,0 +1,18 @@
+unique_name: dimProject
+object_type: dimension
+label: Project
+hierarchies:
+  - unique_name: dimProject_Hierarchy
+    label: Project Hierarchy
+    levels:
+      - unique_name: factGCPBilling_Project
+is_degenerate: true
+level_attributes:
+  - unique_name: factGCPBilling_Project
+    label: Project
+    contains_unique_names: false
+    dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+    key_columns:
+      - project
+    name_column: project
+type: standard
