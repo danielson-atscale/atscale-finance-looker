@@ -129,7 +129,7 @@ columns:
   - name: OpenDealswithPOCs
     data_type: decimal
     sql: >-
-      IF(ForecastCategory <> 'Omitted' AND ForecastCategory <> '5-Won' AND IsClosed = False AND POCStartDate IS NOT NULL,
+      IF(ForecastCategory <> '0-Omitted' AND ForecastCategory <> '5-Won' AND IsClosed = False AND POCStartDate IS NOT NULL,
       1, 0)
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
