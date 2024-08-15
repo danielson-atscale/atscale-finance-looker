@@ -35,8 +35,8 @@ level_attributes:
     dataset: dimDate_GBQUsage_dataset
     is_unique_key: false
     key_columns:
-      - Month-Year
-    name_column: Month-Year
+      - Month
+    name_column: Month
     time_unit: month
   - unique_name: dimDate_GBQUsage_MonthCode
     label: MonthCode
@@ -47,7 +47,7 @@ level_attributes:
     key_columns:
       - MonthCode
     name_column: MonthCode
-    time_unit: month
+    time_unit: undefined
   - unique_name: dimDate_GBQUsage_Date
     label: Date
     contains_unique_names: false

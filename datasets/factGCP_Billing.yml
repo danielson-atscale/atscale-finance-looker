@@ -39,7 +39,10 @@ columns:
     sql: invoice.month
   - name: usage
     data_type: decimal
-    sql: usage.amount
+    sql: usage.amount_in_pricing_units
+  - name: usage_unit
+    data_type: string
+    sql: usage.pricing_unit
   - name: service
     data_type: string
     sql: service.description

@@ -1,6 +1,6 @@
 unique_name: factGCP_Billing_ProjectName
 object_type: dimension
-label: Project Name
+label: Project
 hierarchies:
   - unique_name: factGCP_Billing_ProjectName_Hierarchy
     label: Project Name Hierarchy

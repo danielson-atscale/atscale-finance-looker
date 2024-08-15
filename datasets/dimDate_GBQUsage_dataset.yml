@@ -10,8 +10,6 @@ columns:
     data_type: string
   - name: Year
     data_type: string
-  - name: Month-Year
-    data_type: string
   - name: MonthCode
     data_type: string
   - name: YearMonthNum

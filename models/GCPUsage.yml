@@ -5,7 +5,6 @@ dimensions:
   - factGCP_Billing_ProjectName
   - factGCP_Billing_creditsname
   - factGCP_Billing_Service
-  - factGCP_Billing_Project
 metrics:
   - unique_name: m_factGCP_Billing_cost_sum
   - unique_name: m_factGCP_Billing_usage_sum
@@ -15,7 +14,7 @@ relationships:
       dataset: factGCP_Billing
       join_columns:
         - invoicemonth
-    role_play: InvoiceMonth {0}
+    role_play: Invoice {0}
     to:
       dimension: dimDate_GBQUsage
       level: dimDate_GBQUsage_MonthCode
