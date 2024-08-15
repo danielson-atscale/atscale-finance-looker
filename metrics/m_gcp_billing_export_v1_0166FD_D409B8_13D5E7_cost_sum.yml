@@ -1,6 +1,0 @@
-unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
-object_type: metric
-label: Sum of Cost
-calculation_method: sum
-column: cost
-dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7

@@ -1,0 +1,6 @@
+unique_name: m_factGCP_Billing_cost_sum
+object_type: metric
+label: Cost
+calculation_method: sum
+column: cost
+dataset: factGCP_Billing

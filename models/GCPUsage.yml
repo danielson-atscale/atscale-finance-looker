@@ -2,22 +2,20 @@ unique_name: GCPUsage
 object_type: model
 label: GCPUsage
 dimensions:
-  - dimCost
-  - dimBillingAccountID
-  - gcp_ProjectName
-  - CreditsName
-  - InvoiceMonth
-  - gcp_billing_export_Service
+  - factGCP_Billing_ProjectName
+  - factGCP_Billing_creditsname
+  - factGCP_Billing_Service
+  - factGCP_Billing_Project
 metrics:
-  - unique_name: m_gcp_billing_export_v1_0166FD_D409B8_13D5E7_cost_sum
-  - unique_name: m_gcpBilling_usage_sum
+  - unique_name: m_factGCP_Billing_cost_sum
+  - unique_name: m_factGCP_Billing_usage_sum
 relationships:
-  - unique_name: invoicemonth_to_dimdate_gcpusage_monthcode
+  - unique_name: InvoiceMonth_to_dimDate_MonthCode
     from:
-      dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
+      dataset: factGCP_Billing
       join_columns:
-        - invoice.month
+        - invoicemonth
+    role_play: InvoiceMonth {0}
     to:
-      dimension: dimDate_gcpusage
-      level: dimDate_gcpusage_monthcode
-
+      dimension: dimDate_GBQUsage
+      level: dimDate_GBQUsage_MonthCode

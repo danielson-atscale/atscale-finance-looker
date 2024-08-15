@@ -1,6 +1,6 @@
-unique_name: dimDate_dataset_gcpusage
+unique_name: dimDate_GBQUsage_dataset
 object_type: dataset
-label: dimDate
+label: dimDate_GBQUsage_dataset
 columns:
   - name: Date
     data_type: date
@@ -10,7 +10,7 @@ columns:
     data_type: string
   - name: Year
     data_type: string
-  - name: MonthYear
+  - name: Month-Year
     data_type: string
   - name: MonthCode
     data_type: string

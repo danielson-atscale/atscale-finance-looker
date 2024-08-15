@@ -1,6 +1,0 @@
-unique_name: m_gcpBilling_usage_sum
-object_type: metric
-label: Usage
-calculation_method: sum
-column: usage
-dataset: gcp_billing_export_v1_0166FD_D409B8_13D5E7
