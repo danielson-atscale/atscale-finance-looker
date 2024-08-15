@@ -2,6 +2,6 @@ unique_name: StoppedPOCs
 object_type: metric_calc
 label: Stopped POCs
 expression: >-
-  ([FactOpportunity_POCStatus_Translated].[factOpportunity_POCStatus_Translated_Hierarchy].[factOpportunity_POCStatus_Translated_POCStatus_Translated].&[POC Stopped], 
+  ([FactOpportunity_TrialStatus].[factOpportunity_TrialStatus_Hierarchy].[factOpportunity_TrialStatus_TrialStatus].&[Trial Stopped], 
   [Measures].[m_factOpportunity_Id_Count])
 is_hidden: false

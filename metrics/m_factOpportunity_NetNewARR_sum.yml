@@ -1,6 +1,6 @@
 unique_name: m_factOpportunity_NetNewARR_sum
 object_type: metric
-label: Net New Arr
+label: Net New ARR
 calculation_method: sum
 column: NetNewARR
 dataset: factOpportunity

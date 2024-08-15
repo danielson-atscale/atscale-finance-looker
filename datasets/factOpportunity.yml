@@ -106,18 +106,18 @@ columns:
        IF(IsClosed = False OR Stage = '6-Closed Lost', RenewalProbability*ExpiringARR, 
        IF(IsWon = True AND NetNewARR >=0, RenewalProbability*ExpiringARR, 
        IF(IsWon = True AND NetNewARR < 0, RenewalProbability*OpportunityARR, NULL)))  
-  - name: POCStatus(Translated)
+  - name: TrialStatus
     data_type: string
     sql: >-
-       IF(POCStatus = 'N/A - POC Not Needed', 'POC Not Needed',
-       IF(RecordType = 'Renewal', 'POC Not Needed',
-       IF(POCStatus = 'N/C - POC Stopped', 'POC Stopped',
-       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NULL, 'Pre-POC', 
+       IF(POCStatus = 'N/A - POC Not Needed', 'Trial Not Needed',
+       IF(RecordType = 'Renewal', 'Trial Not Needed',
+       IF(POCStatus = 'N/C - POC Stopped', 'Trial Stopped',
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NULL, 'Pre-Trial', 
        IF(Stage = '6-Closed Lost' AND POCStartDate IS NULL, 'No POC',
-       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NULL, 'POC In Progress',
-       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'POC Complete',
-       IF(Stage = '5-Closed Won' AND POCStartDate IS NOT NULL, 'Won POC',
-       IF(Stage = '6-Closed Lost' AND POCStartDate IS NOT NULL, 'Lost POC', 'No POC')))))))))
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NULL, 'Trial In Progress',
+       IF(Stage <> '5-Closed Won' AND Stage <> '6-Closed Lost' AND POCStartDate IS NOT NULL AND POCEndDate IS NOT NULL, 'Trial Complete',
+       IF(Stage = '5-Closed Won' AND POCStartDate IS NOT NULL, 'Won',
+       IF(Stage = '6-Closed Lost' AND POCStartDate IS NOT NULL, 'Lost', 'No Trial')))))))))
   - name: ReachedPOCYesorNo
     data_type: decimal
     sql: >-
