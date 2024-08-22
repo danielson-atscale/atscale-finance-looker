@@ -8,5 +8,5 @@ expression:
     [Measures].[RenewalDIV]
    )
 
-format: '#,###.0;(#,###.0)'
+format: '#,###;(#,###)'
 is_hidden: false
