@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_KeyInfoScore_sum
+object_type: metric
+label: Key Info Score
+calculation_method: sum
+column: KeyInfoScore
+dataset: factOpportunity

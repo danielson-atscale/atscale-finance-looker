@@ -1,0 +1,6 @@
+unique_name: m_dimOpportunityContacts_KeyContactsScore_sum
+object_type: metric
+label: Key Contact Score
+calculation_method: sum
+column: KeyContactsScore
+dataset: RelatedOpportunityContacts_dataset

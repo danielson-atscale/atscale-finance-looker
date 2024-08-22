@@ -96,8 +96,6 @@ columns:
     data_type: date
   - name: POCEndDate
     data_type: date
-  - name: LostReason
-    data_type: string
   - name: Data_Platforms
     data_type: string
   - name: ExpectedRenewalARR
@@ -131,5 +129,11 @@ columns:
     sql: >-
       IF(ForecastCategory <> '0-Omitted' AND ForecastCategory <> '5-Won' AND IsClosed = False AND POCStartDate IS NOT NULL,
       1, 0)
+  - name: KeyInfoScore
+    data_type: decimal
+    sql: >-
+      (IF(BusinessUseCase IS NULL,1,0)) + (IF(HighestLevelBusinessContact IS NULL,1,0)) + (IF(CloudSpend IS NULL,1,0)) + (IF(Data_Platforms IS NULL,1,0)) + 
+      (IF(PositiveBusinessOutcomes IS NULL,1,0)) + (IF(SuccessMetrics IS NULL,1,0)) + (IF(BITools IS NULL,1,0)) + (IF(PathtoClose IS NULL,1,0)) + 
+      (IF(Competition IS NULL,1,0)) + (IF(NextStep IS NULL,1,0))
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: FactOpportunity
