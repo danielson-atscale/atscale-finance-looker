@@ -18,7 +18,6 @@ level_attributes:
     key_columns:
       - OpportunityId
     name_column: OpportunityId
-    sort_column: empty_value
   - unique_name: dimOpportunityContacts_ContactName
     label: ContactName
     contains_unique_names: false
@@ -27,7 +26,6 @@ level_attributes:
     key_columns:
       - ContactName
     name_column: ContactName
-    sort_column: empty_value
   - unique_name: dimOpportunityContacts_AccountFrom
     label: AccountFrom
     contains_unique_names: false
@@ -36,7 +34,6 @@ level_attributes:
     key_columns:
       - AccountFrom
     name_column: AccountFrom
-    sort_column: empty_value
   - unique_name: dimOpportunityContacts_ContactRole
     label: ContactRole
     contains_unique_names: false

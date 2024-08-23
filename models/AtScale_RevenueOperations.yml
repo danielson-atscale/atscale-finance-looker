@@ -82,8 +82,6 @@ metrics:
     folder: DoNotUse
   - unique_name: Count_PartnerAE
     folder: DoNotUse
-  - unique_name: Sum_KeyInfoScore
-  - unique_name: m_dimOpportunityContacts_KeyContactsScore_sum
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
