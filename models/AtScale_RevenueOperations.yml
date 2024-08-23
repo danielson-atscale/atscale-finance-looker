@@ -72,6 +72,8 @@ metrics:
     folder: POCs
   - unique_name: TotalLostPOCs
     folder: POCs
+  - unique_name: m_factOpportunity_KeyInfoScore
+    folder: Opportunities
 relationships:
   - unique_name: factOpportunity_Id_to_dimOwner_dimOwner_Name
     from:
