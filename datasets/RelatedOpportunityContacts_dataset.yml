@@ -18,6 +18,6 @@ columns:
     data_type: string
   - name: KeyContactsScore
     data_type: decimal
-    sql: (IF(ContactRole = 'Champion',1,0)) + (IF(ContactRole = 'Economic Buyer',1,0)) + (IF(ContactRole = 'Partner',1,0))
+    sql: 1 + 1 + 1
 connection_id: con_atscale-data-warehouse_AIA_dbt
 table: RelatedOpportunityContacts
