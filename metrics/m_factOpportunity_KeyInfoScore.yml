@@ -1,6 +1,6 @@
 unique_name: m_factOpportunity_KeyInfoScore
 object_type: metric
-label: Key Info Score
+label: No. of Missing Fields
 calculation_method: sum
 column: KeyInfoScore
 dataset: factOpportunity
