@@ -1,0 +1,4 @@
+unique_name: avg_slots_ms
+object_type: metric_calc
+label: avg_slots
+expression: "[Measures].[m_total_slot_ms_sum]/(1000 * 60 * 60 * 24 * 7)"

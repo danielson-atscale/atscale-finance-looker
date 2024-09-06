@@ -96,8 +96,6 @@ columns:
     data_type: date
   - name: POCEndDate
     data_type: date
-  - name: LostReason
-    data_type: string
   - name: Data_Platforms
     data_type: string
   - name: ExpectedRenewalARR

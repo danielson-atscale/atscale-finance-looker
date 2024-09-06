@@ -1,0 +1,6 @@
+unique_name: m_creditamount_gbq
+object_type: metric
+label: Credit amount
+calculation_method: sum
+column: creditamount
+dataset: factGCP_Billing

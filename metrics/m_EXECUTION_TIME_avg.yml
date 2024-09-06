@@ -1,0 +1,6 @@
+unique_name: m_EXECUTION_TIME_avg
+object_type: metric
+label: Avg Execution Time
+calculation_method: average
+dataset: QUERY_HISTORY
+column: EXECUTION_TIME

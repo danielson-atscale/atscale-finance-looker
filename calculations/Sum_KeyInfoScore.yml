@@ -1,0 +1,9 @@
+unique_name: Sum_KeyInfoScore
+object_type: metric_calc
+label: Key Info Score
+expression: |-
+  [Measures].[Count_Champions] + [Measures].[Count_EB] +
+    [Measures].[Count_PartnerAE] +
+    [Measures].[m_factOpportunity_KeyInfoScore_sum]
+format: general number
+is_hidden: false

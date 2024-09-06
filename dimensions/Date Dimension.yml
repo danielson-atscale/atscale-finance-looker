@@ -1,0 +1,36 @@
+unique_name: Date Dimension
+object_type: dimension
+label: Date Dimension
+hierarchies:
+  - unique_name: Degenerate Dim Hierarchy
+    label: Date Hierarchy
+    filter_empty: 'yes'
+    levels:
+      - unique_name: year
+      - unique_name: month
+      - unique_name: full_date
+level_attributes:
+  - unique_name: full_date
+    label: Full Date
+    dataset: Degenerate Date
+    key_columns:
+      - USE_DATE
+    name_column: USE_DATE
+    time_unit: day
+  - unique_name: month
+    label: Month
+    dataset: Degenerate Date
+    key_columns:
+      - Month
+      - Year
+    name_column: Month
+    sort_column: USE_DATE
+    time_unit: month
+  - unique_name: year
+    label: Year
+    dataset: Degenerate Date
+    key_columns:
+      - Year
+    name_column: Year
+    time_unit: year
+type: time

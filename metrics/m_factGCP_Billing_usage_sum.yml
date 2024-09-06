@@ -1,0 +1,6 @@
+unique_name: m_factGCP_Billing_usage_sum
+object_type: metric
+label: Usage
+calculation_method: sum
+column: usage
+dataset: factGCP_Billing

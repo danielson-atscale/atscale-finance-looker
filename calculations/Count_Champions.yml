@@ -1,0 +1,7 @@
+unique_name: Count_Champions
+object_type: metric_calc
+label: Count Champions
+expression: >-
+  SUM([dimOpportunityContacts].[OpportunityContacts_Hierarchy].[dimOpportunityContacts_ContactRole].&[Champion],
+  [Measures].[m_factOpportunity_Contacts_count])
+is_hidden: false

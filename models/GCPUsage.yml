@@ -1,0 +1,21 @@
+unique_name: GCPUsage
+object_type: model
+label: GCPUsage
+dimensions:
+  - factGCP_Billing_ProjectName
+  - factGCP_Billing_Service
+  - Credit_Amount
+metrics:
+  - unique_name: m_factGCP_Billing_cost_sum
+  - unique_name: m_factGCP_Billing_usage_sum
+  - unique_name: m_creditamount_gbq
+relationships:
+  - unique_name: InvoiceMonth_to_dimDate_MonthCode
+    from:
+      dataset: factGCP_Billing
+      join_columns:
+        - invoicemonth
+    role_play: Invoice {0}
+    to:
+      dimension: dimDate_GBQUsage
+      level: dimDate_GBQUsage_MonthCode
