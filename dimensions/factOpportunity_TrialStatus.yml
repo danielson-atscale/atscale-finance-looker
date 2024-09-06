@@ -1,0 +1,18 @@
+unique_name: factOpportunity_TrialStatus
+object_type: dimension
+label: Trial Status
+hierarchies:
+  - unique_name: factOpportunity_TrialStatus_Hierarchy
+    label: Trial Status Hierarchy
+    levels:
+      - unique_name: factOpportunity_TrialStatus_TrialStatus
+is_degenerate: true
+level_attributes:
+  - unique_name: factOpportunity_TrialStatus_TrialStatus
+    label: Trial Status
+    contains_unique_names: false
+    dataset: factOpportunity
+    key_columns:
+      - TrialStatus
+    name_column: TrialStatus
+type: standard

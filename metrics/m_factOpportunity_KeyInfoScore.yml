@@ -1,0 +1,7 @@
+unique_name: m_factOpportunity_KeyInfoScore
+object_type: metric
+label: No. of Missing Fields
+calculation_method: sum
+column: KeyInfoScore
+dataset: factOpportunity
+format: '##.#'
