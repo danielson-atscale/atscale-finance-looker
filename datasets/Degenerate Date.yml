@@ -1,0 +1,20 @@
+unique_name: Degenerate Date
+object_type: dataset
+label: Degenerate Date
+connection_id: atscale-snowflake
+sql: "SELECT DISTINCT cast(START_TIME AS date) use_date, year(START_TIME) AS \"Year\"\
+  , monthname(START_TIME) AS \"Month\"\nFROM SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY\n\
+  UNION \nSELECT DISTINCT CAST(END_TIME AS date) use_date, year(END_TIME) AS \"Year\"\
+  , monthname(END_TIME) AS \"Month\"\nFROM SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY\n\
+  UNION\nSELECT DISTINCT CAST(START_TIME AS date) use_date, year(START_TIME) AS \"\
+  Year\", monthname(START_TIME) AS \"Month\"\nFROM SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY\n\
+  UNION \nSELECT DISTINCT CAST(END_TIME AS date) use_date, year(END_TIME) AS \"Year\"\
+  , monthname(END_TIME) AS \"Month\"\nFROM SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY\n"
+
+columns:
+  - name: Month
+    data_type: string
+  - name: USE_DATE
+    data_type: date
+  - name: Year
+    data_type: "decimal(4,0)"

@@ -1,0 +1,6 @@
+unique_name: Count_EB
+object_type: metric_calc
+label: Count Economic Buyer
+expression: >-
+  SUM([dimOpportunityContacts].[OpportunityContacts_Hierarchy].[dimOpportunityContacts_ContactRole].&[Economic Buyer],[Measures].[m_factOpportunity_Contacts_count])
+is_hidden: false

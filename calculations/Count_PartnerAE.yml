@@ -1,0 +1,6 @@
+unique_name: Count_PartnerAE
+object_type: metric_calc
+label: Count Partner AE
+expression: >-
+  SUM([dimOpportunityContacts].[OpportunityContacts_Hierarchy].[dimOpportunityContacts_ContactRole].&[Partner],[Measures].[m_factOpportunity_Contacts_count])
+is_hidden: false

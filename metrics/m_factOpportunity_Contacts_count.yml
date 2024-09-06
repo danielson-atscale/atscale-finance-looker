@@ -1,0 +1,6 @@
+unique_name: m_factOpportunity_Contacts_count
+object_type: metric
+label: Contact Count
+calculation_method: count distinct
+column: RelationshipId
+dataset: RelatedOpportunityContacts_dataset

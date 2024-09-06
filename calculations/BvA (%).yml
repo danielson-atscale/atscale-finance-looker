@@ -1,4 +1,4 @@
-unique_name: BvA_variance
+unique_name: BvA (%)
 object_type: metric_calc
 label: BvA (%)
 expression: >-

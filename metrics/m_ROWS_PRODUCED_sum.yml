@@ -1,0 +1,6 @@
+unique_name: m_ROWS_PRODUCED_sum
+object_type: metric
+label: Sum Rows Produced
+calculation_method: sum
+dataset: QUERY_HISTORY
+column: ROWS_PRODUCED

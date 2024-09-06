@@ -1,0 +1,60 @@
+unique_name: dimDate_GBQUsage
+object_type: dimension
+label: dimDate
+hierarchies:
+  - unique_name: dimDate_GBQUsage_Hierarchy
+    label: dimDate Hierarchy
+    levels:
+      - unique_name: dimDate_GBQUsage_Year
+      - unique_name: dimDate_GBQUsage_Quarter
+      - unique_name: dimDate_GBQUsage_Month
+      - unique_name: dimDate_GBQUsage_MonthCode
+      - unique_name: dimDate_GBQUsage_Date
+level_attributes:
+  - unique_name: dimDate_GBQUsage_Year
+    label: Year
+    contains_unique_names: false
+    dataset: dimDate_GBQUsage_dataset
+    is_unique_key: false
+    key_columns:
+      - Year
+    name_column: Year
+    time_unit: year
+  - unique_name: dimDate_GBQUsage_Quarter
+    label: Quarter
+    contains_unique_names: false
+    dataset: dimDate_GBQUsage_dataset
+    is_unique_key: false
+    key_columns:
+      - Quarter
+    name_column: Quarter
+    time_unit: quarter
+  - unique_name: dimDate_GBQUsage_Month
+    label: Month
+    contains_unique_names: false
+    dataset: dimDate_GBQUsage_dataset
+    is_unique_key: false
+    key_columns:
+      - Month
+    name_column: Month
+    time_unit: month
+  - unique_name: dimDate_GBQUsage_MonthCode
+    label: MonthCode
+    contains_unique_names: false
+    dataset: dimDate_GBQUsage_dataset
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - MonthCode
+    name_column: MonthCode
+    time_unit: undefined
+  - unique_name: dimDate_GBQUsage_Date
+    label: Date
+    contains_unique_names: false
+    dataset: dimDate_GBQUsage_dataset
+    is_unique_key: false
+    key_columns:
+      - Date
+    name_column: Date
+    time_unit: day
+type: time

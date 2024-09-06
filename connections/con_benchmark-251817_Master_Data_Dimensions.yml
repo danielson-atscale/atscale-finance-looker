@@ -1,0 +1,6 @@
+unique_name: con_benchmark-251817_Master_Data_Dimensions
+object_type: connection
+label: con_benchmark-251817_Master_Data_Dimensions
+as_connection: benchmark-251817
+database: benchmark-251817
+schema: Master_Data_Dimensions

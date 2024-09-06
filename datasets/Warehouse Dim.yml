@@ -1,0 +1,20 @@
+unique_name: Warehouse Dim
+object_type: dataset
+label: Warehouse Dim
+connection_id: atscale-snowflake
+sql: |
+  SELECT QH.WAREHOUSE_ID, QH.WAREHOUSE_NAME, DATABASE_ID, DATABASE_NAME, SCHEMA_ID, SCHEMA_NAME FROM "SNOWFLAKE"."ACCOUNT_USAGE".QUERY_HISTORY QH
+
+columns:
+  - name: DATABASE_ID
+    data_type: "decimal(38,0)"
+  - name: DATABASE_NAME
+    data_type: string
+  - name: SCHEMA_ID
+    data_type: "decimal(38,0)"
+  - name: SCHEMA_NAME
+    data_type: string
+  - name: WAREHOUSE_ID
+    data_type: "decimal(38,0)"
+  - name: WAREHOUSE_NAME
+    data_type: string

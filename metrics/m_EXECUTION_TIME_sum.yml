@@ -1,0 +1,6 @@
+unique_name: m_EXECUTION_TIME_sum
+object_type: metric
+label: Sum Execution Time
+calculation_method: sum
+dataset: QUERY_HISTORY
+column: EXECUTION_TIME

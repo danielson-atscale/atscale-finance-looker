@@ -1,0 +1,18 @@
+unique_name: factGCP_Billing_Service
+object_type: dimension
+label: Service
+hierarchies:
+  - unique_name: factGCP_Billing_Service_Hierarchy
+    label: Service Hierarchy
+    levels:
+      - unique_name: factGCP_Billing_Service_Service
+is_degenerate: true
+level_attributes:
+  - unique_name: factGCP_Billing_Service_Service
+    label: Service
+    contains_unique_names: false
+    dataset: factGCP_Billing
+    key_columns:
+      - service
+    name_column: service
+type: standard

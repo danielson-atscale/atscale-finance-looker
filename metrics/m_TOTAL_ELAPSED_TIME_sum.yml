@@ -1,0 +1,6 @@
+unique_name: m_TOTAL_ELAPSED_TIME_sum
+object_type: metric
+label: Sum Total Elapsed Time
+calculation_method: sum
+dataset: QUERY_HISTORY
+column: TOTAL_ELAPSED_TIME

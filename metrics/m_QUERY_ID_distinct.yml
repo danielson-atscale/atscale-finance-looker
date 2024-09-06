@@ -1,0 +1,6 @@
+unique_name: m_QUERY_ID_distinct
+object_type: metric
+label: Number of Queries
+calculation_method: count distinct
+dataset: QUERY_HISTORY
+column: QUERY_ID

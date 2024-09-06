@@ -1,0 +1,18 @@
+unique_name: factGCP_Billing_Project
+object_type: dimension
+label: Project
+hierarchies:
+  - unique_name: factGCP_Billing_Project_Hierarchy
+    label: Project Hierarchy
+    levels:
+      - unique_name: factGCPBilling_Project_Project
+is_degenerate: true
+level_attributes:
+  - unique_name: factGCPBilling_Project_Project
+    label: Project
+    contains_unique_names: false
+    dataset: factGCP_Billing
+    key_columns:
+      - project
+    name_column: project
+type: standard

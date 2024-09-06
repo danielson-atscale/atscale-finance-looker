@@ -1,0 +1,18 @@
+unique_name: Credit_Amount
+object_type: dimension
+label: Credit Amount
+hierarchies:
+  - unique_name: Credit_Amount_Hierarchy
+    label: Credit Amount Hierarchy
+    levels:
+      - unique_name: Credit_Amount_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Credit_Amount_Level
+    label: Credit Amount Level
+    contains_unique_names: false
+    dataset: factGCP_Billing
+    key_columns:
+      - creditamount
+    name_column: creditamount
+type: standard

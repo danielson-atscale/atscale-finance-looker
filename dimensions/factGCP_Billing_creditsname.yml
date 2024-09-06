@@ -1,0 +1,18 @@
+unique_name: factGCP_Billing_creditsname
+object_type: dimension
+label: Credits
+hierarchies:
+  - unique_name: factGCP_Billing_CreditsName_Hierarchy
+    label: Credits Name Hierarchy
+    levels:
+      - unique_name: factGCP_Billing_CreditsName_CreditsName
+is_degenerate: true
+level_attributes:
+  - unique_name: factGCP_Billing_CreditsName_CreditsName
+    label: Credits
+    contains_unique_names: false
+    dataset: factGCP_Billing
+    key_columns:
+      - creditsname
+    name_column: creditsname
+type: standard
