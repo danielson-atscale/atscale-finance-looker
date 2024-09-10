@@ -1,0 +1,18 @@
+unique_name: atscale_license_object_data_dimension
+object_type: dimension
+label: atscale_license_object_data_dimension
+hierarchies:
+  - unique_name: atscale_license_object_data_dimension Hierarchy
+    label: atscale_license_object_data_dimension Hierarchy
+    levels:
+      - unique_name: atscale_license_object_data_dimension Level
+level_attributes:
+  - unique_name: atscale_license_object_data_dimension Level
+    label: atscale_license_object_data_dimension Level
+    contains_unique_names: false
+    dataset: atscale_license_object_data
+    is_unique_key: false
+    key_columns:
+      - licenseKeyId
+    name_column: licenseKeyId
+type: standard

@@ -1,0 +1,16 @@
+unique_name: Customer_Utilization
+object_type: model
+label: Customer_Utilization
+dimensions: []
+metrics: []
+relationships:
+  - unique_name: >-
+      factCustomerDeployedProjects_licenseKeyName_to_atscale_license_object_data_dimension_atscale_license_object_data_dimension
+      Level
+    from:
+      dataset: factCustomerDeployedProjects
+      join_columns:
+        - licenseKeyId
+    to:
+      dimension: atscale_license_object_data_dimension
+      level: atscale_license_object_data_dimension Level

@@ -1,0 +1,6 @@
+unique_name: con_atscale-finance-project_billing
+object_type: connection
+label: con_atscale-finance-project_billing
+as_connection: atscale-finance-project
+database: atscale-finance-project
+schema: billing

@@ -1,0 +1,18 @@
+unique_name: factCustomerDeployedProjects
+object_type: dataset
+label: factCustomerDeployedProjects
+columns:
+  - name: sentAt
+    data_type: datetime
+  - name: licenseKeyName
+    data_type: string
+  - name: userId
+    data_type: string
+  - name: userName
+    data_type: string
+  - name: count
+    data_type: long
+  - name: licenseKeyId
+    data_type: string
+connection_id: con_atscale-finance-project_billing
+table: customerDeployedProjects
