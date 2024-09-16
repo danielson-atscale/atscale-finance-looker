@@ -1,0 +1,6 @@
+unique_name: Object_Count_Day
+object_type: metric
+label: Object_Count_Day
+calculation_method: sum
+column: count
+dataset: factCustomerDeployedProjects

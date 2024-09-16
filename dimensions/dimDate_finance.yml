@@ -1,0 +1,59 @@
+unique_name: dimDate_finance
+object_type: dimension
+label: dimDate_finance
+hierarchies:
+  - unique_name: dimDate_finance Hierarchy
+    label: dimDate_finance Hierarchy
+    levels:
+      - unique_name: dimDate_finance_year
+      - unique_name: dimDate_finance_quarter
+      - unique_name: dimDate_finance_month
+      - unique_name: dimDate_finance_monthYear
+      - unique_name: dimDate_finance_date
+level_attributes:
+  - unique_name: dimDate_finance_year
+    label: Year
+    contains_unique_names: false
+    dataset: dimDate_finance_dataset
+    is_unique_key: false
+    key_columns:
+      - Year
+    name_column: Year
+    time_unit: year
+  - unique_name: dimDate_finance_quarter
+    label: Quarter
+    contains_unique_names: false
+    dataset: dimDate_finance_dataset
+    is_unique_key: false
+    key_columns:
+      - Quarter
+    name_column: Quarter
+    time_unit: quarter
+  - unique_name: dimDate_finance_month
+    label: Month
+    contains_unique_names: false
+    dataset: dimDate_finance_dataset
+    is_unique_key: false
+    key_columns:
+      - Month
+    name_column: Month
+    time_unit: month
+  - unique_name: dimDate_finance_monthYear
+    label: MonthCode
+    contains_unique_names: false
+    dataset: dimDate_finance_dataset
+    is_unique_key: false
+    key_columns:
+      - MonthYear
+    name_column: MonthYear
+    time_unit: undefined
+  - unique_name: dimDate_finance_date
+    label: Date
+    contains_unique_names: false
+    dataset: dimDate_finance_dataset
+    is_unique_key: false
+    key_columns:
+      - Date
+    name_column: Date
+    time_unit: day
+type: time

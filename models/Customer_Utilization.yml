@@ -2,8 +2,17 @@ unique_name: Customer_Utilization
 object_type: model
 label: Customer_Utilization
 dimensions: []
-metrics: []
+metrics:
+  - unique_name: Object_Count_Day
 relationships:
+  - unique_name: factCustomerDeployedProjects_SentAt_to_dimDate_Day
+    from:
+      dataset: factCustomerDeployedProjects
+      join_columns:
+        - sentAt
+    to:
+      dimension: dimDate_finance
+      level: dimDate_finance_date
   - unique_name: >-
       factCustomerDeployedProjects_licenseKeyName_to_atscale_license_object_data_dimension_atscale_license_object_data_dimension
       Level
@@ -14,3 +23,11 @@ relationships:
     to:
       dimension: atscale_license_object_data_dimension
       level: atscale_license_object_data_dimension Level
+  - unique_name: factCustomerDeployedProjects_count_to_dimDate_dimDate_Date
+    from:
+      dataset: factCustomerDeployedProjects
+      join_columns:
+        - count
+    to:
+      dimension: dimDate_finance
+      level: dimDate_finance_date

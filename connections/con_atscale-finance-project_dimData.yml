@@ -1,0 +1,6 @@
+unique_name: con_atscale-finance-project_dimData
+object_type: connection
+label: con_atscale-finance-project_dimData
+as_connection: atscale-finance-project
+database: atscale-finance-project
+schema: dimData
