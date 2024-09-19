@@ -23,11 +23,3 @@ relationships:
     to:
       dimension: atscale_license_object_data_dimension
       level: atscale_license_object_data_dimension Level
-  - unique_name: factCustomerDeployedProjects_count_to_dimDate_dimDate_Date
-    from:
-      dataset: factCustomerDeployedProjects
-      join_columns:
-        - count
-    to:
-      dimension: dimDate_finance
-      level: dimDate_finance_date
