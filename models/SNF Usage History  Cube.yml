@@ -1,6 +1,6 @@
-unique_name: SNF Usage History  Cube
+unique_name: SNF_Usage_History_Cube
 object_type: model
-label: SNF Usage History  Cube
+label: SNF_Usage_History_Cube
 include_default_drillthrough: true
 
 relationships:
