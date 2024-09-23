@@ -421,7 +421,7 @@ view: AtScale_Finance {
 
     dimension: dimContract_Hierarchy_dimContract_Customername {
         label: "   Customername"
-        group_label: "dimContract Hierarchy"
+        group_label: "dimContract_Hierarchy"
         type: string
         sql: ${TABLE}."dimContract_Customername";;
         drill_fields: [dimContract_Hierarchy_dimContract_Status]
@@ -429,14 +429,14 @@ view: AtScale_Finance {
 
     dimension: dimContract_Hierarchy_dimContract_Recordno {
         label: " SageID"
-        group_label: "dimContract Hierarchy"
+        group_label: "dimContract_Hierarchy"
         type: string
         sql: ${TABLE}."dimContract_Recordno";;
     }
 
     dimension: dimContract_Hierarchy_dimContract_Status {
         label: "  Status"
-        group_label: "dimContract Hierarchy"
+        group_label: "dimContract_Hierarchy"
         type: string
         sql: ${TABLE}."dimContract_Status";;
         drill_fields: [dimContract_Hierarchy_dimContract_Recordno]
